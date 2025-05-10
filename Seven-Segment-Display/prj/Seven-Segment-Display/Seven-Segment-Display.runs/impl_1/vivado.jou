@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May  9 16:18:47 2025
+# Process ID: 3940
+# Current directory: Y:/Code/Digital_Design_MCU/Seven-Segment-Display/prj/Seven-Segment-Display/Seven-Segment-Display.runs/impl_1
+# Command line: vivado.exe -log segment_displays.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source segment_displays.tcl -notrace
+# Log file: Y:/Code/Digital_Design_MCU/Seven-Segment-Display/prj/Seven-Segment-Display/Seven-Segment-Display.runs/impl_1/segment_displays.vdi
+# Journal file: Y:/Code/Digital_Design_MCU/Seven-Segment-Display/prj/Seven-Segment-Display/Seven-Segment-Display.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source segment_displays.tcl -notrace
