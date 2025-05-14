@@ -7,7 +7,7 @@
 //  - running       : 高电平 = 计时进行中
 // ============================================================================
 module countdown_fsm #(
-  parameter DEFAULT_TIME = 6'd60,      // 上电默认 60 s（范围 0-60）
+  parameter DEFAULT_TIME = 6'd00,      // 上电默认 00 s（范围 0-60）
   parameter CLK_FREQ_HZ  = 10_000_000  // 输入时钟（此处 10 MHz）
 ) (
   input wire clk,  // 时钟
