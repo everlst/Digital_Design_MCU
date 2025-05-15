@@ -17,7 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 3
 set_param simulator.modelsimInstallPath E:/modeltech64_2020.4/win64
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -40,7 +39,7 @@ read_verilog -library xil_defaultlib {
   Y:/Code/Digital_Design_MCU/Count_down/rtl/decoder_display.v
   Y:/Code/Digital_Design_MCU/Count_down/rtl/top_countdown.v
 }
-read_ip -quiet y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci
+read_ip -quiet Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci
 set_property used_in_implementation false [get_files -all y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc]
 set_property used_in_implementation false [get_files -all y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc]
 set_property used_in_implementation false [get_files -all y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_ooc.xdc]

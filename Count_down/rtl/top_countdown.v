@@ -1,16 +1,20 @@
 module top_countdown (
-  input  wire       clk_in,          // 板载时钟，如 100 MHz
-  input  wire       rst_btn,         // 全局复位键（高有效）
-  input  wire       PB_start_pause,  // 4 个独立按键
-  input  wire       PB_reset,
-  input  wire       PB_add,
-  input  wire       PB_sub,
-  output wire [3:0] seg_sel,         // 数码管 AN3:AN0
-  output wire [7:0] seg_output       // 段码 DP,G,F,E,D,C,B,A
+  input wire clk_in,  // 外部时钟信号
+  input wire rst,     // 全局复位键（高有效）
+
+  // 4 个独立按键
+  input wire PB_start_pause,
+  input wire PB_reset,
+  input wire PB_add,
+  input wire PB_sub,
+
+  //输出以在数码管上进行显示
+  output wire [3:0] seg_sel,    // 数码管 AN3:AN0
+  output wire [7:0] seg_output  // 段码 DP,G,F,E,D,C,B,A
 );
 
   //----------------------------------------------------------------------
-  // 1) 时钟向导：100 MHz → 10 MHz
+  // 1) 时钟：100 MHz → 10 MHz
   //----------------------------------------------------------------------
   wire clk_10M;
   clk_wiz u_clk (
@@ -19,17 +23,17 @@ module top_countdown (
   );
 
   //----------------------------------------------------------------------
-  // 2) 4 键消抖
+  // 2) 4 键消抖后输入
   //----------------------------------------------------------------------
   wire [3:0] key_pulse;
   button_debounce #(
     .WIDTH(4)
   ) u_db (
-    .clk       (clk_10M),
-    .rst       (rst_btn),
-    .key_in    ({PB_sub, PB_add, PB_reset, PB_start_pause}),
-    .pulse_out (key_pulse),
-    .active_low(1'b1)                                         // 若为低电平按下
+    .clk      (clk_10M),
+    .rst      (rst),
+    .key_in   ({PB_sub, PB_add, PB_reset, PB_start_pause}),
+    .active   (1'b0),                                        // 低电平按下
+    .pulse_out(key_pulse)
   );
   wire       start_pause_p = key_pulse[0];
   wire       reset_p = key_pulse[1];
@@ -43,7 +47,7 @@ module top_countdown (
   wire       running;
   countdown_fsm u_fsm (
     .clk          (clk_10M),
-    .rst          (rst_btn),
+    .rst          (rst),
     .start_pause_p(start_pause_p),
     .reset_p      (reset_p),
     .add_p        (add_p),
@@ -53,21 +57,23 @@ module top_countdown (
   );
 
   //----------------------------------------------------------------------
-  // 4) BCD 拆分：sec / 10, sec % 10
+  // 4) 根据状态机的输出，计算十位与个位
   //----------------------------------------------------------------------
   wire [3:0] bcd_tens = seconds / 10;
   wire [3:0] bcd_ones = seconds % 10;
 
   //----------------------------------------------------------------------
-  // 5) 数码管两位动态刷新
+  // 5) 数码管动态刷新
   //----------------------------------------------------------------------
   decoder_display u_disp (
     .clk     (clk_10M),
-    .rst     (rst_btn),
+    .rst     (rst),
     .bcd_tens(bcd_tens),
     .bcd_ones(bcd_ones),
-    .seg_sel (seg_sel),
-    .seg_out (seg_output)
+
+    //对外输出信号
+    .seg_sel(seg_sel),
+    .seg_out(seg_output)
   );
 
 endmodule
