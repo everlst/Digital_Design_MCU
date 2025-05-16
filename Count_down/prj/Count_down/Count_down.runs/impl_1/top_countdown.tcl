@@ -67,6 +67,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 3
   set_param simulator.modelsimInstallPath E:/modeltech64_2020.4/win64
+  set_param xicom.use_bs_reader 1
   open_checkpoint top_countdown_routed.dcp
   set_property webtalk.parent_dir Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.cache/wt [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]

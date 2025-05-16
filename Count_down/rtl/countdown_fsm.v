@@ -21,16 +21,15 @@ module countdown_fsm #(
 
   // === 输出 ===
   output reg [5:0] seconds,  // 当前剩余秒数 0-60
-  output reg       running   // 1 = RUN 状态
+  output reg       running   // 运行状态标志位，1是运行，0是空闲或暂停
 );
 
   // --------------------------------------------------------------------
-  // 1 Hz 时基：计数到 CLK_FREQ_HZ-1 产生 1 个周期的 tick_1hz
+  // 1 Hz 记时：计数到 CLK_FREQ_HZ-1 产生 1 个周期的 tick_1hz
   // --------------------------------------------------------------------
   localparam DIV_CNT_MAX = CLK_FREQ_HZ - 1;  // 0 ... N-1
-  // 计算位宽（$clog2 需要 SV，这里手算 24 位够用 16M+）
   reg [23:0] div_cnt;
-  reg        tick_1hz;  // 1 clk 宽脉冲
+  reg        tick_1hz;  // 1 clk 信号
 
   always @(posedge clk) begin
     if (rst) begin
@@ -46,9 +45,9 @@ module countdown_fsm #(
   end
 
   // --------------------------------------------------------------------
-  // 状态机编码（2 bit）
+  // 状态机编码
   // --------------------------------------------------------------------
-  localparam S_IDLE = 2'd0;
+  localparam S_NULL = 2'd0;
   localparam S_RUN = 2'd1;
   localparam S_PAUSE = 2'd2;
 
@@ -56,32 +55,33 @@ module countdown_fsm #(
 
   // ---- 组合：状态转移 ----
   always @(*) begin
-    state_nxt = state;  // 缺省保持
+    // 复位键最高优先级
+    if (reset_p) state_nxt = S_NULL;
+
+    state_nxt = state;  // 默认保持当前状态
 
     case (state)
-      S_IDLE: begin
+      S_NULL: begin
         if (start_pause_p && seconds != 6'd0) state_nxt = S_RUN;
       end
 
       S_RUN: begin
         if (start_pause_p) state_nxt = S_PAUSE;
         else if (seconds == 6'd0)  // 计到 0 自动回空闲
-          state_nxt = S_IDLE;
+          state_nxt = S_NULL;
       end
 
       S_PAUSE: begin
-        if (start_pause_p) state_nxt = (seconds == 6'd0) ? S_IDLE : S_RUN;
+        if (start_pause_p) state_nxt = (seconds == 6'd0) ? S_NULL : S_RUN;
       end
     endcase
-
-    // 复位键最高优先级
-    if (reset_p) state_nxt = S_IDLE;
   end
 
-  // ---- 时序：状态寄存 ----
+  // ---- 时序：状态更新 ----
   always @(posedge clk) begin
-    if (rst) state <= S_IDLE;
+    if (rst) state <= S_NULL;
     else state <= state_nxt;
+
   end
 
   // --------------------------------------------------------------------
@@ -90,7 +90,7 @@ module countdown_fsm #(
   always @(posedge clk) begin
     if (rst || reset_p) seconds <= DEFAULT_TIME;  // 总复位 / 单独复位
     else begin
-      // Idle 或 Pause 可调时间
+      // Null 或 Pause 状态下可调时间
       if (state != S_RUN) begin
         if (add_p && seconds < 6'd60) seconds <= seconds + 6'd1;
         else if (sub_p && seconds > 6'd0) seconds <= seconds - 6'd1;
@@ -102,7 +102,7 @@ module countdown_fsm #(
   end
 
   // --------------------------------------------------------------------
-  // running 指示
+  // running 信号
   // --------------------------------------------------------------------
   always @(posedge clk) begin
     if (rst) running <= 1'b0;

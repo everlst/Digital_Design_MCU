@@ -2,188 +2,22 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri May  9 17:26:27 2025
-# Process ID: 16252
+# Start of session at: Fri May 16 01:04:36 2025
+# Process ID: 18936
 # Current directory: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13632 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18792 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
 # Log file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/vivado.log
 # Journal file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.xpr
-INFO: [Project 1-313] Project file moved from 'Y:/Code/Digital_Design_MCU/Count_down/Count_down' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 912.117 ; gain = 158.559
-add_files -norecurse {Y:/Code/Digital_Design_MCU/Count_down/rtl/top_countdown.v Y:/Code/Digital_Design_MCU/Count_down/rtl/bcd7seg.v Y:/Code/Digital_Design_MCU/Count_down/rtl/countdown_fsm.v Y:/Code/Digital_Design_MCU/Count_down/rtl/button_debounce.v Y:/Code/Digital_Design_MCU/Count_down/rtl/decoder_display.v}
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 938.160 ; gain = 194.238
 update_compile_order -fileset sources_1
-add_files -fileset constrs_1 -norecurse Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc
-launch_runs synth_1 -jobs 12
-[Fri May  9 17:28:38 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-create_ip -name clk_wiz -vendor xilinx.com -library ip -version 6.0 -module_name clk_wiz -dir y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip
-set_property -dict [list CONFIG.Component_Name {clk_wiz} CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {10.000} CONFIG.USE_LOCKED {false} CONFIG.USE_RESET {false} CONFIG.MMCM_DIVCLK_DIVIDE {2} CONFIG.MMCM_CLKFBOUT_MULT_F {15.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {78.125} CONFIG.CLKOUT1_JITTER {290.478} CONFIG.CLKOUT1_PHASE_ERROR {133.882}] [get_ips clk_wiz]
-WARNING: [Vivado 12-3523] Attempt to change 'Component_Name' from 'clk_wiz' to 'clk_wiz' is not allowed and is ignored.
-generate_target {instantiation_template} [get_files y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
-INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz'...
-generate_target all [get_files  y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
-INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz'...
-INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz'...
-INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz'...
-INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz'...
-catch { config_ip_cache -export [get_ips -all clk_wiz] }
-export_ip_user_files -of_objects [get_files y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -no_script -sync -force -quiet
-create_ip_run [get_files -of_objects [get_fileset sources_1] y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci]
-launch_runs -jobs 12 clk_wiz_synth_1
-[Fri May  9 17:30:26 2025] Launched clk_wiz_synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/clk_wiz_synth_1/runme.log
-export_simulation -of_objects [get_files y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xci] -directory Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
-reset_run synth_1
-WARNING: [Vivado 12-1017] Problems encountered:
-1. Failed to delete one or more files in run directory Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1
-
-launch_runs synth_1 -jobs 12
-[Fri May  9 17:30:43 2025] Launched clk_wiz_synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/clk_wiz_synth_1/runme.log
-[Fri May  9 17:30:44 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 12
-[Fri May  9 17:33:37 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tcpg236-1
-INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-INFO: [Project 1-454] Reading design checkpoint 'y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'u_clk'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1409.219 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk/inst'
-Finished Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk/inst'
-Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
-get_clocks: Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2020.613 ; gain = 521.984
-Finished Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk/inst'
-Parsing XDC File [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc]
-WARNING: [Vivado 12-584] No ports matched 'clk'. [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc:1]
-CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc:1]
-Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
-WARNING: [Vivado 12-584] No ports matched 'clk'. [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc:2]
-CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc:2]
-Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
-Finished Parsing XDC File [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2020.613 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 2061.004 ; gain = 836.461
-place_ports {seg_output[7]} W7
-place_ports {seg_output[6]} W6
-place_ports {seg_output[5]} U8
-place_ports {seg_output[4]} V8
-place_ports {seg_output[3]} U5
-place_ports {seg_output[2]} V5
-place_ports {seg_output[1]} U7
-place_ports {seg_output[0]} V7
-set_property IOSTANDARD LVCMOS15 [get_ports [list {seg_output[7]} {seg_output[6]} {seg_output[5]} {seg_output[4]} {seg_output[3]} {seg_output[2]} {seg_output[1]} {seg_output[0]}]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_output[7]} {seg_output[6]} {seg_output[5]} {seg_output[4]} {seg_output[3]} {seg_output[2]} {seg_output[1]} {seg_output[0]}]]
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-[Fri May  9 17:37:50 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-[Fri May  9 17:40:10 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-update_compile_order -fileset sources_1
-close_design
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-[Fri May  9 17:42:11 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-open_run synth_1 -name synth_1
-Design is defaulting to impl run constrset: constrs_1
-Design is defaulting to synth run part: xc7a35tcpg236-1
-INFO: [Project 1-454] Reading design checkpoint 'y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.dcp' for cell 'u_clk'
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2097.836 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-479] Netlist was created with Vivado 2019.2
-INFO: [Project 1-570] Preparing netlist for logic optimization
-Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk/inst'
-Finished Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz_board.xdc] for cell 'u_clk/inst'
-Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk/inst'
-INFO: [Timing 38-35] Done setting XDC timing constraints. [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
-INFO: [Timing 38-2] Deriving generated clocks [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc:57]
-Finished Parsing XDC File [y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.srcs/sources_1/ip/clk_wiz/clk_wiz.xdc] for cell 'u_clk/inst'
-Parsing XDC File [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc]
-Finished Parsing XDC File [Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc]
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2140.500 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-open_run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2140.500 ; gain = 42.664
-place_ports {seg_output[7]} W7
-place_ports {seg_output[6]} W6
-place_ports {seg_output[5]} B17
-place_ports {seg_output[5]} U8
-place_ports {seg_output[4]} V8
-place_ports {seg_output[3]} U5
-place_ports {seg_output[2]} V5
-place_ports {seg_output[1]} U7
-place_ports {seg_output[0]} V7
-set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_output[7]} {seg_output[6]} {seg_output[5]} {seg_output[4]} {seg_output[3]} {seg_output[2]} {seg_output[1]} {seg_output[0]}]]
-set_property package_pin "" [get_ports [list  PB_add]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PB_add]]
-place_ports PB_reset T18
-place_ports PB_start_pause W19
-set_property package_pin "" [get_ports [list  PB_sub]]
-startgroup
-set_property package_pin "" [get_ports [list  PB_reset]]
-place_ports PB_add T18
-endgroup
-place_ports PB_sub U17
-place_ports PB_start_pause U18
-place_ports PB_reset T17
-set_property package_pin "" [get_ports [list  rst_btn]]
-place_ports rst_btn W19
-place_ports {seg_sel[3]} W4
-startgroup
-set_property package_pin "" [get_ports [list  {seg_sel[3]}]]
-place_ports {seg_sel[2]} V4
-endgroup
-place_ports {seg_sel[3]} W4
-set_property IOSTANDARD LVCMOS33 [get_ports [list {seg_sel[3]} {seg_sel[2]} {seg_sel[1]} {seg_sel[0]}]]
-place_ports {seg_sel[1]} U4
-place_ports {seg_sel[0]} U2
-set_property IOSTANDARD LVCMOS33 [get_ports [list PB_reset]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PB_start_pause]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list PB_sub]]
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst_btn]]
-set_property target_constrs_file Y:/Code/Digital_Design_MCU/Count_down/xdc/Basys3_Master.xdc [current_fileset -constrset]
-save_constraints -force
-launch_runs impl_1 -jobs 12
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2140.500 ; gain = 0.000
-INFO: [Timing 38-480] Writing timing data to binary archive.
-Writing placer database...
-Writing XDEF routing.
-Writing XDEF routing logical nets.
-Writing XDEF routing special nets.
-Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 2140.500 ; gain = 0.000
-[Fri May  9 17:48:54 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Fri May  9 17:50:14 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
 open_hw_manager
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
@@ -206,14 +40,68 @@ INFO: [Labtools 27-2221] Launch Output:
 
 
 
-connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 2140.500 ; gain = 0.000
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.180 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183A76071A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2572.047 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 3256.180 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 3256.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3256.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 3400.305 ; gain = 1061.398
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Fri May 16 14:14:59 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Fri May 16 14:16:39 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Fri May 16 14:18:41 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
 disconnect_hw_server localhost:3121
 connect_hw_server -allow_non_jtag
 INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
 INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
 INFO: [Labtools 27-3414] Connected to existing cs_server.
 open_hw_target
-INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75FA5A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
 set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
@@ -222,9 +110,19 @@ set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
 INFO: [Labtools 27-3164] End of startup status: HIGH
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
-ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75FA5A
-exit
-INFO: [Common 17-206] Exiting Vivado at Fri May  9 17:53:14 2025...
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75F7EA

@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 15 10:44:33 2025
+# Process ID: 11948
+# Current directory: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9392 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
+# Log file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 932.863 ; gain = 181.961
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 15 10:45:19 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 15 10:46:37 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Thu May 15 10:49:02 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu May 15 10:51:30 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu May 15 10:55:01 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+WARNING: [Vivado 12-1017] Problems encountered:
+1. PID not specified
+
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1268.488 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1947.934 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1947.934 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1947.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2075.086 ; gain = 1065.809
+place_ports rst W19
+set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+[Thu May 15 10:58:14 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu May 15 10:59:28 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 15 11:01:14 2025...

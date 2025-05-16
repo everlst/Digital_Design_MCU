@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../ALU_arm.gen/sources_1/ip/test_vector_rom/sim/test_vector_rom.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

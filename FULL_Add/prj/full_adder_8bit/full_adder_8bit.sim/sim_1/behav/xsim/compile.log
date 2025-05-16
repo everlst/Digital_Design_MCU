@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Code/FPGA-LIB/FULL_Add/rtl/bit1_full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit1_full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Code/FPGA-LIB/FULL_Add/rtl/bit8_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit8_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

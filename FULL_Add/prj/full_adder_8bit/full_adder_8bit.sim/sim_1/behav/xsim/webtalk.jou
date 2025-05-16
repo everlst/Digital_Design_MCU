@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Apr 25 17:35:01 2025
+# Process ID: 7700
+# Current directory: Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim/xsim.dir/bit8_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/xsim/xsim.dir/bit8_adder_behav/webtalk/xsim_webtalk.tcl -notrace

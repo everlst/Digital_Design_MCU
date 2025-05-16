@@ -15,7 +15,7 @@ module bcd7seg (
       4'd7:    seg = 8'b0001_1111;
       4'd8:    seg = 8'b0000_0001;
       4'd9:    seg = 8'b0000_1001;
-      default: seg = 8'b1111_1111;  // 非法码熄灭
+      default: seg = 8'b1111_1111;  // 默认情况下保持关闭
     endcase
   end
 endmodule
