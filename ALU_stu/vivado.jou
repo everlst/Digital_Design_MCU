@@ -2,13 +2,13 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu May 15 11:05:18 2025
-# Process ID: 1060
-# Current directory: Y:/Code/Digital_Design_MCU/ALU_stu
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14332 Y:\Code\Digital_Design_MCU\ALU_stu\ALU_stu.xpr
-# Log file: Y:/Code/Digital_Design_MCU/ALU_stu/vivado.log
-# Journal file: Y:/Code/Digital_Design_MCU/ALU_stu\vivado.jou
+# Start of session at: Fri May 16 16:09:17 2025
+# Process ID: 19900
+# Current directory: F:/vivado-project/Digital_Design_MCU/ALU_stu
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8452 F:\vivado-project\Digital_Design_MCU\ALU_stu\ALU_stu.xpr
+# Log file: F:/vivado-project/Digital_Design_MCU/ALU_stu/vivado.log
+# Journal file: F:/vivado-project/Digital_Design_MCU/ALU_stu\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project Y:/Code/Digital_Design_MCU/ALU_stu/ALU_stu.xpr
+open_project F:/vivado-project/Digital_Design_MCU/ALU_stu/ALU_stu.xpr
 update_compile_order -fileset sources_1

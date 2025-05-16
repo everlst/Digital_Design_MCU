@@ -1,0 +1,124 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 15 21:55:45 2025
+# Process ID: 25348
+# Current directory: F:/vivado-project/ALU/prj/ALU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent25264 F:\vivado-project\ALU\prj\ALU\ALU.xpr
+# Log file: F:/vivado-project/ALU/prj/ALU/vivado.log
+# Journal file: F:/vivado-project/ALU/prj/ALU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/vivado-project/ALU/prj/ALU/ALU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2019.2/data/ip'.
+update_compile_order -fileset sources_1
+import_files -force -norecurse F:/vivado-project/ALU/rtl/TB.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/TB.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/TB.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/ALU.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/ALU.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/SUM.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/SUM.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/FA.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/FA.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux2to1.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux2to1.v
+export_ip_user_files -of_objects  [get_files F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux4to1.v] -no_script -reset -force -quiet
+remove_files  F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux4to1.v
+import_files -force -norecurse {F:/vivado-project/ALU/rtl/mux4to1.v F:/vivado-project/ALU/rtl/mux2to1.v F:/vivado-project/ALU/rtl/SUM.v F:/vivado-project/ALU/rtl/TB.v F:/vivado-project/ALU/rtl/ALU.v F:/vivado-project/ALU/rtl/CLA.v}
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/SUM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_1to1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux4to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4to1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 171e830da12045ee869fcebb298ccc48 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 171e830da12045ee869fcebb298ccc48 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'sum' is not permitted [F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v:21]
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'c_out' is not permitted [F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v:22]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_runs synth_1 -jobs 16
+[Thu May 15 22:01:14 2025] Launched synth_1...
+Run output will be captured here: F:/vivado-project/ALU/prj/ALU/ALU.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/SUM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cla4bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux2to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_1to1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/mux4to1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_4to1_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TB
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim'
+"xelab -wto 171e830da12045ee869fcebb298ccc48 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 171e830da12045ee869fcebb298ccc48 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TB_behav xil_defaultlib.TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3236] concurrent assignment to a non-net 'c_out' is not permitted [F:/vivado-project/ALU/prj/ALU/ALU.srcs/sources_1/imports/rtl/CLA.v:22]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'F:/vivado-project/ALU/prj/ALU/ALU.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+[Thu May 15 22:14:41 2025] Launched synth_1...
+Run output will be captured here: F:/vivado-project/ALU/prj/ALU/ALU.runs/synth_1/runme.log
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May 15 22:17:16 2025...
