@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu May 15 10:44:33 2025
-# Process ID: 11948
+# Start of session at: Fri May 16 01:04:36 2025
+# Process ID: 18936
 # Current directory: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9392 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18792 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
 # Log file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/vivado.log
 # Journal file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down\vivado.jou
 #-----------------------------------------------------------
@@ -16,33 +16,56 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 932.863 ; gain = 181.961
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 938.160 ; gain = 194.238
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-[Thu May 15 10:45:19 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-[Thu May 15 10:46:37 2025] Launched synth_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
-launch_runs impl_1 -jobs 12
-[Thu May 15 10:49:02 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Thu May 15 10:51:30 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Thu May 15 10:55:01 2025] Launched impl_1...
-Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-reset_run impl_1 -prev_step 
-WARNING: [Vivado 12-1017] Problems encountered:
-1. PID not specified
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
 
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 1017.180 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+ERROR: [Labtools 27-2269] No devices detected on target localhost:3121/xilinx_tcf/Digilent/210183A76071A.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Common 17-39] 'open_hw_target' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
 open_run impl_1
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1268.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2572.047 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-479] Netlist was created with Vivado 2019.2
@@ -54,23 +77,52 @@ INFO: [Project 1-853] Binary constraint restore complete.
 Reading XDEF placement.
 Reading placer database...
 Reading XDEF routing.
-Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.040 . Memory (MB): peak = 1947.934 ; gain = 0.000
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 3256.180 ; gain = 0.000
 Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
-Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1947.934 ; gain = 0.000
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1947.934 ; gain = 0.000
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 3256.180 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3256.180 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2075.086 ; gain = 1065.809
-place_ports rst W19
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-save_constraints
-reset_run impl_1
+open_run: Time (s): cpu = 00:00:41 ; elapsed = 00:00:48 . Memory (MB): peak = 3400.305 ; gain = 1061.398
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Fri May 16 14:14:59 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/synth_1/runme.log
 launch_runs impl_1 -jobs 12
-[Thu May 15 10:58:14 2025] Launched impl_1...
+[Fri May 16 14:16:39 2025] Launched impl_1...
 Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
 launch_runs impl_1 -to_step write_bitstream -jobs 12
-[Thu May 15 10:59:28 2025] Launched impl_1...
+[Fri May 16 14:18:41 2025] Launched impl_1...
 Run output will be captured here: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/runme.log
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu May 15 11:01:14 2025...
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+ERROR: [Labtools 27-3165] End of startup status: LOW
+ERROR: [Common 17-39] 'program_hw_devices' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A75F7EA
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A75F7EA

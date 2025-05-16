@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Thu May 15 10:59:22 2025
+| Date             : Fri May 16 14:18:20 2025
 | Host             : FB47 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_countdown_power_routed.rpt -pb top_countdown_power_summary_routed.pb -rpx top_countdown_power_routed.rpx
 | Design           : top_countdown
@@ -54,7 +54,7 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |    <0.001 |        8 |       --- |             --- |
 | Slice Logic    |    <0.001 |      343 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      117 |     20800 |            0.56 |
+|   LUT as Logic |    <0.001 |      116 |     20800 |            0.56 |
 |   CARRY4       |    <0.001 |       26 |      8150 |            0.32 |
 |   Register     |    <0.001 |      135 |     41600 |            0.32 |
 |   Others       |     0.000 |        9 |       --- |             --- |

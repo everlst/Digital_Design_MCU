@@ -1,6 +1,6 @@
 module top_countdown (
   input wire clk_in,  // 外部时钟信号
-  input wire rst,     // 全局复位键（高有效）
+  input wire rst,     // 全局复位键（高有效）3
 
   // 4 个独立按键
   input wire PB_start_pause,
@@ -32,7 +32,7 @@ module top_countdown (
     .clk      (clk_10M),
     .rst      (rst),
     .key_in   ({PB_sub, PB_add, PB_reset, PB_start_pause}),
-    .active   (1'b0),                                        // 低电平按下
+    .active   (1'b1),                                        // 高电平按下
     .pulse_out(key_pulse)
   );
   wire       start_pause_p = key_pulse[0];

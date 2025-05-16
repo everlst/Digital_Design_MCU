@@ -2,36 +2,45 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu May 15 10:44:33 2025
-# Process ID: 11948
+# Start of session at: Fri May 16 01:04:36 2025
+# Process ID: 18936
 # Current directory: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9392 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18792 Y:\Code\Digital_Design_MCU\Count_down\prj\Count_down\Count_down.xpr
 # Log file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/vivado.log
 # Journal file: Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.xpr
 update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-reset_run synth_1
-launch_runs synth_1 -jobs 12
-wait_on_run synth_1
-launch_runs impl_1 -jobs 12
-wait_on_run impl_1
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 12
-wait_on_run impl_1
-reset_run impl_1 -prev_step 
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 open_run impl_1
-place_ports rst W19
-set_property IOSTANDARD LVCMOS33 [get_ports [list rst]]
-save_constraints
-reset_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
 launch_runs impl_1 -jobs 12
 wait_on_run impl_1
 launch_runs impl_1 -to_step write_bitstream -jobs 12
 wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
