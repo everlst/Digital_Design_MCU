@@ -26,7 +26,7 @@
 
 # 注意事项
 
-git 如何把 master 上的代码，合并到自己的分支:
+git 如何把 main 上的代码，合并到自己的分支:
 
 ## 1.切换到主分支 （main）
 
@@ -42,7 +42,7 @@ git 如何把 master 上的代码，合并到自己的分支:
 
 ## 4.把主分支的代码 merge 合并到自己的分支上面
 
-`git merge master`
+`git merge main`
 
 ## 5.使用上传命令 push
 

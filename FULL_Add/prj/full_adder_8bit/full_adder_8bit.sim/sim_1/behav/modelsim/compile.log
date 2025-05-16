@@ -10,22 +10,22 @@
 # Modifying modelsim.ini
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:46:46 on Apr 25,2025
+# Start time: 14:32:47 on May 16,2025
 # vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/bit1_full_adder.v ../../../../../../rtl/bit8_adder.v ../../../../../../sim/tb_bit8_adder.v 
 # -- Skipping module bit1_full_adder
-# -- Compiling module bit8_adder
+# -- Skipping module bit8_adder
 # -- Skipping module tb_bit8_adder
 # 
 # Top level modules:
 # 	tb_bit8_adder
-# End time: 17:46:46 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 14:32:47 on May 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 17:46:46 on Apr 25,2025
+# Start time: 14:32:47 on May 16,2025
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 17:46:46 on Apr 25,2025, Elapsed time: 0:00:00
+# End time: 14:32:47 on May 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

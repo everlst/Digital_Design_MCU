@@ -537,3 +537,205 @@ dismissDialog("Close Hardware Target"); // n (cr)
 // TclEventType: DG_GRAPH_STALE
 // TclEventType: FILE_SET_CHANGE
 // WARNING: HTimer (StateMonitor Timer) is taking 819ms to process. Increasing delay to 4000 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 3,496 MB. GUI used memory: 118 MB. Current time: 5/16/25, 2:44:29 PM IRKT
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 1534 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // h (ds, cr)
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ai (ao, cr)
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// Tcl Message: disconnect_hw_server localhost:3121 
+// bB (cr):  Auto Connect : addNotify
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042 INFO: [Labtools 27-3414] Connected to existing cs_server. 
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: current_hw_device [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bB (cr)
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // h (ds, cr)
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+// bC (cr): Program Device: addNotify
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a (bC)
+// bB (cr):  Program Device : addNotify
+dismissDialog("Program Device"); // bC (cr)
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {Y:/Code/Digital_Design_MCU/Count_down/prj/Count_down/Count_down.runs/impl_1/top_countdown.bit} [get_hw_devices xc7a35t_0] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7a35t_0] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it. 
+// 'I' command handler elapsed time: 4 seconds
+dismissDialog("Program Device"); // bB (cr)
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// Elapsed time: 64 seconds
+dismissDialog("Close Hardware Target"); // n (cr)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 12 seconds
+dismissDialog("Close Hardware Target"); // n (cr)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+dismissDialog("Close Hardware Target"); // n (cr)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// Elapsed time: 183 seconds
+dismissDialog("Close Hardware Target"); // n (cr)
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_SERVER_UPDATE
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+// Tcl Message: ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A 
+// n (cr): Close Hardware Target: addNotify
+// TclEventType: HW_TARGET_NEEDS_CLOSE
+// Elapsed time: 130 seconds
+dismissDialog("Close Hardware Target"); // n (cr)
+// TclEventType: HW_SERVER_UPDATE
+// Elapsed time: 54 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (n)
+dismissDialog("Close Hardware Target"); // n (cr)
+// HMemoryUtils.trashcanNow. Engine heap size: 3,496 MB. GUI used memory: 114 MB. Current time: 5/16/25, 3:14:34 PM IRKT
