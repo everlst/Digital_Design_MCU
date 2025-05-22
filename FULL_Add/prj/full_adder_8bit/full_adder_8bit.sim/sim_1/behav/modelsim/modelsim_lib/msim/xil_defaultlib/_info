@@ -21,21 +21,21 @@ n@_opt
 Z5 OL;O;2020.4;71
 R0
 T_opt1
-!s110 1747377178
-V=>>PX3QeoGEWk]BeKR1lA0
+!s110 1747383115
+VkMaa]`OZ:N>L`5hOf3nWm2
 R1
 R2
-=1-001c42c08a3c-6826dc19-2dc-4090
+=1-001c42c08a3c-6826f34a-255-3bc4
 R3
 R4
 n@_opt1
 R5
 vbit1_full_adder
-!s10a 1745570024
+Z6 !s10a 1747382188
 !s110 1745573809
 !i10b 1
 !s100 2XDnY8WKU9@FzOHWdd^FB3
-Z6 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Z7 !s11b Dg1SIo80bB@j0V0VzS_@n1
 Ia3YJiJ3Sf7V0?9SclU<063
 R0
 w1745570024
@@ -43,23 +43,23 @@ w1745570024
 F../../../../../../rtl/bit1_full_adder.v
 !i122 0
 L0 1 14
-Z7 VDg1SIo80bB@j0V0VzS_@n1
-Z8 OL;L;2020.4;71
+Z8 VDg1SIo80bB@j0V0VzS_@n1
+Z9 OL;L;2020.4;71
 r1
 !s85 0
 31
 !s108 1745573809.000000
-Z9 !s107 ../../../../../../sim/tb_bit8_adder.v|../../../../../../rtl/bit8_adder.v|../../../../../../rtl/bit1_full_adder.v|
-Z10 !s90 -64|-incr|-work|xil_defaultlib|../../../../../../rtl/bit1_full_adder.v|../../../../../../rtl/bit8_adder.v|../../../../../../sim/tb_bit8_adder.v|
+Z10 !s107 ../../../../../../sim/tb_bit8_adder.v|../../../../../../rtl/bit8_adder.v|../../../../../../rtl/bit1_full_adder.v|
+Z11 !s90 -64|-incr|-work|xil_defaultlib|../../../../../../rtl/bit1_full_adder.v|../../../../../../rtl/bit8_adder.v|../../../../../../sim/tb_bit8_adder.v|
 !i113 0
-Z11 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z12 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vbit8_adder
-!s10a 1745580514
+R6
 !s110 1745574406
 !i10b 1
 !s100 dA0iWDE@X^Tha:`=z2>bL3
-R6
+R7
 I=nSH77D3GTm7amhKd1kFS1
 R0
 w1745574390
@@ -67,61 +67,60 @@ w1745574390
 F../../../../../../rtl/bit8_adder.v
 !i122 6
 L0 1 50
-R7
 R8
+R9
 r1
 !s85 0
 31
 !s108 1745574406.000000
-R9
 R10
-!i113 0
 R11
+!i113 0
+R12
 R4
 vglbl
-!s110 1747377167
+Z13 !s110 1747383104
 !i10b 1
 !s100 DCW3=ePZ4oEojGg2KL;HS0
-R6
+R7
 ITNN_cbZIG@:>zYe@^CH>f0
-dY:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/modelsim
-w1573089660
+Z14 dY:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/modelsim
+w1747382188
 8glbl.v
 Fglbl.v
-!i122 8
+!i122 10
 L0 6 65
-R7
 R8
+R9
 r1
 !s85 0
 31
-!s108 1747377167.000000
+Z15 !s108 1747383104.000000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
 o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R4
 vtb_bit8_adder
-!s10a 1745574059
-!s110 1745574068
+R13
 !i10b 1
-!s100 eZKd9emRHXQzmKHbJ0KET1
-R6
-IEWmz2M9ACGLAYZ[8TPZZc3
-R0
-w1745574059
+!s100 dj^:42=]H4hi9U@:NP4=m3
+R7
+Iga6V>ocM9YPF@Q2^m3U^o2
+R14
+w1747382527
 8../../../../../../sim/tb_bit8_adder.v
 F../../../../../../sim/tb_bit8_adder.v
-!i122 4
+!i122 9
 L0 3 52
-R7
 R8
+R9
 r1
 !s85 0
 31
-!s108 1745574067.000000
-R9
+R15
 R10
-!i113 0
 R11
+!i113 0
+R12
 R4
