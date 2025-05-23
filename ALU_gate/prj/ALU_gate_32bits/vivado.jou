@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 22 22:41:14 2025
+# Process ID: 17356
+# Current directory: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15240 Y:\Code\Digital_Design_MCU\ALU_gate\prj\ALU_gate_32bits\ALU_gate_32bits.xpr
+# Log file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+set_property is_enabled false [get_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v]
+add_files -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+add_files -norecurse {Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64

@@ -1,0 +1,555 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu May 22 22:41:14 2025
+# Process ID: 17356
+# Current directory: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15240 Y:\Code\Digital_Design_MCU\ALU_gate\prj\ALU_gate_32bits\ALU_gate_32bits.xpr
+# Log file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 939.633 ; gain = 185.973
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 22 22:42:06 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1/runme.log
+set_property is_enabled false [get_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v]
+add_files -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 22 22:43:09 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1/runme.log
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux4_1_32bit' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {mux4_1_32bit_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:24:09 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/mux4_1.v 
+# -- Skipping module mux4_1_32bit
+# -- Skipping module mux4_1
+# 
+# Top level modules:
+# 	mux4_1_32bit
+# End time: 23:24:09 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:24:09 on May 22,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:24:09 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Program launched (PID=4304)
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'mux4_1_32bit' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {mux4_1_32bit_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:25:32 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/mux4_1.v 
+# -- Skipping module mux4_1_32bit
+# -- Skipping module mux4_1
+# 
+# Top level modules:
+# 	mux4_1_32bit
+# End time: 23:25:32 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:25:32 on May 22,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:25:32 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Program launched (PID=17200)
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 22 23:43:24 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/full_adder.v
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu May 22 23:45:23 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1/runme.log
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'ALU_top' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {ALU_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:46:04 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Compiling module pre_adder_32
+# -- Compiling module ALU_top
+# 
+# Top level modules:
+# 	ALU_top
+# End time: 23:46:04 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:46:04 on May 22,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:46:04 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Program launched (PID=16108)
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+add_files -norecurse {Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1
+
+launch_runs synth_1 -jobs 12
+[Thu May 22 23:51:01 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.runs/synth_1/runme.log
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+boost::filesystem::remove: 另一个程序正在使用此文件，进程无法访问。: "Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim/simulate.log"
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse Y:/Code/Digital_Design_MCU/ALU_gate/sim/tb.v
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU_top' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_ALU_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:53:12 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Compiling module ALU_top
+# -- Skipping module pre_adder_32
+# ** Error: ../../../../../../sim/tb.v(103): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(103): Illegal use of 'automatic' for variable declaration (m).
+# ** Error: ../../../../../../sim/tb.v(103): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(104): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(104): Illegal use of 'automatic' for variable declaration (exp_res).
+# ** Error: ../../../../../../sim/tb.v(104): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(105): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(105): Illegal use of 'automatic' for variable declaration (exp_c).
+# ** Error: ../../../../../../sim/tb.v(105): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(106): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(106): Illegal use of 'automatic' for variable declaration (exp_n).
+# ** Error: ../../../../../../sim/tb.v(106): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(107): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(107): Illegal use of 'automatic' for variable declaration (exp_z).
+# ** Error: ../../../../../../sim/tb.v(107): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(108): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(108): Illegal use of 'automatic' for variable declaration (exp_v).
+# ** Error: ../../../../../../sim/tb.v(108): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(111): Illegal declaration after the statement near line '101'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 23:53:12 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 1
+# child process exited abnormally
+# Error in macro ./tb_ALU_top_compile.do line 20
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:53:12 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Compiling module ALU_top
+# -- Skipping module pre_adder_32
+# ** Error: ../../../../../../sim/tb.v(103): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(103): Illegal use of 'automatic' for variable declaration (m).
+# ** Error: ../../../../../../sim/tb.v(103): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(104): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(104): Illegal use of 'automatic' for variable declaration (exp_res).
+# ** Error: ../../../../../../sim/tb.v(104): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(105): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(105): Illegal use of 'automatic' for variable declaration (exp_c).
+# ** Error: ../../../../../../sim/tb.v(105): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(106): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(106): Illegal use of 'automatic' for variable declaration (exp_n).
+# ** Error: ../../../../../../sim/tb.v(106): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(107): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(107): Illegal use of 'automatic' for variable declaration (exp_z).
+# ** Error: ../../../../../../sim/tb.v(107): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(108): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(108): Illegal use of 'automatic' for variable declaration (exp_v).
+# ** Error: ../../../../../../sim/tb.v(108): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(111): Illegal declaration after the statement near line '101'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 23:53:12 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 1
+# child process exited abnormally
+#     while executing
+# "exec <nul: {E:\modeltech64_2020.4\win64\vlog.EXE} -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "E:\\modeltech64_2020.4\\win64\\vlog -64 -incr -work xil_defaultlib  \
+# "../../../../../../rtl/ALU_top.v" \
+# "../../../../../../rtl/pre_adder_32.v" \
+# "....."
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:06 ; elapsed = 00:01:14 . Memory (MB): peak = 1167.414 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:01:14 . Memory (MB): peak = 1167.414 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+update_compile_order -fileset sim_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU_top' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_ALU_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:55:41 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Skipping module ALU_top
+# -- Skipping module pre_adder_32
+# ** Error: ../../../../../../sim/tb.v(103): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(103): Illegal use of 'automatic' for variable declaration (m).
+# ** Error: ../../../../../../sim/tb.v(103): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(104): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(104): Illegal use of 'automatic' for variable declaration (exp_res).
+# ** Error: ../../../../../../sim/tb.v(104): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(105): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(105): Illegal use of 'automatic' for variable declaration (exp_c).
+# ** Error: ../../../../../../sim/tb.v(105): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(106): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(106): Illegal use of 'automatic' for variable declaration (exp_n).
+# ** Error: ../../../../../../sim/tb.v(106): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(107): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(107): Illegal use of 'automatic' for variable declaration (exp_z).
+# ** Error: ../../../../../../sim/tb.v(107): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(108): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(108): Illegal use of 'automatic' for variable declaration (exp_v).
+# ** Error: ../../../../../../sim/tb.v(108): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(111): Illegal declaration after the statement near line '101'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 23:55:41 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 1
+# child process exited abnormally
+# Error in macro ./tb_ALU_top_compile.do line 20
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:55:41 on May 22,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Skipping module ALU_top
+# -- Skipping module pre_adder_32
+# ** Error: ../../../../../../sim/tb.v(103): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(103): Illegal use of 'automatic' for variable declaration (m).
+# ** Error: ../../../../../../sim/tb.v(103): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(104): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(104): Illegal use of 'automatic' for variable declaration (exp_res).
+# ** Error: ../../../../../../sim/tb.v(104): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(105): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(105): Illegal use of 'automatic' for variable declaration (exp_c).
+# ** Error: ../../../../../../sim/tb.v(105): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(106): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(106): Illegal use of 'automatic' for variable declaration (exp_n).
+# ** Error: ../../../../../../sim/tb.v(106): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(107): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(107): Illegal use of 'automatic' for variable declaration (exp_z).
+# ** Error: ../../../../../../sim/tb.v(107): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(108): (vlog-2294) The 'var' keyword is missing.
+# ** Error: ../../../../../../sim/tb.v(108): Illegal use of 'automatic' for variable declaration (exp_v).
+# ** Error: ../../../../../../sim/tb.v(108): Declarations not allowed in unnamed block.
+# ** Error: ../../../../../../sim/tb.v(111): Illegal declaration after the statement near line '101'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 23:55:41 on May 22,2025, Elapsed time: 0:00:00
+# Errors: 19, Warnings: 1
+# child process exited abnormally
+#     while executing
+# "exec <nul: {E:\modeltech64_2020.4\win64\vlog.EXE} -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ..."
+#     ("uplevel" body line 1)
+#     invoked from within
+# "uplevel 1 exec $redir $new [lrange $args 1 end]"
+#     (procedure "::unknown" line 47)
+#     invoked from within
+# "E:\\modeltech64_2020.4\\win64\\vlog -64 -incr -work xil_defaultlib  \
+# "../../../../../../rtl/ALU_top.v" \
+# "../../../../../../rtl/pre_adder_32.v" \
+# "....."
+ModelSim> INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+run_program: Time (s): cpu = 00:00:10 ; elapsed = 00:02:52 . Memory (MB): peak = 1167.414 ; gain = 0.000
+INFO: [Common 17-344] 'run_program' was cancelled
+INFO: [Vivado 12-5357] 'compile' step aborted
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:02:52 . Memory (MB): peak = 1167.414 ; gain = 0.000
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU_top' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_ALU_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 00:01:42 on May 23,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Skipping module ALU_top
+# -- Skipping module pre_adder_32
+# -- Compiling module tb_ALU_top
+# 
+# Top level modules:
+# 	tb_ALU_top
+# End time: 00:01:42 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 00:01:42 on May 23,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 00:01:42 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Program launched (PID=17128)
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_ALU_top' in fileset 'sim_1'...
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_ALU_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 00:02:30 on May 23,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
+# -- Skipping module ALU_top
+# -- Skipping module pre_adder_32
+# -- Compiling module tb_ALU_top
+# 
+# Top level modules:
+# 	tb_ALU_top
+# End time: 00:02:30 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 00:02:30 on May 23,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 00:02:30 on May 23,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.sim/sim_1/behav/modelsim'
+Program launched (PID=4244)
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 00:08:54 2025...
