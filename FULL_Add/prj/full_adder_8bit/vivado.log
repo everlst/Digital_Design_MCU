@@ -2,24 +2,22 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Fri May 16 14:31:32 2025
-# Process ID: 4268
+# Start of session at: Fri May 16 16:02:35 2025
+# Process ID: 15008
 # Current directory: Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12844 Y:\Code\Digital_Design_MCU\FULL_Add\prj\full_adder_8bit\full_adder_8bit.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15148 Y:\Code\Digital_Design_MCU\FULL_Add\prj\full_adder_8bit\full_adder_8bit.xpr
 # Log file: Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/vivado.log
 # Journal file: Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/full_adder_8bit.xpr
-INFO: [Project 1-313] Project file moved from 'Y:/Code/FPGA-LIB/FULL_Add/prj/full_adder_8bit' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 923.555 ; gain = 169.914
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 933.383 ; gain = 178.254
 update_compile_order -fileset sources_1
-reset_run synth_1
 launch_simulation -install_path E:/modeltech64_2020.4/win64
 Command: launch_simulation 
 INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/modelsim'
@@ -51,26 +49,28 @@ Reading pref.tcl
 # Modifying modelsim.ini
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:32:47 on May 16,2025
+# Start time: 16:11:44 on May 16,2025
 # vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/bit1_full_adder.v ../../../../../../rtl/bit8_adder.v ../../../../../../sim/tb_bit8_adder.v 
 # -- Skipping module bit1_full_adder
 # -- Skipping module bit8_adder
-# -- Skipping module tb_bit8_adder
+# -- Compiling module tb_bit8_adder
 # 
 # Top level modules:
 # 	tb_bit8_adder
-# End time: 14:32:47 on May 16,2025, Elapsed time: 0:00:00
+# End time: 16:11:44 on May 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 14:32:47 on May 16,2025
+# Start time: 16:11:44 on May 16,2025
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 14:32:47 on May 16,2025, Elapsed time: 0:00:00
+# End time: 16:11:44 on May 16,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-69] 'compile' step finished in '3' seconds
 INFO: [USF-ModelSim-4] ModelSim::Simulate design
 INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/FULL_Add/prj/full_adder_8bit/full_adder_8bit.sim/sim_1/behav/modelsim'
-Program launched (PID=16224)
+Program launched (PID=16836)
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 16 16:15:22 2025...

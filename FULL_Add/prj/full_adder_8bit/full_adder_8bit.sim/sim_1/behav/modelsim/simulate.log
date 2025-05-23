@@ -13,8 +13,8 @@
 # //
 # do {tb_bit8_adder_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb_bit8_adder xil_defaultlib.glbl 
-# Start time: 14:32:57 on May 16,2025
-# ** Note: (vsim-3812) Design is being optimized...
+# Start time: 16:11:54 on May 16,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading work.tb_bit8_adder(fast)
 # Loading work.bit8_adder(fast)
 # Loading work.bit1_full_adder(fast)
@@ -23,11 +23,12 @@
 # 1
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: everlasting  Hostname: FB47  ProcessID: 6816
-#           Attempting to use alternate WLF file "./wlftcivwig".
+#           Attempting to use alternate WLF file "./wlftt0e0y2".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftcivwig
+#           Using alternate file: ./wlftt0e0y2
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 14:55:46 on May 16,2025, Elapsed time: 0:22:49
+# Causality operation skipped due to absence of debug database file
+# End time: 16:15:21 on May 16,2025, Elapsed time: 0:03:27
 # Errors: 0, Warnings: 2

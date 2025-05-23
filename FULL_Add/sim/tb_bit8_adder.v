@@ -17,8 +17,8 @@ module tb_bit8_adder;
 
   initial begin
     // Initialize Inputs
-    a   = 8'b00000000;
-    b   = 8'b00000000;
+    a   = 8'b00001000;
+    b   = 8'b00011000;
     cin = 1'b0;
 
     // Wait 100 ns for global reset to finish
