@@ -10,22 +10,22 @@
 # Modifying modelsim.ini
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 00:02:30 on May 23,2025
+# Start time: 15:55:07 on May 23,2025
 # vlog -64 -incr -work xil_defaultlib ../../../../../../rtl/ALU_top.v ../../../../../../rtl/pre_adder_32.v ../../../../../../sim/tb.v 
-# -- Skipping module ALU_top
+# -- Compiling module ALU_top
 # -- Skipping module pre_adder_32
-# -- Compiling module tb_ALU_top
+# -- Skipping module tb_ALU_top
 # 
 # Top level modules:
 # 	tb_ALU_top
-# End time: 00:02:30 on May 23,2025, Elapsed time: 0:00:00
+# End time: 15:55:07 on May 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
-# Start time: 00:02:30 on May 23,2025
+# Start time: 15:55:07 on May 23,2025
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 00:02:30 on May 23,2025, Elapsed time: 0:00:00
+# End time: 15:55:07 on May 23,2025, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

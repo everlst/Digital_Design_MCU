@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 23 14:57:13 2025
+# Process ID: 14588
+# Current directory: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17564 Y:\Code\Digital_Design_MCU\ALU_gate\prj\ALU_gate_32bits\ALU_gate_32bits.xpr
+# Log file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/ALU_gate/prj/ALU_gate_32bits/ALU_gate_32bits.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+launch_simulation -install_path E:/modeltech64_2020.4/win64

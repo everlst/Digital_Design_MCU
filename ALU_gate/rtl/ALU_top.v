@@ -1,56 +1,54 @@
-//--------------------------------------------------------------------
-// 32-bit ALU with Kogge-Stone adder & status flags N V C Z
-//--------------------------------------------------------------------
-module ALU_top (
-  input  wire [31:0] A,
-  input  wire [31:0] B,
-  input  wire [ 1:0] ALUOp,   // 00:AND 01:OR 10:ADD 11:SUB
-  output wire [31:0] Result,  // 运算结果
-  output wire        N,       // Negative, Result[31]
-  output wire        V,       // oVerflow（有符号溢出）
-  output wire        C,       // Carry（ADD/SUB 的 Cout）
-  output wire        Z        // Zero flag
+//====================================================================
+// 32-bit ALU  (Verilog-2001)
+// ────────────────────────────────────────────────────────────────────
+// ALUControl[1:0]
+//   00 : a + b
+//   01 : a - b   (用 ~b + 1 实现二补减法)
+//   10 : a & b
+//   11 : a | b
+// ALUFlags = {N, Z, C, V}
+//   N : 结果最高位         (Negative)
+//   Z : 结果是否为 0       (Zero)
+//   C : 加/减运算产生进位  (Carry)           ─ 仅在加/减时有效
+//   V : 加/减运算溢出标志  (Overflow, 2's  complement) ─ 仅在加/减时有效
+//====================================================================
+module alu (
+  input  wire [31:0] a,
+  input  wire [31:0] b,
+  input  wire [ 1:0] ALUControl,
+  output reg  [31:0] Result,      // 用 reg，因为在 always 块里赋值
+  output wire [ 3:0] ALUFlags
 );
 
-  //---------------- 0) 操作码译码 ----------------
-  wire        is_and = (ALUOp == 2'b00);
-  wire        is_or = (ALUOp == 2'b01);
-  wire        is_add = (ALUOp == 2'b10);
-  wire        is_sub = (ALUOp == 2'b11);
+  //----------------------------------------------------------------
+  // ① 条件求反 b，再做一条 33-bit 加法得到 sum_ext
+  //----------------------------------------------------------------
+  wire [31:0] condinvb = (ALUControl[0]) ? ~b : b;  // 01->sub 时取反
+  wire [32:0] sum_ext = {1'b0, a} + {1'b0, condinvb} + ALUControl[0];
+  wire [31:0] sum = sum_ext[31:0];
+  wire        carry_add = sum_ext[32];  // 33-位进位
 
-  //---------------- 1) 逻辑运算 ------------------
-  wire [31:0] and_res = A & B;
-  wire [31:0] or_res = A | B;
+  //----------------------------------------------------------------
+  // ② 根据 ALUControl 产生 Result
+  //----------------------------------------------------------------
+  always @* begin
+    case (ALUControl)
+      2'b10:   Result = a & b;
+      2'b11:   Result = a | b;
+      default: Result = sum;  // 00(add) or 01(sub)
+    endcase
+  end
 
-  //---------------- 2) 加/减 ---------------------
-  wire [31:0] B_sel = B ^ {32{is_sub}};  // SUB: 取反
-  wire        cin = is_sub;  // SUB: +1
+  //----------------------------------------------------------------
+  // ③ 计算标志位
+  //----------------------------------------------------------------
+  wire neg = Result[31];  // N
+  wire zero = (Result == 32'b0);  // Z
+  wire carry = (ALUControl[1] == 1'b0)  // 仅在 add/sub 时有效
+  & carry_add;  // C
+  wire overflow = (ALUControl[1] == 1'b0)  // 仅在 add/sub 时有效
+  & ~(a[31] ^ b[31] ^ ALUControl[0])  // 前两数同号
+  & (a[31] ^ Result[31]);  // 与结果异号  → V
 
-  wire [31:0] addsub_res;
-  wire        cout;
-  pre_adder_32 u_pre32 (
-    .a   (A),
-    .b   (B_sel),
-    .cin (cin),
-    .s   (addsub_res),
-    .cout(cout)
-  );
-
-  //---------------- 3) 溢出检测 ------------------
-  wire overflow_add = (~(A[31] ^ B[31])) & (A[31] ^ addsub_res[31]);
-  wire overflow_sub = (A[31] ^ B[31]) & (A[31] ^ addsub_res[31]);
-  wire ovf = (is_sub & overflow_sub) | (~is_sub & overflow_add);
-
-  //---------------- 4) 结果拼接 -------------------
-  assign Result =
-        ({32{is_and}}            & and_res    ) |
-        ({32{is_or }}            & or_res     ) |
-        ({32{is_add | is_sub}}   & addsub_res);
-
-  //---------------- 5) 状态标志 ------------------
-  assign N = Result[31];  // 最高位
-  assign C = (is_add | is_sub) & cout;
-  assign V = (is_add | is_sub) & ovf;
-  assign Z = ~|Result;  // 全 0 为 1
-
+  assign ALUFlags = {neg, zero, carry, overflow};
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Thu May 22 23:51:31 2025
+| Date         : Fri May 23 15:53:09 2025
 | Host         : FB47 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ALU_top_utilization_synth.rpt -pb ALU_top_utilization_synth.pb
 | Design       : ALU_top
@@ -30,8 +30,8 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |  234 |     0 |     20800 |  1.13 |
-|   LUT as Logic          |  234 |     0 |     20800 |  1.13 |
+| Slice LUTs*             |  226 |     0 |     20800 |  1.09 |
+|   LUT as Logic          |  226 |     0 |     20800 |  1.09 |
 |   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
 | Slice Registers         |    0 |     0 |     41600 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |     41600 |  0.00 |
@@ -149,13 +149,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |  171 |                 LUT |
+| LUT6     |  165 |                 LUT |
 | IBUF     |   66 |                  IO |
-| LUT4     |   51 |                 LUT |
 | OBUF     |   36 |                  IO |
-| LUT5     |   26 |                 LUT |
-| LUT3     |   11 |                 LUT |
-| LUT2     |    4 |                 LUT |
+| LUT4     |   28 |                 LUT |
+| LUT5     |   24 |                 LUT |
+| LUT2     |   22 |                 LUT |
+| LUT3     |   13 |                 LUT |
+| LUT1     |    1 |                 LUT |
 +----------+------+---------------------+
 
 
