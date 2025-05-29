@@ -32,7 +32,7 @@ module register_file (
 
   // --- 寄存器读操作 ---
   // 读操作是组合逻辑，直接根据地址输出相应寄存器的内容
-  assign RD1 = (WE && A1 == A3) ? WD3 : registers[A1];
-  assign RD2 = (WE && A2 == A3) ? WD3 : registers[A2];
+  assign RD1 = (WE && A1 == A3) ? WD3 : (A1 == 4'b1111) ? R15 : registers[A1];
+  assign RD2 = (WE && A2 == A3) ? WD3 : (A2 == 4'b1111) ? R15 : registers[A2];
 
 endmodule

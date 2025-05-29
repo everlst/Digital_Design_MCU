@@ -1,7 +1,10 @@
 //依照书上第七章的单周期微结构写的
 module scm_mcu (
     input clk,
-    input rst
+    input rst,
+    output [31:0] write_data_dm,
+    output [31:0] A_dm,
+    output we_dm
 );
   wire [31:0] read_data_im;  //为指令存储器部分声明对应变量
 
@@ -59,10 +62,10 @@ module scm_mcu (
   wire [ 3:0] ALUFlags;
   assign srcA = RD1;  //ALU部分声明对应变量
 
-  wire [31:0] A_dm;
+  //wire [31:0] A_dm;
   assign A_dm = ALUResult;
-  wire we_dm;
-  wire [31:0] write_data_dm;
+  //wire we_dm;
+  //wire [31:0] write_data_dm;提前在输出声明以便于测试
   assign write_data_dm = RD2;
   wire [31:0] read_data_dm;  //数据存储器部分声明对应变量
 
