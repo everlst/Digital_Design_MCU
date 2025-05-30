@@ -2,9 +2,9 @@ module memory_32bit (
     input clk,  // 时钟信号
     input [31:0] address,  // 32 位地址输入
     input rst_n,  // 复位信号，低电平有效
-    input we,  // 写使能信高有效
+    input we,  // 写使能高有效
     input [31:0] write_data,  // 写入数据
-    output wire [31:0] read_data  // 32 位读出数据
+    output [31:0] read_data  // 32 位读出数据
 );
 
   localparam MEM_SIZE = 256;  // 定义存储器的大小（这里是 256个 32 位
@@ -31,5 +31,7 @@ module memory_32bit (
   // --- 存储器读操作 (组合逻辑) ---
   // 读数据会立即反映地址对应的存储器内容
   // 如果在写操作发生时，读地址和写地址相同，则读出的是新写入的数据
-  assign read_data = (we && address == address) ? write_data : mem[address];
+
+  assign read_data = (we == 1'b0) ? mem[address] : 32'hxxxxxxxx;//we是高电平时在时钟上升沿写，we是低电平时实时读
+
 endmodule

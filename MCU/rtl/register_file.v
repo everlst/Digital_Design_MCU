@@ -1,6 +1,6 @@
 module register_file (
     input  wire        clk,  // 时钟
-    input  wire        rst,  // 复位信号，高电平有效
+    input  wire        rst,  // 复位信号，低电平有效
     input  wire [ 3:0] A1,   // 读地址1
     input  wire [ 3:0] A2,   // 读地址2
     output wire [31:0] RD1,  // 读数据1
@@ -13,10 +13,12 @@ module register_file (
 
   // 声明16个32位寄存器
   reg [31:0] registers[15:0];
+  wire rst_n;
+  assign rst_n = ~rst;
   integer i;
   // --- 寄存器写操作 ---
-  always @(posedge clk or posedge rst) begin
-    if (rst) begin
+  always @(posedge clk or posedge rst_n) begin
+    if (rst_n) begin
       // 复位时，所有寄存器清零
       for (i = 0; i < 16; i = i + 1) begin
         registers[i] <= 32'b0;

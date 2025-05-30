@@ -1,12 +1,3 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/prj/SCM_MCU/SCM_MCU.srcs/sources_1/ip/rom_ip_inst/rom_ip_inst_sim_netlist.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module rom_ip_inst
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_generic_cstr
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_prim_width
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_prim_wrapper_init
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_top
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_v8_4_4
-INFO: [VRFC 10-311] analyzing module rom_ip_inst_blk_mem_gen_v8_4_4_synth
-INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/ALU.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ALU32bit
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/RCA.v" into library xil_defaultlib
@@ -16,8 +7,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/control_d
 INFO: [VRFC 10-311] analyzing module control_decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/decoder4bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module decoder4bit
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/imrom.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module imrom
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/memory_32bit.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module memory_32bit
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/mux1to1.v" into library xil_defaultlib
@@ -32,10 +21,9 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/mux4to1_A
 INFO: [VRFC 10-311] analyzing module mux_4to1_32bit
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/register_file.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rom
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/scm_mcu.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module scm_mcu
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/prj/SCM_MCU/SCM_MCU.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [F:/vivado-project/MCU/prj/SCM_MCU/SCM_MCU.sim/sim_1/behav/xsim/glbl.v:6]

@@ -2,10 +2,10 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Thu May 29 17:48:37 2025
-# Process ID: 25724
+# Start of session at: Thu May 29 17:17:00 2025
+# Process ID: 11892
 # Current directory: F:/vivado-project/MCU/prj/SCM_MCU
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26104 F:\vivado-project\MCU\prj\SCM_MCU\SCM_MCU.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent22772 F:\vivado-project\MCU\prj\SCM_MCU\SCM_MCU.xpr
 # Log file: F:/vivado-project/MCU/prj/SCM_MCU/vivado.log
 # Journal file: F:/vivado-project/MCU/prj/SCM_MCU\vivado.jou
 #-----------------------------------------------------------
@@ -16,7 +16,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2019.2/data/ip'.
-open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 942.973 ; gain = 226.180
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 973.133 ; gain = 233.559
 update_compile_order -fileset sources_1
 launch_simulation
 Command: launch_simulation 
@@ -58,7 +58,7 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/scm_mcu.v
 INFO: [VRFC 10-311] analyzing module scm_mcu
 INFO: [VRFC 10-2263] Analyzing Verilog file "F:/vivado-project/MCU/rtl/tb.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb
-INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/vivado-project/MCU/prj/SCM_MCU/SCM_MCU.sim/sim_1/behav/xsim'
 "xelab -wto 02776a6ffa434e0a9fc1c140f27b0f96 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
@@ -89,7 +89,7 @@ Compiling module xil_defaultlib.scm_mcu
 Compiling module xil_defaultlib.tb
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_behav
-INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/vivado-project/MCU/prj/SCM_MCU/SCM_MCU.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
@@ -111,8 +111,8 @@ source tb.tcl
 ERROR: Illegal hex digit ';' found in data of file "imdec.coe"
 INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
 INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.754 ; gain = 62.527
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1002.176 ; gain = 20.492
 close_sim
 INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu May 29 17:49:38 2025...
+INFO: [Common 17-206] Exiting Vivado at Thu May 29 17:18:22 2025...

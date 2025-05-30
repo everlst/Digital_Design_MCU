@@ -1,31 +1,14 @@
 Vivado Simulator 2019.2
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: F:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 02776a6ffa434e0a9fc1c140f27b0f96 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Running: F:/Vivado/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 02776a6ffa434e0a9fc1c140f27b0f96 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-WARNING: [VRFC 10-5021] port 'rsta' is not connected on this instance [F:/vivado-project/MCU/rtl/imrom.v:21]
-WARNING: [VRFC 10-3283] element index 32 into 'extlmm00' is out of bounds [F:/vivado-project/MCU/rtl/scm_mcu.v:46]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module unisims_ver.GND
-Compiling module unisims_ver.FDRE_default
-Compiling module unisims_ver.x_lut2_mux4
-Compiling module unisims_ver.LUT2
-Compiling module unisims_ver.SRL16E_default
-Compiling module unisims_ver.RB18_INTERNAL_VLOG(READ_WIDTH_A=...
-Compiling module unisims_ver.RAMB18E1(INIT_00=256'b0111110000...
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_prim_wra...
-Compiling module unisims_ver.LUT4
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_prim_wid...
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_generic_...
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_top
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_v8_4_4_s...
-Compiling module xil_defaultlib.rom_ip_inst_blk_mem_gen_v8_4_4
-Compiling module xil_defaultlib.rom_ip_inst
-Compiling module xil_defaultlib.imrom
+Compiling module xil_defaultlib.rom
 Compiling module xil_defaultlib.register_file
 Compiling module xil_defaultlib.mux_1to1_32bit
 Compiling module xil_defaultlib.full_adder

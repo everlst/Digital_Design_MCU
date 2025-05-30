@@ -6,6 +6,8 @@ module tb ();
   wire [31:0] write_data;
   wire [31:0] data_adr;
   wire memwrite;
+  //wire [3:0] data_adr_4bit;
+  //assign data_adr_4bit[3:0] = data_adr[3:0];s
   scm_mcu scm_mcu_uut (
       .clk(clk),
       .rst(rst),

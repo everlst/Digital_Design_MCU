@@ -1,7 +1,7 @@
 //依照书上第七章的单周期微结构写的
 module scm_mcu (
-    input clk,
-    input rst,
+    input clk,  //时钟
+    input rst,  //复位信号，低有效
     output [31:0] write_data_dm,
     output [31:0] A_dm,
     output we_dm
@@ -10,6 +10,12 @@ module scm_mcu (
 
   wire [31:0] pc;
   reg  [31:0] pc_registers;  //为程序计数器声明对应变量
+
+  always @(posedge clk or negedge rst) begin
+    if (!rst) begin
+      pc_registers <= 32'b0;
+    end
+  end  //初始化pc寄存器以使系统自启动
 
   wire [31:0] constpc;
   wire [31:0] pc_4;
@@ -43,7 +49,7 @@ module scm_mcu (
   wire [ 1:0] sel_imm;
   assign extlmm01[31:12] = 20'b0;
   assign extlmm01[11:0] = read_data_im[11:0];
-  assign extlmm00[32:8] = 24'b0;
+  assign extlmm00[31:8] = 24'b0;
   assign extlmm00[7:0] = read_data_im[7:0];
   assign extlmm10[25:2] = read_data_im[23:0];
   assign extlmm10[1:0] = 2'b00;
@@ -96,7 +102,7 @@ module scm_mcu (
   assign sel_A1 = regsrc[0];
   assign sel_A2 = regsrc[1];  //声明控制单元的对应变量
 
-  imrom imrom_uut (
+  rom rom_uut (
       .clk(clk),
       .imrom_addr(pc_registers),
       .imrom_out(read_data_im)
