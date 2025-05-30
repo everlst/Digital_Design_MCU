@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 30 14:41:25 2025
+# Process ID: 23760
+# Current directory: E:/MCU-experiment/ALU_stu_18
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15852 E:\MCU-experiment\ALU_stu_18\ALU_stu_18.xpr
+# Log file: E:/MCU-experiment/ALU_stu_18/vivado.log
+# Journal file: E:/MCU-experiment/ALU_stu_18\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MCU-experiment/ALU_stu_18/ALU_stu_18.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Common 17-344] 'open_project' was cancelled
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 30 14:41:43 2025...

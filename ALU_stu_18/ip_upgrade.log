@@ -1,0 +1,79 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May 23 15:36:46 2025
+| Host         : LAPTOP-TFKU3BS3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_vector_rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_vector_rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May 23 15:36:45 2025
+| Host         : LAPTOP-TFKU3BS3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'test_flags_and_result_rom'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of test_flags_and_result_rom (xilinx.com:ip:blk_mem_gen:8.4) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May 23 15:36:45 2025
+| Host         : LAPTOP-TFKU3BS3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'sys_clk'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of sys_clk (xilinx.com:ip:clk_wiz:6.0) from (Rev. 2) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Fri May 23 15:36:42 2025
+| Host         : LAPTOP-TFKU3BS3 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a35tcpg236-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of ila_0 (xilinx.com:ip:ila:6.2) from (Rev. 8) to (Rev. 10)
+

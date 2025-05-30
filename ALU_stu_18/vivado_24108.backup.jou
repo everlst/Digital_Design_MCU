@@ -1,0 +1,238 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 23 15:35:57 2025
+# Process ID: 24108
+# Current directory: E:/MCU-experiment/ALU_stu_18
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26408 E:\MCU-experiment\ALU_stu_18\ALU_stu_18.xpr
+# Log file: E:/MCU-experiment/ALU_stu_18/vivado.log
+# Journal file: E:/MCU-experiment/ALU_stu_18\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MCU-experiment/ALU_stu_18/ALU_stu_18.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset ila_0 [get_ips  {ila_0 sys_clk test_flags_and_result_rom test_vector_rom}] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips {ila_0 sys_clk test_flags_and_result_rom test_vector_rom}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+set_property -dict [list CONFIG.Coe_File {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe}] [get_ips test_vector_rom]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+catch { config_ip_cache -export [get_ips -all test_vector_rom] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+launch_runs -jobs 10 test_vector_rom_synth_1
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+set_property -dict [list CONFIG.Coe_File {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe}] [get_ips test_flags_and_result_rom]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+catch { config_ip_cache -export [get_ips -all test_flags_and_result_rom] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+launch_runs -jobs 10 test_flags_and_result_rom_synth_1
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v {E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v} E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v}}
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v
+import_files
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {130.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.750} CONFIG.CLKOUT1_JITTER {231.118} CONFIG.CLKOUT1_PHASE_ERROR {297.890}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+reorder_files -fileset constrs_1 -after E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc
+show_objects -name r_alu_ctrl [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {120.000} CONFIG.MMCM_CLKFBOUT_MULT_F {50.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.375} CONFIG.CLKOUT1_JITTER {234.636} CONFIG.CLKOUT1_PHASE_ERROR {298.923}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+startgroup
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_1]
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs impl_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+set_property target_constrs_file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+open_run impl_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {160.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {119.657} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+close_hw_manager
+launch_simulation
+source alu_tb.tcl
+close_sim

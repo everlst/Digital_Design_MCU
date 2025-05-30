@@ -1,0 +1,1065 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 23 15:35:57 2025
+# Process ID: 24108
+# Current directory: E:/MCU-experiment/ALU_stu_18
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent26408 E:\MCU-experiment\ALU_stu_18\ALU_stu_18.xpr
+# Log file: E:/MCU-experiment/ALU_stu_18/vivado.log
+# Journal file: E:/MCU-experiment/ALU_stu_18\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/MCU-experiment/ALU_stu_18/ALU_stu_18.xpr
+INFO: [Project 1-313] Project file moved from 'D:/experiment/ALU_stu_18' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'sys_clk_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'test_vector_rom_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'test_flags_and_result_rom_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'ila_0_synth_1' not found
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'sys_clk' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'sys_clk' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'test_vector_rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'test_vector_rom' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'test_flags_and_result_rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'test_flags_and_result_rom' (customized with software release 2018.3) has a different revision in the IP Catalog.
+WARNING: [IP_Flow 19-2162] IP 'ila_0' is locked:
+* IP definition 'ILA (Integrated Logic Analyzer) (6.2)' for IP 'ila_0' (customized with software release 2018.3) has a different revision in the IP Catalog.
+INFO: [Project 1-230] Project 'ALU_stu_18.xpr' upgraded for this version of Vivado.
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+upgrade_ip -srcset ila_0 [get_ips  {ila_0 sys_clk test_flags_and_result_rom test_vector_rom}] -log ip_upgrade.log
+Upgrading 'ila_0'
+INFO: [Project 1-386] Moving file 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/ila_0/ila_0.xci' from fileset 'ila_0' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded ila_0 (ILA (Integrated Logic Analyzer) 6.2) from revision 8 to revision 10
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'ila_0'...
+Upgrading 'sys_clk'
+INFO: [Project 1-386] Moving file 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci' from fileset 'sys_clk' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded sys_clk (Clocking Wizard 6.0) from revision 2 to revision 4
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_clk'...
+Upgrading 'test_flags_and_result_rom'
+INFO: [Project 1-386] Moving file 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci' from fileset 'test_flags_and_result_rom' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded test_flags_and_result_rom (Block Memory Generator 8.4) from revision 2 to revision 4
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_flags_and_result_rom'...
+Upgrading 'test_vector_rom'
+INFO: [Project 1-386] Moving file 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci' from fileset 'test_vector_rom' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded test_vector_rom (Block Memory Generator 8.4) from revision 2 to revision 4
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_vector_rom'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'E:/MCU-experiment/ALU_stu_18/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.617 ; gain = 190.512
+export_ip_user_files -of_objects [get_ips {ila_0 sys_clk test_flags_and_result_rom test_vector_rom}] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe'
+set_property -dict [list CONFIG.Coe_File {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe}] [get_ips test_vector_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe'
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'test_vector_rom'...
+catch { config_ip_cache -export [get_ips -all test_vector_rom] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+launch_runs -jobs 10 test_vector_rom_synth_1
+[Fri May 23 15:46:48 2025] Launched test_vector_rom_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/test_vector_rom_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe'
+set_property -dict [list CONFIG.Coe_File {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe}] [get_ips test_flags_and_result_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'e:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe'
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'test_flags_and_result_rom'...
+catch { config_ip_cache -export [get_ips -all test_flags_and_result_rom] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+launch_runs -jobs 10 test_flags_and_result_rom_synth_1
+[Fri May 23 15:47:18 2025] Launched test_flags_and_result_rom_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/test_flags_and_result_rom_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v {E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v} E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v}}] -no_script -reset -force -quiet
+remove_files  {{E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top copy.v}}
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/full_adder.v
+import_files
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'test_flags_and_result_rom'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'test_flags_and_result_rom'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'test_vector_rom'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'test_vector_rom'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'constrs_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'constrs_1'
+INFO: [filemgmt 20-334] All file(s) are already imported in fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux2-1.v
+export_ip_user_files -of_objects  [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v] -no_script -reset -force -quiet
+remove_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/mux4_1.v
+launch_runs synth_1 -jobs 10
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_clk'...
+[Fri May 23 16:07:22 2025] Launched sys_clk_synth_1, ila_0_synth_1...
+Run output will be captured here:
+sys_clk_synth_1: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+ila_0_synth_1: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/ila_0_synth_1/runme.log
+[Fri May 23 16:07:22 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:08:51 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1520.117 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 2208.707 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.169 . Memory (MB): peak = 2208.707 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2208.707 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 58 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 52 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 2395.027 ; gain = 1036.039
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:11:52 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:12:23 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2441.473 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 2441.473 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 2441.473 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:21:45 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:22:15 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3059.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 3059.898 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 3059.898 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {130.000} CONFIG.MMCM_DIVCLK_DIVIDE {5} CONFIG.MMCM_CLKFBOUT_MULT_F {50.375} CONFIG.MMCM_CLKOUT0_DIVIDE_F {7.750} CONFIG.CLKOUT1_JITTER {231.118} CONFIG.CLKOUT1_PHASE_ERROR {297.890}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sys_clk'...
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+[Fri May 23 16:24:23 2025] Launched sys_clk_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:24:56 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:25:29 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3059.898 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3059.898 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3059.898 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reorder_files -fileset constrs_1 -after E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc
+show_objects -name r_alu_ctrl [get_cells -hierarchical -filter { PRIMITIVE_TYPE =~ BMEM.*.* } ]
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:36:23 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:36:53 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3060.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 3060.098 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.176 . Memory (MB): peak = 3060.098 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:42:13 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:42:56 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3060.098 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 3060.098 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 3060.098 ; gain = 0.000
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {120.000} CONFIG.MMCM_CLKFBOUT_MULT_F {50.250} CONFIG.MMCM_CLKOUT0_DIVIDE_F {8.375} CONFIG.CLKOUT1_JITTER {234.636} CONFIG.CLKOUT1_PHASE_ERROR {298.923}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sys_clk'...
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+[Fri May 23 16:45:04 2025] Launched sys_clk_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 16:45:37 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:46:06 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3180.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 3180.812 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.165 . Memory (MB): peak = 3180.812 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+startgroup
+set_property BITSTREAM.GENERAL.COMPRESS TRUE [get_designs impl_1]
+set_property BITSTREAM.CONFIG.CONFIGRATE 33 [get_designs impl_1]
+set_property config_mode SPIx4 [current_design]
+endgroup
+set_property target_constrs_file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/constrs_1/new/xdc.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+[Fri May 23 16:50:11 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 3195.145 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3195.145 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 3195.145 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri May 23 16:51:30 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 3201.695 ; gain = 2.340
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 16:53:54
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 16:53:54
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+close_hw_manager
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 17:16:34 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 17:17:16 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 17:18:33 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 17:19:16 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 4479.742 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 4479.742 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 4479.742 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 4479.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 58 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 52 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {160.000} CONFIG.MMCM_DIVCLK_DIVIDE {1} CONFIG.MMCM_CLKFBOUT_MULT_F {10.000} CONFIG.MMCM_CLKOUT0_DIVIDE_F {6.250} CONFIG.CLKOUT1_JITTER {119.657} CONFIG.CLKOUT1_PHASE_ERROR {98.575}] [get_ips sys_clk]
+generate_target all [get_files  E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'sys_clk'...
+catch { config_ip_cache -export [get_ips -all sys_clk] }
+export_ip_user_files -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -no_script -sync -force -quiet
+reset_run sys_clk_synth_1
+launch_runs -jobs 10 sys_clk_synth_1
+[Fri May 23 17:20:47 2025] Launched sys_clk_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+export_simulation -of_objects [get_files E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.xci] -directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir E:/MCU-experiment/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=E:/MCU-experiment/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1
+
+launch_runs synth_1 -jobs 10
+[Fri May 23 17:21:00 2025] Launched sys_clk_synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+[Fri May 23 17:21:00 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 17:21:39 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 4479.742 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 4479.742 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 4479.742 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri May 23 17:23:53 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 4662.039 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:22
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:22
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:25
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:25
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:29
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:29
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:32
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:32
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:35
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:35
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:39
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:39
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:42
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:42
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:46
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:46
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:49
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:49
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:26:57
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:26:57
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+[Fri May 23 17:32:50 2025] Launched synth_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 10
+[Fri May 23 17:33:21 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+refresh_design
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 4662.605 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 102 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 4662.605 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.153 . Memory (MB): peak = 4662.605 ; gain = 0.000
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+[Fri May 23 17:34:54 2025] Launched impl_1...
+Run output will be captured here: E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {E:/MCU-experiment/ALU_stu_18/ALU_stu_18.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:36:03
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:36:03
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-May-23 17:36:14
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-May-23 17:36:14
+INFO: [Labtools 27-3304] ILA Waveform data saved to file E:/MCU-experiment/ALU_stu_18/ALU_stu_18.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/Xilinx/Vivado/2019.2/data/xsim/xsim.ini' copied to run dir:'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/test_flags_and_result_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/flags_and_result.coe'
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/test_vector_rom.mif'
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/test_vector.coe'
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/test_vector.coe'
+INFO: [SIM-utils-43] Exported 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/flags_and_result.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj alu_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/ila_0/ila_0_sim_netlist.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module ila_0_blk_mem_gen_v8_4_4_synth
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_cap_addrgen
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_cap_ctrl_legacy
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_cap_sample_counter
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_cap_window_counter
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_core
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_register
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_reset_ctrl
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_trace_memory
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_trig_match
+INFO: [VRFC 10-311] analyzing module ila_0_ila_v6_2_10_ila_trigger
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_11
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_14
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_16
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_4
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_6
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_8
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0_43
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA__parameterized0_51
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_12
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_15
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_17
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_5
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_7
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice_9
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_44
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized0_52
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1_45
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_all_typeA_slice__parameterized1_53
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0_10
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized0_13
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized1
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized2
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA__parameterized2_3
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay_42
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_allx_typeA_nodelay_50
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_18
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_19
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_async_edge_xfer_20
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut4
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut4_46
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5_40
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut5_47
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6_48
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut6__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut7
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_cfglut7_39
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_generic_memrd
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0_0
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized0_1
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized1
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized2
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match__parameterized2_2
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay_41
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_match_nodelay_49
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_rising_edge_detection
+INFO: [VRFC 10-311] analyzing module ila_0_ltlib_v1_0_0_rising_edge_detection_21
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized21
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized22
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized23
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized24
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized36
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized37
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized38
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized39
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized40
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized41
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized42
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized43
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized44
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized45
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized46
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized47
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized49
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized51
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg__parameterized54
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_25
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_26
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_27
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_28
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_31
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_33
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_34
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_35
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_36
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl_37
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1_29
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_ctl__parameterized1_32
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized1
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized2
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized3
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized4
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized5
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_p2s__parameterized6
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_22
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_23
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_24
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_30
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stat_38
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stream
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_reg_stream__parameterized0
+INFO: [VRFC 10-311] analyzing module ila_0_xsdbs_v1_0_2_xsdbs
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/sim/test_flags_and_result_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_flags_and_result_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/sim/test_vector_rom.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_vector_rom
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sys_clk
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/imports/MCU-experiment/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pre_adder_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/new/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'glbl' [E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/glbl.v:6]
+"xvhdl --incr --relax -prj alu_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'alu_tb'
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim'
+"xelab -wto ace5023db2f44e28b6066dd87723b53d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: E:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ace5023db2f44e28b6066dd87723b53d --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_4 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-5021] port 'clk' is not connected on this instance [E:/MCU-experiment/ALU_stu_18/ALU_stu_18.srcs/sources_1/new/top.v:143]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_textio
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=10.0,...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.sys_clk_clk_wiz
+Compiling module xil_defaultlib.sys_clk
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.test_vector_rom
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.test_flags_and_result_rom
+Compiling module xil_defaultlib.pre_adder_32
+Compiling module xil_defaultlib.ALU_top
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1
+Compiling module unisims_ver.RB36_INTERNAL_VLOG(DOA_REG=1,DOB...
+Compiling module unisims_ver.RAMB36E1(DOA_REG=1,DOB_REG=1,REA...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4_blk_mem...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4_blk_mem...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4_blk_mem...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4_blk_mem...
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4_synth
+Compiling module xil_defaultlib.ila_0_blk_mem_gen_v8_4_4
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_trace_memo...
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.SRL16E_default
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.SRLC32E_default
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut6__para...
+Compiling module unisims_ver.LUT6
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut7
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut7_39
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut6
+Compiling module unisims_ver.SRLC16E_default
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut4_46
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut5_47
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut6_48
+Compiling module unisims_ver.LUT5
+Compiling module unisims_ver.CARRY4
+Compiling module unisims_ver.CFGLUT5_default
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA__pa...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA_no...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match_nodelay...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_cap_sample...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut4
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut5
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_cfglut5_40
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA__pa...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA_no...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match_nodelay
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA__pa...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA_no...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match_nodelay...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_cap_window...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_cap_addrge...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_cap_ctrl_l...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_xsdbs
+Compiling module unisims_ver.FDSE_default
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_37
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_36
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_35
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_34
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_33
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_31
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat_30
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_28
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_27
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_26
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl_25
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat_24
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat_23
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat_38
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat_22
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg__paramete...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_p2s__para...
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_ctl
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stream
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stat
+Compiling module xil_defaultlib.ila_0_xsdbs_v1_0_2_reg_stream__p...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_register
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_rising_edge_d...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_async_edge_xf...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_async_edge_xf...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_async_edge_xf...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_async_edge_xf...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_rising_edge_d...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_reset_ctrl
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_16
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_14
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_11
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_8
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_6
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_4
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA_sli...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_all_typeA
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_allx_typeA__p...
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_match__parame...
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_trig_match
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_trigger
+Compiling module xil_defaultlib.ila_0_ltlib_v1_0_0_generic_memrd
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila_core
+Compiling module xil_defaultlib.ila_0_ila_v6_2_10_ila
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.top
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim/xsim.dir/alu_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 23 17:37:29 2025...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 4741.094 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/MCU-experiment/ALU_stu_18/ALU_stu_18.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module alu_tb.uut.u_test_vector_rom.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+ Block Memory Generator module loading initial data...
+ Block Memory Generator data initialization complete.
+Block Memory Generator module alu_tb.uut.u_test_flags_and_result_rom.inst.native_mem_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:19 . Memory (MB): peak = 4741.094 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 23 17:52:55 2025...
