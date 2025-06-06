@@ -1,0 +1,474 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dY:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.sim/sim_1/behav/modelsim
+T_opt
+!s110 1749214788
+VTigVHon4g;=Ebk9ANAQiP1
+04 6 4 work tb_top fast 0
+04 4 4 work glbl fast 0
+=1-001c42c08a3c-6842e643-336-2bf0
+o-quiet -auto_acc_if_foreign -work xil_defaultlib -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2020.4;71
+vadder
+!s10a 1748621316
+Z2 !s110 1749213446
+!i10b 1
+!s100 <bg2@BmR6Ui:P?bNQB94[2
+Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IaGZ9;l2mV3i_ETP=j89933
+R0
+w1748621316
+8../../../../../../rtl/adder.v
+F../../../../../../rtl/adder.v
+!i122 0
+L0 19 14
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2020.4;71
+r1
+!s85 0
+31
+Z6 !s108 1749213445.000000
+Z7 !s107 ../../../../../../sim/tb.v|../../../../../../rtl/top.v|../../../../../../rtl/regfile.v|../../../../../../rtl/mux2.v|../../../../../../rtl/imem.v|../../../../../../rtl/flopr.v|../../../../../../rtl/flopenr.v|../../../../../../rtl/extend.v|../../../../../../rtl/dmem.v|../../../../../../rtl/decoder.v|../../../../../../rtl/datapath.v|../../../../../../rtl/controller.v|../../../../../../rtl/condlogic.v|../../../../../../rtl/arm.v|../../../../../../rtl/alu.v|../../../../../../rtl/adder.v|../../../../MCU_test.srcs/sources_1/ip/rom/sim/rom.v|
+Z8 !s90 -64|-incr|-work|xil_defaultlib|../../../../MCU_test.srcs/sources_1/ip/rom/sim/rom.v|../../../../../../rtl/adder.v|../../../../../../rtl/alu.v|../../../../../../rtl/arm.v|../../../../../../rtl/condlogic.v|../../../../../../rtl/controller.v|../../../../../../rtl/datapath.v|../../../../../../rtl/decoder.v|../../../../../../rtl/dmem.v|../../../../../../rtl/extend.v|../../../../../../rtl/flopenr.v|../../../../../../rtl/flopr.v|../../../../../../rtl/imem.v|../../../../../../rtl/mux2.v|../../../../../../rtl/regfile.v|../../../../../../rtl/top.v|../../../../../../sim/tb.v|
+!i113 0
+Z9 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+valu
+Z10 !s110 1749214781
+!i10b 1
+!s100 VSGMV:lC@GSP=KfDkg>`E3
+R3
+I:flI?cZffoW5YF1T@7BZL0
+R0
+w1749214767
+8../../../../../../rtl/alu.v
+F../../../../../../rtl/alu.v
+!i122 14
+L0 6 43
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1749214781.000000
+R7
+R8
+!i113 0
+R9
+R1
+varm
+!s10a 1749213009
+R2
+!i10b 1
+!s100 :6aH:_VBEZi99MEFgJN>f2
+R3
+IZGmij=fmJe5;:1ZEN2U;Q0
+R0
+w1749213009
+8../../../../../../rtl/arm.v
+F../../../../../../rtl/arm.v
+!i122 0
+L0 22 73
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vcondcheck
+Z12 !s10a 1749210526
+R2
+!i10b 1
+!s100 B3<gVgSkNU?_=g;Y]MC6Y1
+R3
+I15NJXacTWP:YllZjlNQ9=2
+R0
+Z13 w1749210526
+Z14 8../../../../../../rtl/condlogic.v
+Z15 F../../../../../../rtl/condlogic.v
+!i122 0
+L0 109 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vcondlogic
+R12
+R2
+!i10b 1
+!s100 VOm>z:K7]J9Vn>OSWC@:I1
+R3
+ITOXBGlBge]WQ:Z<kXZ@jW3
+R0
+R13
+R14
+R15
+!i122 0
+L0 31 68
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vcontroller
+!s10a 1749212759
+R2
+!i10b 1
+!s100 :=nFkbKfK@9i4]M@=U<Tn2
+R3
+IC>SellaLAK7YH8?Y6kj^L2
+R0
+w1749212759
+8../../../../../../rtl/controller.v
+F../../../../../../rtl/controller.v
+!i122 0
+L0 29 70
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdatapath
+!s10a 1748624502
+R2
+!i10b 1
+!s100 BL0cljJ@C=[liAogM]EWj0
+R3
+IVTdSUNm]310WFARB5M]g=1
+R0
+w1748624502
+8../../../../../../rtl/datapath.v
+F../../../../../../rtl/datapath.v
+!i122 0
+L0 33 164
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdecoder
+!s10a 1748596328
+R2
+!i10b 1
+!s100 UCYzbdlV8QE>odnQMh;Y72
+R3
+IR`:CGodbRWj5DPLm>8<Cd3
+R0
+w1748596328
+8../../../../../../rtl/decoder.v
+F../../../../../../rtl/decoder.v
+!i122 0
+L0 36 103
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vdmem
+!s10a 1749211939
+R2
+!i10b 1
+!s100 9D41>YBifb8QNj]kik7G]2
+R3
+IQBiA86;T[Mk9kO>@`4Jf00
+R0
+w1749211939
+8../../../../../../rtl/dmem.v
+F../../../../../../rtl/dmem.v
+!i122 0
+L0 17 28
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vextend
+!s10a 1748624348
+R2
+!i10b 1
+!s100 FkG96jA]jDjQUni_eRL7F3
+R3
+In9zNM<S_ZbH:bV5_mYTS<1
+R0
+w1748624348
+8../../../../../../rtl/extend.v
+F../../../../../../rtl/extend.v
+!i122 0
+L0 13 25
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vflopenr
+!s10a 1748621871
+R2
+!i10b 1
+!s100 F[LBSFXGXVeS1e_dz>h[V0
+R3
+IWS0eUd[9>3H_j691o0o7X2
+R0
+w1748621871
+8../../../../../../rtl/flopenr.v
+F../../../../../../rtl/flopenr.v
+!i122 0
+L0 21 20
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vflopr
+!s10a 1748621624
+R2
+!i10b 1
+!s100 E^fG?=M4KOeB>;8MfY2k`2
+R3
+IaPZekZD<<;HW?S70m2f7g2
+R0
+w1748621624
+8../../../../../../rtl/flopr.v
+F../../../../../../rtl/flopr.v
+!i122 0
+L0 18 18
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vglbl
+R10
+!i10b 1
+!s100 DCW3=ePZ4oEojGg2KL;HS0
+R3
+ITNN_cbZIG@:>zYe@^CH>f0
+R0
+w1573089660
+8glbl.v
+Fglbl.v
+!i122 15
+L0 6 65
+R4
+R5
+r1
+!s85 0
+31
+R11
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 0
+o-work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vimem
+!s10a 1749208213
+R2
+!i10b 1
+!s100 Czk;]UFLKz7AOS68_PVaV1
+R3
+ImUD56=D^R0O6EZ9zH2AMb2
+R0
+w1749208213
+8../../../../../../rtl/imem.v
+F../../../../../../rtl/imem.v
+!i122 0
+L0 16 30
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vmux2
+!s10a 1748621933
+R2
+!i10b 1
+!s100 JCS_JXPQGc;Le5DYlK[`a2
+R3
+Iiba:>m98T[zE5zgY[STe_0
+R0
+w1748621933
+8../../../../../../rtl/mux2.v
+F../../../../../../rtl/mux2.v
+!i122 0
+L0 18 15
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vregfile
+!s10a 1748621134
+R2
+!i10b 1
+!s100 T@fS9[DVVga[IJR@IGan;0
+R3
+IATFVK176YkkI93g_]2`Nn0
+R0
+w1748621134
+8../../../../../../rtl/regfile.v
+F../../../../../../rtl/regfile.v
+!i122 0
+L0 16 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vrom
+!s10a 1749208217
+R2
+!i10b 1
+!s100 _P9lD59E6LeWD26Y2gnnR2
+R3
+IT2?HWFISBjHeRFQz5<JaF3
+R0
+w1749208217
+8../../../../MCU_test.srcs/sources_1/ip/rom/sim/rom.v
+F../../../../MCU_test.srcs/sources_1/ip/rom/sim/rom.v
+!i122 0
+L0 56 156
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
+vtb_top
+R10
+!i10b 1
+!s100 7H:;bSW[K?X8lkYizM]Ji2
+R3
+I]3fmm?YHgID<2:_@MLJSb3
+R0
+w1749214608
+8../../../../../../sim/tb.v
+F../../../../../../sim/tb.v
+!i122 14
+L0 18 65
+R4
+R5
+r1
+!s85 0
+31
+R11
+R7
+R8
+!i113 0
+R9
+R1
+vtop
+!s10a 1749196430
+R2
+!i10b 1
+!s100 L0`0ehoOl61dO`IM1ZVEU3
+R3
+I_;eJOK8@jgQO8Q_MRg9NE3
+R0
+w1749196430
+8../../../../../../rtl/top.v
+F../../../../../../rtl/top.v
+!i122 0
+L0 22 58
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1
