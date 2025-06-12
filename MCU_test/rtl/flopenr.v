@@ -32,7 +32,7 @@ module flopenr #(
   // 时序逻辑：异步复位 + 上升沿采样（带使能）
   // --------------------------------------------------------------------
   always @(posedge clk or posedge reset) begin
-    if (reset) q <= {WIDTH{1'b0}};  // 复位时立即清零
+    if (reset) q <= 0;  // 复位时立即清零
     else if (en) q <= d;  // 使能为 1 时装载新数据
     // else 保持原值
   end

@@ -84,7 +84,7 @@ module decoder (
       2'b10:  // 分支 (B / BL)
       controls = 10'b0110100010;
 
-      default: controls = 10'bXXXXXXXXXX;  // 未定义
+      default: controls = 10'bx;  // 未定义
     endcase
   end
 

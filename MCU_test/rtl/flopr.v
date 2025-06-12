@@ -27,8 +27,8 @@ module flopr #(
   // --------------------------------------------------------------------
   // 时序逻辑：同步复位 + 边沿采样
   // --------------------------------------------------------------------
-  always @(posedge clk) begin
-    if (reset) q <= {WIDTH{1'b0}};  // 复位时清零
+  always @(posedge clk or posedge reset) begin
+    if (reset) q <= 0;  // 复位时清零
     else q <= d;  // 采样输入
   end
 

@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Thu Jun 12 13:43:44 2025
+# Process ID: 11976
+# Current directory: Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10496 Y:\Code\Digital_Design_MCU\MCU_test\prj\MCU_test\MCU_test.xpr
+# Log file: Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/MCU_test/rtl/top_test.v] -no_script -reset -force -quiet
+remove_files  Y:/Code/Digital_Design_MCU/MCU_test/rtl/top_test.v
+reset_run rom_synth_1
+launch_runs synth_1 -jobs 12
+wait_on_run synth_1
+generate_target Simulation [get_files Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom/rom.xci]
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom/rom.xci] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom/rom.xci] -directory Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+create_ip -name dist_mem_gen -vendor xilinx.com -library ip -version 8.0 -module_name dist_mem_gen_0 -dir y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip
+set_property -dict [list CONFIG.depth {128} CONFIG.data_width {32} CONFIG.memory_type {rom} CONFIG.coefficient_file {Y:/Code/Digital_Design_MCU/MCU_test/sim/memfile.coe}] [get_ips dist_mem_gen_0]
+generate_target {instantiation_template} [get_files y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+generate_target all [get_files  y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+launch_runs -jobs 12 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+reset_simulation
+reset_simulation
+export_ip_user_files -of_objects  [get_files Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom/rom.xci] -no_script -reset -force -quiet
+remove_files  -fileset rom Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom/rom.xci
+file delete -force Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/rom
+set_property -dict [list CONFIG.coefficient_file {Y:/Code/Digital_Design_MCU/MCU_test/sim/memfile.coe}] [get_ips dist_mem_gen_0]
+generate_target all [get_files  y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_0_synth_1
+launch_runs -jobs 12 dist_mem_gen_0_synth_1
+export_simulation -of_objects [get_files y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/MCU_test/prj/MCU_test/MCU_test.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation -install_path E:/modeltech64_2020.4/win64

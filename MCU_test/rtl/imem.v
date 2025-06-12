@@ -18,10 +18,14 @@ module imem (
   input  [31:0] a,     // 字节地址（来自 PC）
   output [31:0] rd     // 读出指令字
 );
-  rom ROM (
-    .clka (clka),
-    .addra(a[31:2]),
-    .douta(rd)
+  // rom ROM (
+  //   .clka (clka),
+  //   .addra(a[31:2]),
+  //   .douta(rd)
+  // );
+  dist_mem_gen_0 ROM_1 (
+    .a  (a[31:2]),  // input wire [6 : 0] a
+    .spo(rd)        // output wire [31 : 0] spo
   );
   // --------------------------------------------------------------------
   // 64 × 32-bit 只读存储器；Synth 时综合工具会将 initial 数据固化到 ROM。
