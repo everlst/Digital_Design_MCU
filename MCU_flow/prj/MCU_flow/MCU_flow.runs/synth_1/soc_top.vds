@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun  9 11:42:13 2025
+# Process ID: 17388
+# Current directory: Y:/Code/Digital_Design_MCU/MCU_flow/prj/MCU_flow/MCU_flow.runs/synth_1
+# Command line: vivado.exe -log soc_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source soc_top.tcl
+# Log file: Y:/Code/Digital_Design_MCU/MCU_flow/prj/MCU_flow/MCU_flow.runs/synth_1/soc_top.vds
+# Journal file: Y:/Code/Digital_Design_MCU/MCU_flow/prj/MCU_flow/MCU_flow.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source soc_top.tcl -notrace
+Command: synth_design -top soc_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3332 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 973.973 ; gain = 241.656
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'soc_top' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/top_soc.v:15]
+INFO: [Synth 8-6157] synthesizing module 'imem' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/imem.v:16]
+INFO: [Synth 8-6157] synthesizing module 'rom' [Y:/Code/Digital_Design_MCU/MCU_flow/prj/MCU_flow/MCU_flow.runs/synth_1/.Xil/Vivado-17388-FB47/realtime/rom_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (1#1) [Y:/Code/Digital_Design_MCU/MCU_flow/prj/MCU_flow/MCU_flow.runs/synth_1/.Xil/Vivado-17388-FB47/realtime/rom_stub.v:6]
+WARNING: [Synth 8-689] width (30) of port connection 'addra' does not match port width (8) of module 'rom' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/imem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (2#1) [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/imem.v:16]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/dmem.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (3#1) [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/dmem.v:17]
+INFO: [Synth 8-6157] synthesizing module 'arm_pipeline' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:7]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:82]
+INFO: [Synth 8-6157] synthesizing module 'extend' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/extend.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (4#1) [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/extend.v:13]
+ERROR: [Synth 8-448] named port connection 'instr' does not exist for instance 'u_extend' of module 'extend' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:83]
+ERROR: [Synth 8-448] named port connection 'imm' does not exist for instance 'u_extend' of module 'extend' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:84]
+WARNING: [Synth 8-7023] instance 'u_extend' of module 'extend' has 3 connections declared, but only 0 given [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:82]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/regfile.v:16]
+ERROR: [Synth 8-6156] failed synthesizing module 'regfile' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/regfile.v:16]
+ERROR: [Synth 8-6156] failed synthesizing module 'arm_pipeline' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/arm_pipeline.v:7]
+ERROR: [Synth 8-6156] failed synthesizing module 'soc_top' [Y:/Code/Digital_Design_MCU/MCU_flow/rtl/top_soc.v:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1050.418 ; gain = 318.102
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+14 Infos, 3 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Mon Jun  9 11:42:40 2025...

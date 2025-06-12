@@ -1,0 +1,169 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_top_simulate.do}
+# vsim -voptargs=""+acc"" -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
+# Start time: 19:00:11 on Jun 12,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_test.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 24 of file "dist_mem_gen_0.mif". Expected 128, found 23.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 175000 ns : Write @ 96 = 7
+# 215000 ns : Write @ 100 = 7
+# 
+# ==================== TEST SUCCEEDED ====================
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_test.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+add wave -position insertpoint  \
+sim:/tb_top/dut/dm/RAM
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 24 of file "dist_mem_gen_0.mif". Expected 128, found 23.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 175000 ns : Write @ 96 = 7
+# 215000 ns : Write @ 100 = 7
+# 
+# ==================== TEST SUCCEEDED ====================
+# 
+add wave -position insertpoint  \
+sim:/tb_top/dut/dm/a
+add wave -position insertpoint  \
+sim:/tb_top/dut/im/ROM_1/a \
+sim:/tb_top/dut/im/ROM_1/spo
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_test.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 24 of file "dist_mem_gen_0.mif". Expected 128, found 23.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 175000 ns : Write @ 96 = 7
+# 215000 ns : Write @ 100 = 7
+# 
+# ==================== TEST SUCCEEDED ====================
+# 
+add wave -position insertpoint  \
+sim:/tb_top/dut/dm/a
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_test.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 24 of file "dist_mem_gen_0.mif". Expected 128, found 23.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 175000 ns : Write @ 96 = 7
+# 215000 ns : Write @ 100 = 7
+# 
+# ==================== TEST SUCCEEDED ====================
+# 
+# End time: 19:15:10 on Jun 12,2025, Elapsed time: 0:14:59
+# Errors: 0, Warnings: 2

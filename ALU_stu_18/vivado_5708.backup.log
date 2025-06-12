@@ -1,0 +1,107 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri May 23 15:03:49 2025
+# Process ID: 5708
+# Current directory: Y:/Code/Digital_Design_MCU/ALU_stu_18
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2360 Y:\Code\Digital_Design_MCU\ALU_stu_18\ALU_stu_18.xpr
+# Log file: Y:/Code/Digital_Design_MCU/ALU_stu_18/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/ALU_stu_18\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 926.680 ; gain = 181.738
+update_compile_order -fileset sources_1
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe'
+set_property -dict [list CONFIG.Coe_File {Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe}] [get_ips test_vector_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe'
+generate_target all [get_files  Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'test_vector_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'test_vector_rom'...
+catch { config_ip_cache -export [get_ips -all test_vector_rom] }
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci]
+launch_runs -jobs 12 test_vector_rom_synth_1
+[Fri May 23 15:13:43 2025] Launched test_vector_rom_synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/test_vector_rom_synth_1/runme.log
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci] -directory Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe'
+set_property -dict [list CONFIG.Coe_File {Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe}] [get_ips test_flags_and_result_rom]
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe' provided. It will be converted relative to IP Instance files '../../../../ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe'
+generate_target all [get_files  Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Miscellaneous' target for IP 'test_flags_and_result_rom'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'test_flags_and_result_rom'...
+catch { config_ip_cache -export [get_ips -all test_flags_and_result_rom] }
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci]
+launch_runs -jobs 12 test_flags_and_result_rom_synth_1
+[Fri May 23 15:19:31 2025] Launched test_flags_and_result_rom_synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/test_flags_and_result_rom_synth_1/runme.log
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom.xci] -directory Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/ipstatic -lib_map_path [list {modelsim=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/modelsim} {questa=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+add_files -norecurse {Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 12
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ila_0'...
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/ila_0/ila_0_ooc.xdc'
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'ila_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sys_clk'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'sys_clk'...
+[Fri May 23 15:32:26 2025] Launched sys_clk_synth_1, ila_0_synth_1...
+Run output will be captured here:
+sys_clk_synth_1: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/sys_clk_synth_1/runme.log
+ila_0_synth_1: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/ila_0_synth_1/runme.log
+[Fri May 23 15:32:27 2025] Launched synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1164.625 ; gain = 27.652
+launch_runs impl_1 -jobs 12
+[Fri May 23 15:37:15 2025] Launched impl_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1379.609 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 103 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.202 . Memory (MB): peak = 2089.223 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.203 . Memory (MB): peak = 2089.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2089.223 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 58 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 52 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+open_run: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 2269.613 ; gain = 1098.555
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
