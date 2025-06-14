@@ -1,0 +1,281 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Jun 13 23:13:41 2025
+# Process ID: 5084
+# Current directory: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9140 Y:\Code\Digital_Design_MCU\v11_MCU_MOV_shift\prj\MCU_MOV_shift\MCU_MOV_shift.xpr
+# Log file: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.xpr
+INFO: [Project 1-313] Project file moved from 'Y:/Code/Digital_Design_MCU/MCU_MOV_shift/prj/MCU_MOV_shift' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 947.852 ; gain = 206.207
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.coefficient_file {Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe}] [get_ips dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe' provided. It will be converted relative to IP Instance files '../../../../../../sim/memfile.coe'
+generate_target all [get_files  Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_0_synth_1
+launch_runs -jobs 12 dist_mem_gen_0_synth_1
+[Fri Jun 13 23:22:52 2025] Launched dist_mem_gen_0_synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.runs/dist_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_simulation
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+reset_simulation
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/memfile.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_top_compile.do}
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:24:05 on Jun 13,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../../../../rtl/adder.v ../../../../../../rtl/alu.v ../../../../../../rtl/arm.v ../../../../../../rtl/condlogic.v ../../../../../../rtl/controller.v ../../../../../../rtl/datapath.v ../../../../../../rtl/decoder.v ../../../../../../rtl/dmem.v ../../../../../../rtl/extend.v ../../../../../../rtl/flopenr.v ../../../../../../rtl/flopr.v ../../../../../../rtl/imem.v ../../../../../../rtl/mux2.v ../../../../../../rtl/regfile.v ../../../../../../rtl/shifter.v ../../../../../../rtl/top.v ../../../../../../sim/tb.v 
+# -- Compiling module dist_mem_gen_0
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module arm
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module controller
+# -- Compiling module datapath
+# -- Compiling module decoder
+# -- Compiling module dmem
+# -- Compiling module extend
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module imem
+# -- Compiling module mux2
+# -- Compiling module regfile
+# -- Compiling module shifter
+# -- Compiling module top
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 23:24:05 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:24:05 on Jun 13,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:24:05 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Program launched (PID=8848)
+set_property -dict [list CONFIG.coefficient_file {Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe}] [get_ips dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe' provided. It will be converted relative to IP Instance files '../../../../../../sim/memfile.coe'
+generate_target all [get_files  Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_0_synth_1
+launch_runs -jobs 12 dist_mem_gen_0_synth_1
+[Fri Jun 13 23:29:41 2025] Launched dist_mem_gen_0_synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.runs/dist_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_simulation
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/memfile.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_top_compile.do}
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:31:05 on Jun 13,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../../../../rtl/adder.v ../../../../../../rtl/alu.v ../../../../../../rtl/arm.v ../../../../../../rtl/condlogic.v ../../../../../../rtl/controller.v ../../../../../../rtl/datapath.v ../../../../../../rtl/decoder.v ../../../../../../rtl/dmem.v ../../../../../../rtl/extend.v ../../../../../../rtl/flopenr.v ../../../../../../rtl/flopr.v ../../../../../../rtl/imem.v ../../../../../../rtl/mux2.v ../../../../../../rtl/regfile.v ../../../../../../rtl/shifter.v ../../../../../../rtl/top.v ../../../../../../sim/tb.v 
+# -- Compiling module dist_mem_gen_0
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module arm
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module controller
+# -- Compiling module datapath
+# -- Compiling module decoder
+# -- Compiling module dmem
+# -- Compiling module extend
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module imem
+# -- Compiling module mux2
+# -- Compiling module regfile
+# -- Compiling module shifter
+# -- Compiling module top
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 23:31:05 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:31:05 on Jun 13,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:31:05 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Program launched (PID=2912)
+set_property -dict [list CONFIG.coefficient_file {Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe}] [get_ips dist_mem_gen_0]
+INFO: [IP_Flow 19-3484] Absolute path of file 'y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/sim/memfile.coe' provided. It will be converted relative to IP Instance files '../../../../../../sim/memfile.coe'
+generate_target all [get_files  Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'dist_mem_gen_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'dist_mem_gen_0'...
+catch { config_ip_cache -export [get_ips -all dist_mem_gen_0] }
+export_ip_user_files -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -no_script -sync -force -quiet
+reset_run dist_mem_gen_0_synth_1
+launch_runs -jobs 12 dist_mem_gen_0_synth_1
+[Fri Jun 13 23:36:33 2025] Launched dist_mem_gen_0_synth_1...
+Run output will be captured here: Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.runs/dist_mem_gen_0_synth_1/runme.log
+export_simulation -of_objects [get_files Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0.xci] -directory Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/sim_scripts -ip_user_files_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files -ipstatic_source_dir Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.ip_user_files/ipstatic -lib_map_path [list {modelsim=E:/modeltech64_2020.4/vivado2019.2_lib} {questa=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/questa} {riviera=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/riviera} {activehdl=Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_simulation
+INFO: [Vivado 12-2266] Removing simulation data...
+INFO: [Vivado 12-2267] Reset complete
+launch_simulation -install_path E:/modeltech64_2020.4/win64
+Command: launch_simulation 
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'ModelSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-ModelSim-47] Finding simulator installation...
+INFO: [USF-ModelSim-50] Using simulator executables from 'E:/modeltech64_2020.4/win64/vsim.exe'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-modelsim-7] Finding pre-compiled libraries...
+INFO: [USF-modelsim-11] File 'E:/modeltech64_2020.4/vivado2019.2_lib/modelsim.ini' copied to run dir:'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/dist_mem_gen_0.mif'
+INFO: [SIM-utils-43] Exported 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim/memfile.coe'
+INFO: [USF-ModelSim-107] Finding global include files...
+INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths...
+INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'...
+INFO: [USF-ModelSim-2] ModelSim::Compile design
+INFO: [USF-ModelSim-15] Creating automatic 'do' files...
+INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Reading pref.tcl
+
+# 2020.4
+
+# do {tb_top_compile.do}
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:37:48 on Jun 13,2025
+# vlog -64 -incr -work xil_defaultlib ../../../../MCU_MOV_shift.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v ../../../../../../rtl/adder.v ../../../../../../rtl/alu.v ../../../../../../rtl/arm.v ../../../../../../rtl/condlogic.v ../../../../../../rtl/controller.v ../../../../../../rtl/datapath.v ../../../../../../rtl/decoder.v ../../../../../../rtl/dmem.v ../../../../../../rtl/extend.v ../../../../../../rtl/flopenr.v ../../../../../../rtl/flopr.v ../../../../../../rtl/imem.v ../../../../../../rtl/mux2.v ../../../../../../rtl/regfile.v ../../../../../../rtl/shifter.v ../../../../../../rtl/top.v ../../../../../../sim/tb.v 
+# -- Compiling module dist_mem_gen_0
+# -- Compiling module adder
+# -- Compiling module alu
+# -- Compiling module arm
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module controller
+# -- Compiling module datapath
+# -- Compiling module decoder
+# -- Compiling module dmem
+# -- Compiling module extend
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module imem
+# -- Compiling module mux2
+# -- Compiling module regfile
+# -- Compiling module shifter
+# -- Compiling module top
+# -- Compiling module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 23:37:48 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 23:37:48 on Jun 13,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 23:37:48 on Jun 13,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-ModelSim-4] ModelSim::Simulate design
+INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'Y:/Code/Digital_Design_MCU/v11_MCU_MOV_shift/prj/MCU_MOV_shift/MCU_MOV_shift.sim/sim_1/behav/modelsim'
+Program launched (PID=7140)
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jun 13 23:47:38 2025...
