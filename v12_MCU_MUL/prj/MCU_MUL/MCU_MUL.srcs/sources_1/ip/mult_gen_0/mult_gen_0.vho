@@ -54,9 +54,9 @@
 ------------- Begin Cut here for COMPONENT Declaration ------ COMP_TAG
 COMPONENT mult_gen_0
   PORT (
-    A : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    B : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
-    P : OUT STD_LOGIC_VECTOR(63 DOWNTO 0)
+    A : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    B : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
+    P : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
   );
 END COMPONENT;
 -- COMP_TAG_END ------ End COMPONENT Declaration ------------

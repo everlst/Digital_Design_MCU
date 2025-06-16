@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file Y:\Code\Digital_Design_MCU\v20_MCU_FULL_RW\prj\MCU_FULL_RW\MCU_FULL_RW.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: 没有权限

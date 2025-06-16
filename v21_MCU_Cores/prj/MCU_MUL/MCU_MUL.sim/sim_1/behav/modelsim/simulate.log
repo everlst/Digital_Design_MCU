@@ -1,0 +1,325 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_top_simulate.do}
+# vsim -voptargs=""+acc"" -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
+# Start time: 17:17:45 on Jun 14,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.shifter(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mult_gen_0(mult_gen_0_arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.mult_and(mult_and_v)#1
+# Loading unisim.lut2(lut2_v)#1
+# Loading unisim.muxcy(muxcy_v)#1
+# Loading unisim.xorcy(xorcy_v)#1
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 50 of file "dist_mem_gen_0.mif". Expected 128, found 49.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 205000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 215000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 225000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 235000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 245000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 255000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 265000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 275000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 445000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 455000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 465000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 475000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 485000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 495000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 505000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 515000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.shifter(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 50 of file "dist_mem_gen_0.mif". Expected 128, found 49.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 205000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 215000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 225000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 235000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 245000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 255000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 265000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 275000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 445000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 455000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 465000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 475000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 485000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 495000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 505000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 515000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+add wave -position insertpoint  \
+sim:/tb_top/dut/dm/RAM
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.shifter(fast)
+# Loading work.alu(fast)
+# Loading work.imem(fast)
+# Loading work.dist_mem_gen_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.dmem(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 50 of file "dist_mem_gen_0.mif". Expected 128, found 49.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 205000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 215000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 225000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 235000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 245000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 255000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 265000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 275000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 445000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 455000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 465000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 475000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 485000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 495000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 505000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 515000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# End time: 17:23:17 on Jun 14,2025, Elapsed time: 0:05:32
+# Errors: 0, Warnings: 2

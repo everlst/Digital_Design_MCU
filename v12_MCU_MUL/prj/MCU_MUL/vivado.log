@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 16 16:34:53 2025
+# Process ID: 3760
+# Current directory: Y:/Code/Digital_Design_MCU/v12_MCU_MUL/prj/MCU_MUL
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2936 Y:\Code\Digital_Design_MCU\v12_MCU_MUL\prj\MCU_MUL\MCU_MUL.xpr
+# Log file: Y:/Code/Digital_Design_MCU/v12_MCU_MUL/prj/MCU_MUL/vivado.log
+# Journal file: Y:/Code/Digital_Design_MCU/v12_MCU_MUL/prj/MCU_MUL\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project Y:/Code/Digital_Design_MCU/v12_MCU_MUL/prj/MCU_MUL/MCU_MUL.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 937.895 ; gain = 205.094
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 20:52:16 2025...
