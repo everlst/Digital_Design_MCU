@@ -13,7 +13,7 @@
 # //
 # do {tb_top_simulate.do}
 # vsim -voptargs=""+acc"" -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
-# Start time: 02:30:03 on Jun 14,2025
+# Start time: 23:36:06 on Jun 14,2025
 # ** Note: (vsim-3812) Design is being optimized...
 # Loading work.tb_top(fast)
 # Loading work.top(fast)
@@ -53,7 +53,7 @@
 # Loading unisim.lut2(lut2_v)#1
 # Loading unisim.muxcy(muxcy_v)#1
 # Loading unisim.xorcy(xorcy_v)#1
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
 # 1
 # 1
@@ -61,11 +61,139 @@
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 4 of file "dist_mem_gen_0.mif". Expected 128, found 3.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 256, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 205000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 215000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 225000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 235000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 245000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 255000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 265000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 275000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 445000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 455000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 465000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 475000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 485000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 495000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 505000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 515000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 685000 ns : Write @ 64 = 131027
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 695000 ns : Write @ 66 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 705000 ns : Write @ 68 = 1
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 715000 ns : Write @ 70 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 725000 ns : Write @ 72 = 65554
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 735000 ns : Write @ 74 = 131013
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 745000 ns : Write @ 76 = 65514
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 755000 ns : Write @ 78 = 4294967243
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 925000 ns : Write @ 80 = 65524
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 935000 ns : Write @ 82 = 4294901822
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 945000 ns : Write @ 84 = 4294901826
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 955000 ns : Write @ 86 = 65528
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 965000 ns : Write @ 88 = 65502
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 975000 ns : Write @ 90 = 4294967289
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 985000 ns : Write @ 92 = 4294901812
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 995000 ns : Write @ 94 = 131025
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_top(fast)
 # Loading work.top(fast)
 # Loading work.arm(fast)
@@ -89,43 +217,360 @@ restart
 # Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
 # Loading work.dmem(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
-run
-# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 4 of file "dist_mem_gen_0.mif". Expected 128, found 3.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
 add wave -position insertpoint  \
-sim:/tb_top/dut/cpu/dp/rf/rf
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
-# Loading work.tb_top(fast)
-# Loading work.top(fast)
-# Loading work.arm(fast)
-# Loading work.controller(fast)
-# Loading work.decoder(fast)
-# Loading work.condlogic(fast)
-# Loading work.flopenr(fast)
-# Loading work.condcheck(fast)
-# Loading work.datapath(fast)
-# Loading work.mux2(fast)
-# Loading work.flopr(fast)
-# Loading work.adder(fast)
-# Loading work.mux3(fast)
-# Loading work.mux2(fast__1)
-# Loading work.regfile(fast)
-# Loading work.extend(fast)
-# Loading work.shifter(fast)
-# Loading work.alu(fast)
-# Loading work.imem(fast)
-# Loading work.dist_mem_gen_0(fast)
-# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
-# Loading work.dmem(fast)
-# Loading work.glbl(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (7) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_MUL.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
+sim:/tb_top/dut/dm/RAM
 run
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 4 of file "dist_mem_gen_0.mif". Expected 128, found 3.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 256, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
+# 205000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 215000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 225000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 235000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 245000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 255000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 265000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 275000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 445000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 455000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 465000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 475000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 485000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 495000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 505000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 515000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 685000 ns : Write @ 64 = 131027
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 695000 ns : Write @ 66 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 705000 ns : Write @ 68 = 1
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 715000 ns : Write @ 70 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 725000 ns : Write @ 72 = 65554
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 735000 ns : Write @ 74 = 131013
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 745000 ns : Write @ 76 = 65514
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 755000 ns : Write @ 78 = 4294967243
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 925000 ns : Write @ 80 = 65524
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 935000 ns : Write @ 82 = 4294901822
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 945000 ns : Write @ 84 = 4294901826
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 955000 ns : Write @ 86 = 65528
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 965000 ns : Write @ 88 = 65502
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 975000 ns : Write @ 90 = 4294967289
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 985000 ns : Write @ 92 = 4294901812
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 995000 ns : Write @ 94 = 131025
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1135000 ns : Write @ 96 = 65509
+# 1145000 ns : Write @ 98 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1155000 ns : Write @ 104 = 65473
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1165000 ns : Write @ 106 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1295000 ns : Write @ 100 = 53
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1305000 ns : Write @ 102 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1315000 ns : Write @ 108 = 4294967245
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1325000 ns : Write @ 110 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1455000 ns : Write @ 112 = 131026
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1465000 ns : Write @ 114 = 62
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1475000 ns : Write @ 120 = 22
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1485000 ns : Write @ 122 = 62
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1615000 ns : Write @ 116 = 4294901844
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1625000 ns : Write @ 118 = 65528
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1635000 ns : Write @ 124 = 65576
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 1645000 ns : Write @ 126 = 65528
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+run
+# 2765000 ns : Write @ 32 = 131050
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2775000 ns : Write @ 34 = 4294967292
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2785000 ns : Write @ 36 = 65513
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2795000 ns : Write @ 38 = 65501
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2805000 ns : Write @ 40 = 65534
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2815000 ns : Write @ 42 = 65480
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2825000 ns : Write @ 44 = 20
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 2835000 ns : Write @ 46 = 4294967276
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3005000 ns : Write @ 48 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3015000 ns : Write @ 50 = 27
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3025000 ns : Write @ 52 = 131033
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3035000 ns : Write @ 58 = 65509
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3045000 ns : Write @ 62 = 4294967293
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3055000 ns : Write @ 54 = 3
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3065000 ns : Write @ 56 = 65545
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3075000 ns : Write @ 60 = 131029
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3245000 ns : Write @ 64 = 131027
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3255000 ns : Write @ 66 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3265000 ns : Write @ 68 = 1
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3275000 ns : Write @ 70 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3285000 ns : Write @ 72 = 65554
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3295000 ns : Write @ 74 = 131013
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3305000 ns : Write @ 76 = 65514
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3315000 ns : Write @ 78 = 4294967243
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3485000 ns : Write @ 80 = 65524
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3495000 ns : Write @ 82 = 4294901822
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3505000 ns : Write @ 84 = 4294901826
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3515000 ns : Write @ 86 = 65528
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3525000 ns : Write @ 88 = 65502
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3535000 ns : Write @ 90 = 4294967289
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3545000 ns : Write @ 92 = 4294901812
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3555000 ns : Write @ 94 = 131025
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3695000 ns : Write @ 96 = 65509
+# 3705000 ns : Write @ 98 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3715000 ns : Write @ 104 = 65473
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3725000 ns : Write @ 106 = 65535
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3855000 ns : Write @ 100 = 53
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3865000 ns : Write @ 102 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3875000 ns : Write @ 108 = 4294967245
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# 3885000 ns : Write @ 110 = 65529
+# 
+# !!!!!!!!!!!!!!!!!!!! TEST FAILED !!!!!!!!!!!!!!!!!!!!
+# 
+# End time: 10:41:35 on Jun 16,2025, Elapsed time: 35:05:29
+# Errors: 0, Warnings: 2

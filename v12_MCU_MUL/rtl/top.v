@@ -29,6 +29,13 @@ module top (
   output        MemWrite    // 数据存储器写使能
 );
 
+  // clk_wiz_0 u_clk (
+  //   // Clock out ports
+  //   .clk_out1(clk),  // output clk_out1
+  //   // Clock in ports
+  //   .clk_in1 (clk_in)
+  // );  // input clk_in1
+
   // --------------------------------------------------------------------
   // 内部连线：CPU <-> 存储器
   // --------------------------------------------------------------------

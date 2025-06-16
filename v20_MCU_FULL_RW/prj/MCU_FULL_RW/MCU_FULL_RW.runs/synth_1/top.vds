@@ -1,0 +1,1209 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Jun 16 22:17:17 2025
+# Process ID: 4876
+# Current directory: Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/top.vds
+# Journal file: Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a35tcpg236-1 -fanout_limit 400 -directive PerformanceOptimized -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5 -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 19412 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 993.488 ; gain = 242.980
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'arm' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/arm.v:22]
+INFO: [Synth 8-6157] synthesizing module 'controller' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/controller.v:29]
+INFO: [Synth 8-6157] synthesizing module 'decoder' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:36]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:74]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:83]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:143]
+INFO: [Synth 8-6155] done synthesizing module 'decoder' (2#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/decoder.v:36]
+INFO: [Synth 8-6157] synthesizing module 'condlogic' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/condlogic.v:31]
+INFO: [Synth 8-6157] synthesizing module 'flopenr' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/flopenr.v:21]
+	Parameter WIDTH bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopenr' (3#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/flopenr.v:21]
+INFO: [Synth 8-6157] synthesizing module 'condcheck' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/condlogic.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'condcheck' (4#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/condlogic.v:109]
+INFO: [Synth 8-6155] done synthesizing module 'condlogic' (5#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/condlogic.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'controller' (6#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/controller.v:29]
+INFO: [Synth 8-6157] synthesizing module 'datapath' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/datapath.v:17]
+INFO: [Synth 8-6157] synthesizing module 'mux2' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux2.v:18]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2' (7#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux2.v:18]
+INFO: [Synth 8-6157] synthesizing module 'flopr' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/flopr.v:18]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'flopr' (8#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/flopr.v:18]
+INFO: [Synth 8-6157] synthesizing module 'adder' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/adder.v:19]
+	Parameter WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'adder' (9#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/adder.v:19]
+INFO: [Synth 8-6157] synthesizing module 'mux3' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux3.v:1]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux3' (10#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux3.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mux2__parameterized0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux2.v:18]
+	Parameter WIDTH bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2__parameterized0' (10#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/mux2.v:18]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/regfile.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (11#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/regfile.v:16]
+INFO: [Synth 8-6157] synthesizing module 'extend' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/extend.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'extend' (12#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/extend.v:13]
+INFO: [Synth 8-6157] synthesizing module 'shifter' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/shifter.v:8]
+INFO: [Synth 8-226] default block is never used [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/shifter.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'shifter' (13#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/shifter.v:8]
+INFO: [Synth 8-6157] synthesizing module 'alu' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/alu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mult_gen_0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mult_gen_0' (14#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/mult_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (15#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/alu.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'datapath' (16#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/datapath.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'arm' (17#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/arm.v:22]
+INFO: [Synth 8-6157] synthesizing module 'imem' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/imem.v:16]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (18#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (30) of port connection 'a' does not match port width (8) of module 'dist_mem_gen_0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/imem.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'imem' (19#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/imem.v:16]
+INFO: [Synth 8-6157] synthesizing module 'dmem' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/dmem.v:11]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_1' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_1' (20#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/dist_mem_gen_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dmem' (21#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/dmem.v:11]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:116]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ila_0' (22#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/.Xil/Vivado-4876-FB47/realtime/ila_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_ila'. This will prevent further optimization [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'top' (23#1) [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[16]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port a[0]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[31]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[30]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[29]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[28]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[27]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[26]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[25]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[24]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[23]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[22]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[21]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[20]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[19]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[18]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[17]
+WARNING: [Synth 8-3331] design dmem has unconnected port wd[16]
+WARNING: [Synth 8-3331] design imem has unconnected port clka
+WARNING: [Synth 8-3331] design imem has unconnected port a[31]
+WARNING: [Synth 8-3331] design imem has unconnected port a[30]
+WARNING: [Synth 8-3331] design imem has unconnected port a[29]
+WARNING: [Synth 8-3331] design imem has unconnected port a[28]
+WARNING: [Synth 8-3331] design imem has unconnected port a[27]
+WARNING: [Synth 8-3331] design imem has unconnected port a[26]
+WARNING: [Synth 8-3331] design imem has unconnected port a[25]
+WARNING: [Synth 8-3331] design imem has unconnected port a[24]
+WARNING: [Synth 8-3331] design imem has unconnected port a[23]
+WARNING: [Synth 8-3331] design imem has unconnected port a[22]
+WARNING: [Synth 8-3331] design imem has unconnected port a[21]
+WARNING: [Synth 8-3331] design imem has unconnected port a[20]
+WARNING: [Synth 8-3331] design imem has unconnected port a[19]
+WARNING: [Synth 8-3331] design imem has unconnected port a[18]
+WARNING: [Synth 8-3331] design imem has unconnected port a[17]
+WARNING: [Synth 8-3331] design imem has unconnected port a[16]
+WARNING: [Synth 8-3331] design imem has unconnected port a[15]
+WARNING: [Synth 8-3331] design imem has unconnected port a[14]
+WARNING: [Synth 8-3331] design imem has unconnected port a[13]
+WARNING: [Synth 8-3331] design imem has unconnected port a[12]
+WARNING: [Synth 8-3331] design imem has unconnected port a[11]
+WARNING: [Synth 8-3331] design imem has unconnected port a[10]
+WARNING: [Synth 8-3331] design imem has unconnected port a[1]
+WARNING: [Synth 8-3331] design imem has unconnected port a[0]
+WARNING: [Synth 8-3331] design alu has unconnected port clk
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[24]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[19]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[18]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[17]
+WARNING: [Synth 8-3331] design controller has unconnected port Instr[16]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1069.855 ; gain = 319.348
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1069.855 ; gain = 319.348
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1069.855 ; gain = 319.348
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 1069.855 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'im/ROM_1'
+Finished Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'im/ROM_1'
+Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'dm/ROM_1'
+Finished Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1/dist_mem_gen_1_in_context.xdc] for cell 'dm/ROM_1'
+Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'cpu/dp/alu_u/mul'
+Finished Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'cpu/dp/alu_u/mul'
+Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
+Finished Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/ila_0/ila_0/ila_0_in_context.xdc] for cell 'u_ila'
+Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk'
+Finished Parsing XDC File [y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clk'
+Parsing XDC File [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/xdc/Basys3_Master.xdc]
+Finished Parsing XDC File [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/xdc/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/xdc/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1177.074 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1177.074 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk_in. (constraint file  y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk_in. (constraint file  y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property DONT_TOUCH = true for im/ROM_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for dm/ROM_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for cpu/dp/alu_u/mul. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_ila. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_clk. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:16 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:17 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	               20 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 4     
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     13 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     11 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+Module flopenr 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
+Module mux2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module flopr 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+Module mux2__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module dmem 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+	              512 Bit         RAMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design alu has unconnected port clk
+WARNING: [Synth 8-3331] design extend has unconnected port ImmSrc[2]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[31]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[30]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[29]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[28]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[27]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[26]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[25]
+WARNING: [Synth 8-3331] design datapath has unconnected port Instr[24]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:40 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|top         | cpu/dp/rf/rf_reg  | Implied   | 16 x 32              | RAM32M x 12	   | 
+|top         | dm/verify_RAM_reg | Implied   | 16 x 16              | RAM16X1S x 32	 | 
+|top         | dm/RAM_reg        | Implied   | 32 x 16              | RAM16X1S x 32	 | 
++------------+-------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:51 . Memory (MB): peak = 1177.074 ; gain = 426.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+      : i_0/I16[0]
+      : verify_RAM_inferred__0/out[0]
+      : verify_RAM_inferred__0/in0[0]
+      : verify_RAM_inferred/out[0]
+      : verify_RAM_inferred/in0[0]
+      : i_0/verify_RAM[0]
+      : i_0/I16[1]
+      : verify_RAM_inferred__0/out[1]
+      : verify_RAM_inferred__0/in0[1]
+      : verify_RAM_inferred/out[1]
+      : verify_RAM_inferred/in0[1]
+      : i_0/verify_RAM[1]
+      : i_0/I16[2]
+      : verify_RAM_inferred__0/out[2]
+      : verify_RAM_inferred__0/in0[2]
+      : verify_RAM_inferred/out[2]
+      : verify_RAM_inferred/in0[2]
+      : i_0/verify_RAM[2]
+      : i_0/I16[3]
+      : verify_RAM_inferred__0/out[3]
+      : verify_RAM_inferred__0/in0[3]
+      : verify_RAM_inferred/out[3]
+      : verify_RAM_inferred/in0[3]
+      : i_0/verify_RAM[3]
+      : i_0/I16[4]
+      : verify_RAM_inferred__0/out[4]
+      : verify_RAM_inferred__0/in0[4]
+      : verify_RAM_inferred/out[4]
+      : verify_RAM_inferred/in0[4]
+      : i_0/verify_RAM[4]
+      : i_0/I16[5]
+      : verify_RAM_inferred__0/out[5]
+      : verify_RAM_inferred__0/in0[5]
+      : verify_RAM_inferred/out[5]
+      : verify_RAM_inferred/in0[5]
+      : i_0/verify_RAM[5]
+      : i_0/I16[6]
+      : verify_RAM_inferred__0/out[6]
+      : verify_RAM_inferred__0/in0[6]
+      : verify_RAM_inferred/out[6]
+      : verify_RAM_inferred/in0[6]
+      : i_0/verify_RAM[6]
+      : i_0/I16[7]
+      : verify_RAM_inferred__0/out[7]
+      : verify_RAM_inferred__0/in0[7]
+      : verify_RAM_inferred/out[7]
+      : verify_RAM_inferred/in0[7]
+      : i_0/verify_RAM[7]
+      : i_0/I16[8]
+      : verify_RAM_inferred__0/out[8]
+      : verify_RAM_inferred__0/in0[8]
+      : verify_RAM_inferred/out[8]
+      : verify_RAM_inferred/in0[8]
+      : i_0/verify_RAM[8]
+      : i_0/I16[9]
+      : verify_RAM_inferred__0/out[9]
+      : verify_RAM_inferred__0/in0[9]
+      : verify_RAM_inferred/out[9]
+      : verify_RAM_inferred/in0[9]
+      : i_0/verify_RAM[9]
+      : i_0/I16[10]
+      : verify_RAM_inferred__0/out[10]
+      : verify_RAM_inferred__0/in0[10]
+      : verify_RAM_inferred/out[10]
+      : verify_RAM_inferred/in0[10]
+      : i_0/verify_RAM[10]
+      : i_0/I16[11]
+      : verify_RAM_inferred__0/out[11]
+      : verify_RAM_inferred__0/in0[11]
+      : verify_RAM_inferred/out[11]
+      : verify_RAM_inferred/in0[11]
+      : i_0/verify_RAM[11]
+      : i_0/I16[12]
+      : verify_RAM_inferred__0/out[12]
+      : verify_RAM_inferred__0/in0[12]
+      : verify_RAM_inferred/out[12]
+      : verify_RAM_inferred/in0[12]
+      : i_0/verify_RAM[12]
+      : i_0/I16[13]
+      : verify_RAM_inferred__0/out[13]
+      : verify_RAM_inferred__0/in0[13]
+      : verify_RAM_inferred/out[13]
+      : verify_RAM_inferred/in0[13]
+      : i_0/verify_RAM[13]
+      : i_0/I16[14]
+      : verify_RAM_inferred__0/out[14]
+      : verify_RAM_inferred__0/in0[14]
+      : verify_RAM_inferred/out[14]
+      : verify_RAM_inferred/in0[14]
+      : i_0/verify_RAM[14]
+      : i_0/I16[15]
+      : verify_RAM_inferred__0/out[15]
+      : verify_RAM_inferred__0/in0[15]
+      : verify_RAM_inferred/out[15]
+      : verify_RAM_inferred/in0[15]
+      : i_0/verify_RAM[15]
+      : i_0/out[0]
+      : test_vector_in_inferred__0/out[0]
+      : test_vector_in_inferred__0/in0[0]
+      : test_vector_in_inferred/out[0]
+      : test_vector_in_inferred/in0[0]
+      : i_0/test_vector_in[0]
+      : i_0/out[1]
+      : test_vector_in_inferred__0/out[1]
+      : test_vector_in_inferred__0/in0[1]
+      : test_vector_in_inferred/out[1]
+      : test_vector_in_inferred/in0[1]
+      : i_0/test_vector_in[1]
+      : i_0/out[2]
+      : test_vector_in_inferred__0/out[2]
+      : test_vector_in_inferred__0/in0[2]
+      : test_vector_in_inferred/out[2]
+      : test_vector_in_inferred/in0[2]
+      : i_0/test_vector_in[2]
+      : i_0/out[3]
+      : test_vector_in_inferred__0/out[3]
+      : test_vector_in_inferred__0/in0[3]
+      : test_vector_in_inferred/out[3]
+      : test_vector_in_inferred/in0[3]
+      : i_0/test_vector_in[3]
+      : i_0/out[4]
+      : test_vector_in_inferred__0/out[4]
+      : test_vector_in_inferred__0/in0[4]
+      : test_vector_in_inferred/out[4]
+      : test_vector_in_inferred/in0[4]
+      : i_0/test_vector_in[4]
+      : i_0/out[5]
+      : test_vector_in_inferred__0/out[5]
+      : test_vector_in_inferred__0/in0[5]
+      : test_vector_in_inferred/out[5]
+      : test_vector_in_inferred/in0[5]
+      : i_0/test_vector_in[5]
+      : i_0/out[6]
+      : test_vector_in_inferred__0/out[6]
+      : test_vector_in_inferred__0/in0[6]
+      : test_vector_in_inferred/out[6]
+      : test_vector_in_inferred/in0[6]
+      : i_0/test_vector_in[6]
+      : i_0/out[7]
+      : test_vector_in_inferred__0/out[7]
+      : test_vector_in_inferred__0/in0[7]
+      : test_vector_in_inferred/out[7]
+      : test_vector_in_inferred/in0[7]
+      : i_0/test_vector_in[7]
+      : i_0/out[8]
+      : test_vector_in_inferred__0/out[8]
+      : test_vector_in_inferred__0/in0[8]
+      : test_vector_in_inferred/out[8]
+      : test_vector_in_inferred/in0[8]
+      : i_0/test_vector_in[8]
+      : i_0/out[9]
+      : test_vector_in_inferred__0/out[9]
+      : test_vector_in_inferred__0/in0[9]
+      : test_vector_in_inferred/out[9]
+      : test_vector_in_inferred/in0[9]
+      : i_0/test_vector_in[9]
+      : i_0/out[10]
+      : test_vector_in_inferred__0/out[10]
+      : test_vector_in_inferred__0/in0[10]
+      : test_vector_in_inferred/out[10]
+      : test_vector_in_inferred/in0[10]
+      : i_0/test_vector_in[10]
+      : i_0/out[11]
+      : test_vector_in_inferred__0/out[11]
+      : test_vector_in_inferred__0/in0[11]
+      : test_vector_in_inferred/out[11]
+      : test_vector_in_inferred/in0[11]
+      : i_0/test_vector_in[11]
+      : i_0/out[12]
+      : test_vector_in_inferred__0/out[12]
+      : test_vector_in_inferred__0/in0[12]
+      : test_vector_in_inferred/out[12]
+      : test_vector_in_inferred/in0[12]
+      : i_0/test_vector_in[12]
+      : i_0/out[13]
+      : test_vector_in_inferred__0/out[13]
+      : test_vector_in_inferred__0/in0[13]
+      : test_vector_in_inferred/out[13]
+      : test_vector_in_inferred/in0[13]
+      : i_0/test_vector_in[13]
+      : i_0/out[14]
+      : test_vector_in_inferred__0/out[14]
+      : test_vector_in_inferred__0/in0[14]
+      : test_vector_in_inferred/out[14]
+      : test_vector_in_inferred/in0[14]
+      : i_0/test_vector_in[14]
+      : i_0/out[15]
+      : test_vector_in_inferred__0/out[15]
+      : test_vector_in_inferred__0/in0[15]
+      : test_vector_in_inferred/out[15]
+      : test_vector_in_inferred/in0[15]
+      : i_0/test_vector_in[15]
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:19 . Memory (MB): peak = 1334.215 ; gain = 583.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object        | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------+-----------+----------------------+----------------+
+|top         | cpu/dp/rf/rf_reg  | Implied   | 16 x 32              | RAM32M x 12	   | 
+|top         | dm/verify_RAM_reg | Implied   | 16 x 16              | RAM16X1S x 32	 | 
+|top         | dm/RAM_reg        | Implied   | 32 x 16              | RAM16X1S x 32	 | 
++------------+-------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+Found timing loop:
+     0: i_928/O (LUT2)
+      [(null):0]
+     1: i_928/I1 (LUT2)
+     2: i_312/O (LUT2)
+      [(null):0]
+     3: i_312/I0 (LUT2)
+      : test_vector_in_inferred__0/out[0]
+      : test_vector_in_inferred__0/in0[0]
+      : test_vector_in_inferred/out[0]
+      : test_vector_in_inferred/in0[0]
+     4: i_928/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_928"
+Found timing loop:
+     0: i_927/O (LUT2)
+      [(null):0]
+     1: i_927/I1 (LUT2)
+     2: i_313/O (LUT2)
+      [(null):0]
+     3: i_313/I0 (LUT2)
+      : test_vector_in_inferred__0/out[1]
+      : test_vector_in_inferred__0/in0[1]
+      : test_vector_in_inferred/out[1]
+      : test_vector_in_inferred/in0[1]
+     4: i_927/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_927"
+Found timing loop:
+     0: i_926/O (LUT2)
+      [(null):0]
+     1: i_926/I1 (LUT2)
+     2: i_314/O (LUT2)
+      [(null):0]
+     3: i_314/I0 (LUT2)
+      : test_vector_in_inferred__0/out[2]
+      : test_vector_in_inferred__0/in0[2]
+      : test_vector_in_inferred/out[2]
+      : test_vector_in_inferred/in0[2]
+     4: i_926/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_926"
+Found timing loop:
+     0: i_925/O (LUT2)
+      [(null):0]
+     1: i_925/I1 (LUT2)
+     2: i_315/O (LUT2)
+      [(null):0]
+     3: i_315/I0 (LUT2)
+      : test_vector_in_inferred__0/out[3]
+      : test_vector_in_inferred__0/in0[3]
+      : test_vector_in_inferred/out[3]
+      : test_vector_in_inferred/in0[3]
+     4: i_925/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_925"
+Found timing loop:
+     0: i_924/O (LUT2)
+      [(null):0]
+     1: i_924/I1 (LUT2)
+     2: i_316/O (LUT2)
+      [(null):0]
+     3: i_316/I0 (LUT2)
+      : test_vector_in_inferred__0/out[4]
+      : test_vector_in_inferred__0/in0[4]
+      : test_vector_in_inferred/out[4]
+      : test_vector_in_inferred/in0[4]
+     4: i_924/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_924"
+Found timing loop:
+     0: i_923/O (LUT2)
+      [(null):0]
+     1: i_923/I1 (LUT2)
+     2: i_317/O (LUT2)
+      [(null):0]
+     3: i_317/I0 (LUT2)
+      : test_vector_in_inferred__0/out[5]
+      : test_vector_in_inferred__0/in0[5]
+      : test_vector_in_inferred/out[5]
+      : test_vector_in_inferred/in0[5]
+     4: i_923/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_923"
+Found timing loop:
+     0: i_922/O (LUT2)
+      [(null):0]
+     1: i_922/I1 (LUT2)
+     2: i_318/O (LUT2)
+      [(null):0]
+     3: i_318/I0 (LUT2)
+      : test_vector_in_inferred__0/out[6]
+      : test_vector_in_inferred__0/in0[6]
+      : test_vector_in_inferred/out[6]
+      : test_vector_in_inferred/in0[6]
+     4: i_922/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_922"
+Found timing loop:
+     0: i_921/O (LUT2)
+      [(null):0]
+     1: i_921/I1 (LUT2)
+     2: i_319/O (LUT2)
+      [(null):0]
+     3: i_319/I0 (LUT2)
+      : test_vector_in_inferred__0/out[7]
+      : test_vector_in_inferred__0/in0[7]
+      : test_vector_in_inferred/out[7]
+      : test_vector_in_inferred/in0[7]
+     4: i_921/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_921"
+Found timing loop:
+     0: i_920/O (LUT2)
+      [(null):0]
+     1: i_920/I1 (LUT2)
+     2: i_320/O (LUT2)
+      [(null):0]
+     3: i_320/I0 (LUT2)
+      : test_vector_in_inferred__0/out[8]
+      : test_vector_in_inferred__0/in0[8]
+      : test_vector_in_inferred/out[8]
+      : test_vector_in_inferred/in0[8]
+     4: i_920/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_920"
+Found timing loop:
+     0: i_919/O (LUT2)
+      [(null):0]
+     1: i_919/I1 (LUT2)
+     2: i_321/O (LUT2)
+      [(null):0]
+     3: i_321/I0 (LUT2)
+      : test_vector_in_inferred__0/out[9]
+      : test_vector_in_inferred__0/in0[9]
+      : test_vector_in_inferred/out[9]
+      : test_vector_in_inferred/in0[9]
+     4: i_919/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_919"
+Found timing loop:
+     0: i_918/O (LUT2)
+      [(null):0]
+     1: i_918/I1 (LUT2)
+     2: i_322/O (LUT2)
+      [(null):0]
+     3: i_322/I0 (LUT2)
+      : test_vector_in_inferred__0/out[10]
+      : test_vector_in_inferred__0/in0[10]
+      : test_vector_in_inferred/out[10]
+      : test_vector_in_inferred/in0[10]
+     4: i_918/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_918"
+Found timing loop:
+     0: i_917/O (LUT2)
+      [(null):0]
+     1: i_917/I1 (LUT2)
+     2: i_323/O (LUT2)
+      [(null):0]
+     3: i_323/I0 (LUT2)
+      : test_vector_in_inferred__0/out[11]
+      : test_vector_in_inferred__0/in0[11]
+      : test_vector_in_inferred/out[11]
+      : test_vector_in_inferred/in0[11]
+     4: i_917/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_917"
+Found timing loop:
+     0: i_916/O (LUT2)
+      [(null):0]
+     1: i_916/I1 (LUT2)
+     2: i_324/O (LUT2)
+      [(null):0]
+     3: i_324/I0 (LUT2)
+      : test_vector_in_inferred__0/out[12]
+      : test_vector_in_inferred__0/in0[12]
+      : test_vector_in_inferred/out[12]
+      : test_vector_in_inferred/in0[12]
+     4: i_916/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_916"
+Found timing loop:
+     0: i_915/O (LUT2)
+      [(null):0]
+     1: i_915/I1 (LUT2)
+     2: i_325/O (LUT2)
+      [(null):0]
+     3: i_325/I0 (LUT2)
+      : test_vector_in_inferred__0/out[13]
+      : test_vector_in_inferred__0/in0[13]
+      : test_vector_in_inferred/out[13]
+      : test_vector_in_inferred/in0[13]
+     4: i_915/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_915"
+Found timing loop:
+     0: i_914/O (LUT2)
+      [(null):0]
+     1: i_914/I1 (LUT2)
+     2: i_326/O (LUT2)
+      [(null):0]
+     3: i_326/I0 (LUT2)
+      : test_vector_in_inferred__0/out[14]
+      : test_vector_in_inferred__0/in0[14]
+      : test_vector_in_inferred/out[14]
+      : test_vector_in_inferred/in0[14]
+     4: i_914/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_914"
+Found timing loop:
+     0: i_913/O (LUT2)
+      [(null):0]
+     1: i_913/I1 (LUT2)
+     2: i_327/O (LUT2)
+      [(null):0]
+     3: i_327/I0 (LUT2)
+      : test_vector_in_inferred__0/out[15]
+      : test_vector_in_inferred__0/in0[15]
+      : test_vector_in_inferred/out[15]
+      : test_vector_in_inferred/in0[15]
+     4: i_913/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_913"
+Found timing loop:
+     0: i_944/O (LUT2)
+      [(null):0]
+     1: i_944/I1 (LUT2)
+     2: i_329/O (LUT2)
+      [(null):0]
+     3: i_329/I0 (LUT2)
+      : verify_RAM_inferred__0/out[0]
+      : verify_RAM_inferred__0/in0[0]
+      : verify_RAM_inferred/out[0]
+      : verify_RAM_inferred/in0[0]
+     4: i_944/O (LUT2)
+      [(null):0]
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_944"
+Found timing loop:
+     0: i_929/O (LUT2)
+      [(null):0]
+     1: i_929/I1 (LUT2)
+      : verify_RAM_inferred__0/out[15]
+      : verify_RAM_inferred__0/in0[15]
+      : verify_RAM_inferred/out[15]
+      : verify_RAM_inferred/in0[15]
+     2: i_929/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_929"
+Found timing loop:
+     0: i_930/O (LUT2)
+      [(null):0]
+     1: i_930/I1 (LUT2)
+      : verify_RAM_inferred__0/out[14]
+      : verify_RAM_inferred__0/in0[14]
+      : verify_RAM_inferred/out[14]
+      : verify_RAM_inferred/in0[14]
+     2: i_930/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_930"
+Found timing loop:
+     0: i_931/O (LUT2)
+      [(null):0]
+     1: i_931/I1 (LUT2)
+      : verify_RAM_inferred__0/out[13]
+      : verify_RAM_inferred__0/in0[13]
+      : verify_RAM_inferred/out[13]
+      : verify_RAM_inferred/in0[13]
+     2: i_931/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_931"
+Found timing loop:
+     0: i_932/O (LUT2)
+      [(null):0]
+     1: i_932/I1 (LUT2)
+      : verify_RAM_inferred__0/out[12]
+      : verify_RAM_inferred__0/in0[12]
+      : verify_RAM_inferred/out[12]
+      : verify_RAM_inferred/in0[12]
+     2: i_932/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_932"
+Found timing loop:
+     0: i_933/O (LUT2)
+      [(null):0]
+     1: i_933/I1 (LUT2)
+      : verify_RAM_inferred__0/out[11]
+      : verify_RAM_inferred__0/in0[11]
+      : verify_RAM_inferred/out[11]
+      : verify_RAM_inferred/in0[11]
+     2: i_933/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_933"
+Found timing loop:
+     0: i_934/O (LUT2)
+      [(null):0]
+     1: i_934/I1 (LUT2)
+      : verify_RAM_inferred__0/out[10]
+      : verify_RAM_inferred__0/in0[10]
+      : verify_RAM_inferred/out[10]
+      : verify_RAM_inferred/in0[10]
+     2: i_934/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_934"
+Found timing loop:
+     0: i_935/O (LUT2)
+      [(null):0]
+     1: i_935/I1 (LUT2)
+      : verify_RAM_inferred__0/out[9]
+      : verify_RAM_inferred__0/in0[9]
+      : verify_RAM_inferred/out[9]
+      : verify_RAM_inferred/in0[9]
+     2: i_935/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_935"
+Found timing loop:
+     0: i_936/O (LUT2)
+      [(null):0]
+     1: i_936/I1 (LUT2)
+      : verify_RAM_inferred__0/out[8]
+      : verify_RAM_inferred__0/in0[8]
+      : verify_RAM_inferred/out[8]
+      : verify_RAM_inferred/in0[8]
+     2: i_936/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_936"
+Found timing loop:
+     0: i_937/O (LUT2)
+      [(null):0]
+     1: i_937/I1 (LUT2)
+      : verify_RAM_inferred__0/out[7]
+      : verify_RAM_inferred__0/in0[7]
+      : verify_RAM_inferred/out[7]
+      : verify_RAM_inferred/in0[7]
+     2: i_937/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_937"
+Found timing loop:
+     0: i_938/O (LUT2)
+      [(null):0]
+     1: i_938/I1 (LUT2)
+      : verify_RAM_inferred__0/out[6]
+      : verify_RAM_inferred__0/in0[6]
+      : verify_RAM_inferred/out[6]
+      : verify_RAM_inferred/in0[6]
+     2: i_938/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_938"
+Found timing loop:
+     0: i_939/O (LUT2)
+      [(null):0]
+     1: i_939/I1 (LUT2)
+      : verify_RAM_inferred__0/out[5]
+      : verify_RAM_inferred__0/in0[5]
+      : verify_RAM_inferred/out[5]
+      : verify_RAM_inferred/in0[5]
+     2: i_939/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_939"
+Found timing loop:
+     0: i_940/O (LUT2)
+      [(null):0]
+     1: i_940/I1 (LUT2)
+      : verify_RAM_inferred__0/out[4]
+      : verify_RAM_inferred__0/in0[4]
+      : verify_RAM_inferred/out[4]
+      : verify_RAM_inferred/in0[4]
+     2: i_940/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_940"
+Found timing loop:
+     0: i_941/O (LUT2)
+      [(null):0]
+     1: i_941/I1 (LUT2)
+      : verify_RAM_inferred__0/out[3]
+      : verify_RAM_inferred__0/in0[3]
+      : verify_RAM_inferred/out[3]
+      : verify_RAM_inferred/in0[3]
+     2: i_941/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_941"
+Found timing loop:
+     0: i_942/O (LUT2)
+      [(null):0]
+     1: i_942/I1 (LUT2)
+      : verify_RAM_inferred__0/out[2]
+      : verify_RAM_inferred__0/in0[2]
+      : verify_RAM_inferred/out[2]
+      : verify_RAM_inferred/in0[2]
+     2: i_942/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_942"
+Found timing loop:
+     0: i_943/O (LUT2)
+      [(null):0]
+     1: i_943/I1 (LUT2)
+      : verify_RAM_inferred__0/out[1]
+      : verify_RAM_inferred__0/in0[1]
+      : verify_RAM_inferred/out[1]
+      : verify_RAM_inferred/in0[1]
+     2: i_943/O (LUT2)
+CRITICAL WARNING: [Synth 8-295] found timing loop. [Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/rtl/top.v:22]
+Inferred a: "set_disable_timing -from I1 -to O i_943"
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:12 ; elapsed = 00:01:20 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:16 ; elapsed = 00:01:23 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |clk_wiz_0      |         1|
+|2     |ila_0          |         1|
+|3     |mult_gen_0     |         1|
+|4     |dist_mem_gen_1 |         1|
+|5     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |clk_wiz_0      |     1|
+|2     |dist_mem_gen_0 |     1|
+|3     |dist_mem_gen_1 |     1|
+|4     |ila_0          |     1|
+|5     |mult_gen_0     |     1|
+|6     |CARRY4         |    25|
+|7     |LUT1           |    23|
+|8     |LUT2           |    34|
+|9     |LUT3           |   150|
+|10    |LUT4           |    92|
+|11    |LUT5           |   198|
+|12    |LUT6           |   574|
+|13    |RAM16X1S       |    64|
+|14    |RAM32M         |    12|
+|15    |FDCE           |    36|
+|16    |FDRE           |     8|
+|17    |IBUF           |     1|
++------+---------------+------+
+
+Report Instance Areas: 
++------+-----------------+-----------+------+
+|      |Instance         |Module     |Cells |
++------+-----------------+-----------+------+
+|1     |top              |           |  1298|
+|2     |  cpu            |arm        |   208|
+|3     |    c            |controller |    11|
+|4     |      cl         |condlogic  |    11|
+|5     |        flagreg0 |flopenr    |     5|
+|6     |        flagreg1 |flopenr_0  |     6|
+|7     |    dp           |datapath   |   197|
+|8     |      alu_u      |alu        |    48|
+|9     |      pcreg      |flopr      |    43|
+|10    |      rf         |regfile    |   106|
+|11    |  dm             |dmem       |    96|
+|12    |  im             |imem       |   959|
++------+-----------------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 32 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:08 ; elapsed = 00:01:21 . Memory (MB): peak = 1335.277 ; gain = 477.551
+Synthesis Optimization Complete : Time (s): cpu = 00:01:16 ; elapsed = 00:01:24 . Memory (MB): peak = 1335.277 ; gain = 584.770
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1335.277 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 101 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.277 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 76 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+63 Infos, 94 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:21 ; elapsed = 00:01:31 . Memory (MB): peak = 1335.277 ; gain = 860.621
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1335.277 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Jun 16 22:18:58 2025...
