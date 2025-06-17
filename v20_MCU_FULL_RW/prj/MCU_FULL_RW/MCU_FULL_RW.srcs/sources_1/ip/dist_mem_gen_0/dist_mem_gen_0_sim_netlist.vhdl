@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Jun 16 21:25:24 2025
+-- Date        : Tue Jun 17 02:11:08 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl
+--               Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_sim_netlist.vhdl
 -- Design      : dist_mem_gen_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -270,7 +270,7 @@ begin
     );
 \spo[13]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"699EB61E41E16100"
+      INIT => X"619EBE1E41E16100"
     )
         port map (
       I0 => a(5),
@@ -321,7 +321,7 @@ begin
     );
 \spo[14]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"A07920180806E75E"
+      INIT => X"A07920180006E77E"
     )
         port map (
       I0 => a(5),
@@ -372,7 +372,7 @@ begin
     );
 \spo[15]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"1ED74996008086A0"
+      INIT => X"1EDF419E00808680"
     )
         port map (
       I0 => a(5),
@@ -600,7 +600,7 @@ begin
     );
 \spo[1]_INST_0_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"4455101154574544"
+      INIT => X"4445101154574544"
     )
         port map (
       I0 => a(5),
@@ -613,7 +613,7 @@ begin
     );
 \spo[1]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"61FFEFBEA61E06C6"
+      INIT => X"61FFE7BEA61E06E6"
     )
         port map (
       I0 => a(5),
@@ -1000,7 +1000,7 @@ begin
     );
 \spo[2]_INST_0_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"5150001010100303"
+      INIT => X"5150101010100303"
     )
         port map (
       I0 => a(5),
@@ -1013,7 +1013,7 @@ begin
     );
 \spo[2]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"B65F08A60806F7F8"
+      INIT => X"BE5F00A60006FFF8"
     )
         port map (
       I0 => a(5),
@@ -1064,7 +1064,7 @@ begin
     );
 \spo[3]_INST_0_i_3\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"9E809E80D7C1CF78"
+      INIT => X"9E809E80DFC1C778"
     )
         port map (
       I0 => a(5),

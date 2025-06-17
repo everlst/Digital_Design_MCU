@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1750083482">
   <File Type="PA-TCL" Name="top.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="top_reports.tcl"/>
   <File Type="RDS-RDS" Name="top.vds"/>
   <File Type="RDS-UTIL" Name="top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="top.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="top_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../../rtl/adder.v">
@@ -168,23 +165,21 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019">
-      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
-    </StratHandle>
+    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design">
-      <Option Id="FsmExtraction">1</Option>
-      <Option Id="ResourceSharing">2</Option>
-      <Option Id="MaxDsp">0</Option>
-      <Option Id="ShregMinSize">5</Option>
-      <Option Id="KeepEquivalentRegisters">1</Option>
       <Option Id="RepFanoutThreshold">400</Option>
+      <Option Id="ShregMinSize">5</Option>
+      <Option Id="MaxDsp">0</Option>
+      <Option Id="FsmExtraction">1</Option>
       <Option Id="NoCombineLuts">1</Option>
+      <Option Id="KeepEquivalentRegisters">1</Option>
+      <Option Id="ResourceSharing">2</Option>
       <Option Id="Directive">7</Option>
     </Step>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
   <BlockFileSet Type="BlockSrcs" Name="dist_mem_gen_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ila_0"/>
   <BlockFileSet Type="BlockSrcs" Name="mult_gen_0"/>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
 </GenRun>

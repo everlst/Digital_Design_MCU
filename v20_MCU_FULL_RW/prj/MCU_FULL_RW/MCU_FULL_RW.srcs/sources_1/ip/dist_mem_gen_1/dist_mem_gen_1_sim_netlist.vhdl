@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 -- Date        : Mon Jun 16 21:19:10 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top dist_mem_gen_1 -prefix
+--               dist_mem_gen_1_ dist_mem_gen_1_sim_netlist.vhdl
 -- Design      : dist_mem_gen_1
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -98,8 +98,6 @@ entity dist_mem_gen_1_dist_mem_gen_v8_0_13 is
   attribute C_SYNC_ENABLE of dist_mem_gen_1_dist_mem_gen_v8_0_13 : entity is 1;
   attribute C_WIDTH : integer;
   attribute C_WIDTH of dist_mem_gen_1_dist_mem_gen_v8_0_13 : entity is 16;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of dist_mem_gen_1_dist_mem_gen_v8_0_13 : entity is "dist_mem_gen_v8_0_13";
 end dist_mem_gen_1_dist_mem_gen_v8_0_13;
 
 architecture STRUCTURE of dist_mem_gen_1_dist_mem_gen_v8_0_13 is

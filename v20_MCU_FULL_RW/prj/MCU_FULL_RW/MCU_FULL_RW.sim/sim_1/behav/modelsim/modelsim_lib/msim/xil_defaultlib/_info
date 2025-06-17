@@ -11,22 +11,23 @@ z2
 cModel Technology
 Z0 dY:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.sim/sim_1/behav/modelsim
 T_opt
-!s110 1750080829
-VR`PZ37WK`BSD^QbVJ:J=D2
+!s110 1750097166
+VN7G`oACML2A2l5j;bJ2D80
 04 6 4 work tb_top fast 0
 04 4 4 work glbl fast 0
-=1-001c42c08a3c-68501d3c-1aa-4570
+=1-001c42c08a3c-68505d0d-d4-57c
 o-quiet -auto_acc_if_foreign -work xil_defaultlib -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm +acc
 Z1 tCvgOpt 0
 n@_opt
 OL;O;2020.4;71
+R0
 vadder
 !s10a 1748621316
-Z2 !s110 1750080184
+Z2 !s110 1750097158
 !i10b 1
 !s100 SYNnzl[M1Lg5;KS_<7O;:0
 Z3 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IPk;1fmG;0T[XEmKYoZZlI3
+I`JE4cBFE_GbkI<Ag@?G@C2
 R0
 w1748621316
 8../../../../../../rtl/adder.v
@@ -38,11 +39,12 @@ Z5 OL;L;2020.4;71
 r1
 !s85 0
 31
-Z6 !s108 1750080184.000000
+Z6 !s108 1750097158.000000
 Z7 !s107 ../../../../../../sim/tb.v|../../../../../../rtl/top.v|../../../../../../rtl/shifter.v|../../../../../../rtl/regfile.v|../../../../../../rtl/mux3.v|../../../../../../rtl/mux2.v|../../../../../../rtl/imem.v|../../../../../../rtl/flopr.v|../../../../../../rtl/flopenr.v|../../../../../../rtl/extend.v|../../../../../../rtl/dmem.v|../../../../../../rtl/decoder.v|../../../../../../rtl/datapath.v|../../../../../../rtl/controller.v|../../../../../../rtl/condlogic.v|../../../../../../rtl/arm.v|../../../../../../rtl/alu.v|../../../../../../rtl/adder.v|
-Z8 !s90 -64|-incr|-work|xil_defaultlib|../../../../../../rtl/adder.v|../../../../../../rtl/alu.v|../../../../../../rtl/arm.v|../../../../../../rtl/condlogic.v|../../../../../../rtl/controller.v|../../../../../../rtl/datapath.v|../../../../../../rtl/decoder.v|../../../../../../rtl/dmem.v|../../../../../../rtl/extend.v|../../../../../../rtl/flopenr.v|../../../../../../rtl/flopr.v|../../../../../../rtl/imem.v|../../../../../../rtl/mux2.v|../../../../../../rtl/mux3.v|../../../../../../rtl/regfile.v|../../../../../../rtl/shifter.v|../../../../../../rtl/top.v|../../../../../../sim/tb.v|
+Z8 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0|../../../../../../rtl/adder.v|../../../../../../rtl/alu.v|../../../../../../rtl/arm.v|../../../../../../rtl/condlogic.v|../../../../../../rtl/controller.v|../../../../../../rtl/datapath.v|../../../../../../rtl/decoder.v|../../../../../../rtl/dmem.v|../../../../../../rtl/extend.v|../../../../../../rtl/flopenr.v|../../../../../../rtl/flopr.v|../../../../../../rtl/imem.v|../../../../../../rtl/mux2.v|../../../../../../rtl/mux3.v|../../../../../../rtl/regfile.v|../../../../../../rtl/shifter.v|../../../../../../rtl/top.v|../../../../../../sim/tb.v|
 !i113 0
 Z9 o-64 -work xil_defaultlib -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z10 !s92 -64 -work xil_defaultlib +incdir+../../../../MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R1
 valu
 !s10a 1749889780
@@ -50,7 +52,7 @@ R2
 !i10b 1
 !s100 n=;F`;V<9ko@U@Fk]bF0l3
 R3
-IL@6lDXz0RPjW]CZgZ7bIK0
+IF9:kW1MddbZRK@agK1_2F2
 R0
 w1749889780
 8../../../../../../rtl/alu.v
@@ -67,6 +69,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 varm
 !s10a 1749834118
@@ -74,7 +77,7 @@ R2
 !i10b 1
 !s100 _`JRaIW0@6<R<Z27hU``83
 R3
-Ibd3lGWURFRCMWCVcGf8_[3
+IO_:HBNK8C8W?;1[IH`SQ50
 R0
 w1749834118
 8../../../../../../rtl/arm.v
@@ -91,18 +94,19 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vcondcheck
-Z10 !s10a 1749210526
+Z11 !s10a 1749210526
 R2
 !i10b 1
 !s100 el1UknPTO360QN]H>ghhX2
 R3
-I@>82`bLj]KNd@he7H2U1=0
+IBU7h@?R=YGF37b]J=hE<W2
 R0
-Z11 w1749210526
-Z12 8../../../../../../rtl/condlogic.v
-Z13 F../../../../../../rtl/condlogic.v
+Z12 w1749210526
+Z13 8../../../../../../rtl/condlogic.v
+Z14 F../../../../../../rtl/condlogic.v
 !i122 2
 L0 109 35
 R4
@@ -115,18 +119,19 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vcondlogic
-R10
+R11
 R2
 !i10b 1
 !s100 J3bCFdg2oaG9Ofc?@0cc?3
 R3
-I6F:T;2OhmaIcSeDPZZn;F0
+IndK?KVeaz_lni4jBEh=8:3
 R0
-R11
 R12
 R13
+R14
 !i122 2
 L0 31 68
 R4
@@ -139,6 +144,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vcontroller
 !s10a 1749834142
@@ -146,7 +152,7 @@ R2
 !i10b 1
 !s100 XP4iNN:ZDAKT^[kbgMD?b2
 R3
-IFd40e_R2_J^Fo1AjU9gX_3
+I`PgJSIKOI;D1liPUzDJe[3
 R0
 w1749834142
 8../../../../../../rtl/controller.v
@@ -163,6 +169,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vdatapath
 !s10a 1749838658
@@ -170,7 +177,7 @@ R2
 !i10b 1
 !s100 AI6JFA4jD01Jc3IkHC?IL2
 R3
-I`IMTBdQ_bb;_e[GSm[`JY0
+IWLHSQm81g]M6;OY;mnzSF3
 R0
 w1749838658
 8../../../../../../rtl/datapath.v
@@ -187,6 +194,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vdecoder
 !s10a 1750077434
@@ -194,7 +202,7 @@ R2
 !i10b 1
 !s100 h6h]Z9?>_VQoEWQDHkVkG0
 R3
-I37GS8GHlQ5jM;BO74n`I@2
+IPhE^4m;I:Z58C]mHE3NWC0
 R0
 w1750077434
 8../../../../../../rtl/decoder.v
@@ -211,77 +219,82 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vdist_mem_gen_0
-!s10a 1750080275
-!s110 1750080333
+!s10a 1750097419
+R2
 !i10b 1
 !s100 4FUeONKENZo`ECahE=1;31
 R3
-I5kXn7d8J=kFh]WhOdYj0a2
+Ik`V?4M3EkfnAfimRZl]363
 R0
-w1750080275
+w1750097093
 8../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v
 F../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v
-!i122 4
-Z14 L0 56 61
-R4
-R5
-r1
-!s85 0
-31
-!s108 1750080333.000000
-Z15 !s107 ../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v|
-Z16 !s90 -64|-incr|-work|xil_defaultlib|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|
-!i113 0
-R9
-R1
-vdist_mem_gen_1
-!s10a 1750079903
-R2
-!i10b 1
-!s100 SbUeMDF1g5MlIJgW08VU=1
-R3
-I;]QWRQ@i8__aNROd0mJ;j2
-R0
-w1750079903
-8../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v
-F../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v
 !i122 0
-R14
+Z15 L0 56 61
 R4
 R5
 r1
 !s85 0
 31
 R6
-R15
-R16
+Z16 !s107 ../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v|
+Z17 !s90 -64|-incr|-work|xil_defaultlib|+incdir+../../../../MCU_FULL_RW.srcs/sources_1/ip/clk_wiz_0|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v|../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v|
 !i113 0
 R9
+R10
+R1
+vdist_mem_gen_1
+!s10a 1750096211
+R2
+!i10b 1
+!s100 SbUeMDF1g5MlIJgW08VU=1
+R3
+I<R`b1kO<6HALm^eX0FC3^3
+R0
+w1750096211
+8../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v
+F../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v
+!i122 0
+R15
+R4
+R5
+r1
+!s85 0
+31
+R6
+R16
+R17
+!i113 0
+R9
+R10
 R1
 vdmem
-Z17 !s110 1750080821
+!s10a 1750080813
+R2
 !i10b 1
 !s100 4kgYUO;1mfH8_P9`L`SNX3
 R3
-IVkKKT91TfO]N=neIC>F_b2
+I=;Rom:blizU67SK:mzPOH3
 R0
 w1750080813
 8../../../../../../rtl/dmem.v
 F../../../../../../rtl/dmem.v
-!i122 8
+!i122 2
 L0 11 63
 R4
 R5
 r1
 !s85 0
 31
-Z18 !s108 1750080821.000000
+R6
 R7
 R8
 !i113 0
 R9
+R10
 R1
 vextend
 !s10a 1749823455
@@ -289,7 +302,7 @@ R2
 !i10b 1
 !s100 GgDiZHoSSm@5RDZcJhA]X3
 R3
-Ie[=@0h1X[ZPmMLl]?ffK92
+IL82mE=@AM5<LS?ZFAWZ^E3
 R0
 w1749823455
 8../../../../../../rtl/extend.v
@@ -306,6 +319,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vflopenr
 !s10a 1749706965
@@ -313,7 +327,7 @@ R2
 !i10b 1
 !s100 W8hN6hdUEhzd_@iQ6LW?=1
 R3
-I8L=;6=@WSa?aVF3OWoBi=3
+IFaJKTD;`DL1T6m9^nKPIN3
 R0
 w1749706965
 8../../../../../../rtl/flopenr.v
@@ -330,6 +344,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vflopr
 !s10a 1749706821
@@ -337,7 +352,7 @@ R2
 !i10b 1
 !s100 JB;]6Q]mZHAg1[UEKI3VV1
 R3
-IZZa[?<3=RDXVYOlzP=Yg?3
+IGO8nMH5UO4R2ei2n=3FD]3
 R0
 w1749706821
 8../../../../../../rtl/flopr.v
@@ -354,9 +369,10 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vglbl
-R17
+Z18 !s110 1750097486
 !i10b 1
 !s100 DCW3=ePZ4oEojGg2KL;HS0
 R3
@@ -365,14 +381,14 @@ R0
 w1573089660
 8glbl.v
 Fglbl.v
-!i122 9
+!i122 5
 L0 6 65
 R4
 R5
 r1
 !s85 0
 31
-R18
+Z19 !s108 1750097486.000000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
@@ -384,7 +400,7 @@ R2
 !i10b 1
 !s100 j;ED:VObSiV?8:F>IW_eF1
 R3
-IY=ZFZ46V]kL?i?BiN;H7z0
+I70DSz6J@4Z`^G[>j^1obL1
 R0
 w1749805731
 8../../../../../../rtl/imem.v
@@ -401,60 +417,61 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 Emult_gen_0
-Z19 w1750080021
-Z20 DPx17 mult_gen_v12_0_16 26 mult_gen_v12_0_16_viv_comp 0 22 HOFd6MgoIcCozFCkjd1`_3
+Z20 w1750080021
+Z21 DPx17 mult_gen_v12_0_16 26 mult_gen_v12_0_16_viv_comp 0 22 HOFd6MgoIcCozFCkjd1`_3
 DEx17 mult_gen_v12_0_16 17 mult_gen_v12_0_16 0 22 SDHlQZ^ln^@EcaAM`BlNd2
-Z21 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
-Z22 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z23 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
-!i122 7
+Z22 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z23 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z24 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 4
 R0
-Z24 8../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd
-Z25 F../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd
+Z25 8../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd
+Z26 F../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd
 l0
 L59 1
 V>INaE]9l4eZkl4Kh@o`WV0
 !s100 >ONHZUa4T:HoLEBD;i[PD0
-Z26 OL;C;2020.4;71
+Z27 OL;C;2020.4;71
 31
-R17
-!i10b 1
 R18
-Z27 !s90 -64|-93|-work|xil_defaultlib|../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd|
-Z28 !s107 ../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd|
+!i10b 1
+R19
+Z28 !s90 -64|-93|-work|xil_defaultlib|../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd|
+Z29 !s107 ../../../../MCU_FULL_RW.srcs/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd|
 !i113 0
-Z29 o-64 -93 -work xil_defaultlib
-Z30 tExplicit 1 CvgOpt 0
+Z30 o-64 -93 -work xil_defaultlib
+Z31 tExplicit 1 CvgOpt 0
 Amult_gen_0_arch
-R20
 R21
 R22
 R23
+R24
 DEx4 work 10 mult_gen_0 0 22 >INaE]9l4eZkl4Kh@o`WV0
-!i122 7
+!i122 4
 l110
 L67 76
 VnC^eJGSakH]Y[;hI0Eo>T3
 !s100 TBXhJYD10Z9eZ@R9mb6?83
-R26
-31
-R17
-!i10b 1
-R18
 R27
+31
+R18
+!i10b 1
+R19
 R28
-!i113 0
 R29
+!i113 0
 R30
+R31
 vmux2
 !s10a 1748621933
 R2
 !i10b 1
 !s100 0OC^chf>A?]03E4:<6;z63
 R3
-IE6[XK9PRn@`KI`DzalNf?1
+I;S=TM4RPCEd;BG`__aX]m3
 R0
 w1748621933
 8../../../../../../rtl/mux2.v
@@ -471,6 +488,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vmux3
 !s10a 1749834885
@@ -478,7 +496,7 @@ R2
 !i10b 1
 !s100 3l3:cXU6gN_b_RHVW4^aL1
 R3
-IfNYAX;20j3bHXj6MPY^k>1
+I0A4^zah6eLTG7dai@NCkT2
 R0
 w1749834885
 8../../../../../../rtl/mux3.v
@@ -495,6 +513,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vregfile
 !s10a 1749823253
@@ -502,7 +521,7 @@ R2
 !i10b 1
 !s100 ZmUC6iZ=nQi381jDUE<VV2
 R3
-I0:5TeD`N=:j@mNF[N5GJe2
+IPa05TC0F]geTkVUVlLZY<3
 R0
 w1749823253
 8../../../../../../rtl/regfile.v
@@ -519,6 +538,7 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vshifter
 !s10a 1749838251
@@ -526,7 +546,7 @@ R2
 !i10b 1
 !s100 04JJ4D^SmB]GnZh_GVz0?1
 R3
-ISlUQVTBCC9MQ@<IZKUI9g3
+I9V^hY<lJGT1QXjTV8iPhC0
 R0
 w1749838251
 8../../../../../../rtl/shifter.v
@@ -543,16 +563,17 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vtb_top
-!s10a 1749214608
+!s10a 1750089221
 R2
 !i10b 1
-!s100 7H:;bSW[K?X8lkYizM]Ji2
+!s100 e5ZZHDZPU>QG[l1OMgI3Y3
 R3
-I]3fmm?YHgID<2:_@MLJSb3
+I_^jHd@BD7;cDb3l_S>c8b2
 R0
-w1749214608
+w1750089221
 8../../../../../../sim/tb.v
 F../../../../../../sim/tb.v
 !i122 2
@@ -567,20 +588,21 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
 vtop
-!s10a 1749902746
+!s10a 1750089164
 R2
 !i10b 1
-!s100 `3PV1UJ`5G5FV=FOQDBU51
+!s100 ok7@`eYbS91jK4Tc:ZP712
 R3
-IW1XAB247gXJcZKz@iz]Zd1
+IN=@^i1l882S]]]nL?1Cfc0
 R0
-w1749902746
+w1750089164
 8../../../../../../rtl/top.v
 F../../../../../../rtl/top.v
 !i122 2
-L0 22 65
+L0 22 104
 R4
 R5
 r1
@@ -591,4 +613,5 @@ R7
 R8
 !i113 0
 R9
+R10
 R1
