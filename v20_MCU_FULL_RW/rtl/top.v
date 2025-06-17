@@ -20,8 +20,8 @@
 //    3. 实例化全部改为 **点名端口连接**，读写含义一目了然。  
 // ============================================================================
 module top (
-  input clk_in,  // 时钟
-  input reset    // 同步复位（进入 testbench 时由 stimuli 产生）
+  input clk,   // 时钟
+  input reset  // 同步复位（进入 testbench 时由 stimuli 产生）
 
   // ========= 便于 testbench 观察的 CPU <-> dmem 接口 ====================
   // output [31:0] WriteData,  // 写入数据存储器的数据
@@ -32,12 +32,12 @@ module top (
   wire [31:0] DataAdr;
   wire        MemWrite;
 
-  clk_wiz_0 u_clk (
-    // Clock out ports
-    .clk_out1(clk),    // output clk_out1
-    // Clock in ports
-    .clk_in1 (clk_in)
-  );  // input clk_in1
+  // clk_wiz_0 u_clk (
+  //   // Clock out ports
+  //   .clk_out1(clk),    // output clk_out1
+  //   // Clock in ports
+  //   .clk_in1 (clk_in)
+  // );  // input clk_in1
 
   // --------------------------------------------------------------------
   // 内部连线：CPU <-> 存储器
@@ -90,13 +90,13 @@ module top (
   reg [15:0] verify_RAM;
   reg [19:0] cnt_test = 20'd0;
 
-  always @(*) begin
+  always @(posedge clk) begin
     if (DataAdr[8:1] <= 7'd15) begin
       // 地址范围 0-15，从ROM_1读取
       test_vector_in = ReadData[15:0];
     end else if (DataAdr[8:1] >= 7'd48 && DataAdr[8:1] <= 7'd63) begin
       // 地址范围 48-63，从verify_RAM读取
-      verify_RAM = WriteData[DataAdr[8:1]];
+      verify_RAM = WriteData[15:0];
     end else begin
       // 超出范围，返回0或其他默认值
       test_vector_in = 16'h0000;
@@ -113,13 +113,13 @@ module top (
   end
 
 
-  ila_0 u_ila (
-    .clk(clk),  // input wire clk
+  // ila_0 u_ila (
+  //   .clk(clk),  // input wire clk
 
 
-    .probe0(test_vector_in),  // input wire [15:0]  probe0  
-    .probe1(verify_RAM),      // input wire [15:0]  probe1 
-    .probe2(cnt_test)         // input wire [19:0]  probe2
-  );
+  //   .probe0(test_vector_in),  // input wire [15:0]  probe0  
+  //   .probe1(verify_RAM),      // input wire [15:0]  probe1 
+  //   .probe2(cnt_test)         // input wire [19:0]  probe2
+  // );
 
 endmodule

@@ -30,11 +30,11 @@ module tb_top;
   // 被测设计实例化
   //--------------------------------------------------------------------------
   top dut (
-    .clk      (clk),
-    .reset    (reset),
-    .WriteData(WriteData),
-    .DataAdr  (DataAdr),
-    .MemWrite (MemWrite)
+    .clk  (clk),
+    .reset(reset)
+    // .WriteData(WriteData),
+    // .DataAdr  (DataAdr),
+    // .MemWrite (MemWrite)
   );
 
   //--------------------------------------------------------------------------

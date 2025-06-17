@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Mon Jun 16 21:25:24 2025
+-- Date        : Tue Jun 17 02:11:08 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.vhdl
+--               Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.vhdl
 -- Design      : dist_mem_gen_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1
