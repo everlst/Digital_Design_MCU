@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Tue Jun 17 02:11:08 2025
+-- Date        : Tue Jun 17 21:03:25 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
 --               Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0_stub.vhdl

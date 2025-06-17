@@ -20,4 +20,10 @@ with open("y:\\Code\\Digital_Design_MCU\\v20_MCU_FULL_RW\\sim\\trans.txt", "r") 
         # 跳过注释行和空行
         if line and not line.startswith("#"):
             hex_in.append(line)
-print(q7_hex_to_float(hex_in))
+
+# 将十六进制值转换为浮点数
+floats = q7_hex_to_float(hex_in)
+
+# 每8个数值一组进行输出
+for i in range(0, len(floats), 8):
+    print(floats[i : i + 8])
