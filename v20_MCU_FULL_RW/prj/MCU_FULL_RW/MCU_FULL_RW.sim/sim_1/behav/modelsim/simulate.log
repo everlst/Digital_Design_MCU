@@ -13,7 +13,7 @@
 # //
 # do {tb_top_simulate.do}
 # vsim -voptargs=""+acc"" -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
-# Start time: 02:11:32 on Jun 17,2025
+# Start time: 21:12:24 on Jun 17,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_top(fast)
 # Loading work.top(fast)
@@ -63,9 +63,11 @@
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 176, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 171 of file "dist_mem_gen_0.mif". Expected 176, found 170.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+add wave -position insertpoint  \
+sim:/tb_top/dut/dm/verify_RAM
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-8009) Loading existing optimized design _opt
@@ -96,113 +98,30 @@ restart
 # Loading work.glbl(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
-add wave -position insertpoint  \
-sim:/tb_top/dut/dm/verify_RAM
 run
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 176, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 171 of file "dist_mem_gen_0.mif". Expected 176, found 170.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1095000 ns: 
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1085000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1255000 ns: 
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1115000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1415000 ns: 
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1265000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1575000 ns: 
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1295000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-run
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1445000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1475000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1625000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.dm.ROM_1.inst at time              1655000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
 # WARNING in tb_top.dut.im.ROM_1.inst at time              1785000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.im.ROM_1.inst is         175
 # WARNING in tb_top.dut.dm.ROM_1.inst at time              1785000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-add wave -position insertpoint  \
-sim:/tb_top/dut/dm/RAM
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_top(fast)
-# Loading work.top(fast)
-# Loading work.arm(fast)
-# Loading work.controller(fast)
-# Loading work.decoder(fast)
-# Loading work.condlogic(fast)
-# Loading work.flopenr(fast)
-# Loading work.condcheck(fast)
-# Loading work.datapath(fast)
-# Loading work.mux2(fast)
-# Loading work.flopr(fast)
-# Loading work.adder(fast)
-# Loading work.mux3(fast)
-# Loading work.mux2(fast__1)
-# Loading work.regfile(fast)
-# Loading work.extend(fast)
-# Loading work.shifter(fast)
-# Loading work.alu(fast)
-# Loading work.imem(fast)
-# Loading work.dist_mem_gen_0(fast)
-# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
-# Loading work.dmem(fast)
-# Loading work.dist_mem_gen_1(fast)
-# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__1)
-# Loading work.glbl(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
-run
-# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 176, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
-# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1095000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1255000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1415000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1575000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-add wave -position insertpoint  \
-sim:/tb_top/dut/cpu/dp/rf/rf
-restart
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt
-# Loading work.tb_top(fast)
-# Loading work.top(fast)
-# Loading work.arm(fast)
-# Loading work.controller(fast)
-# Loading work.decoder(fast)
-# Loading work.condlogic(fast)
-# Loading work.flopenr(fast)
-# Loading work.condcheck(fast)
-# Loading work.datapath(fast)
-# Loading work.mux2(fast)
-# Loading work.flopr(fast)
-# Loading work.adder(fast)
-# Loading work.mux3(fast)
-# Loading work.mux2(fast__1)
-# Loading work.regfile(fast)
-# Loading work.extend(fast)
-# Loading work.shifter(fast)
-# Loading work.alu(fast)
-# Loading work.imem(fast)
-# Loading work.dist_mem_gen_0(fast)
-# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
-# Loading work.dmem(fast)
-# Loading work.dist_mem_gen_1(fast)
-# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__1)
-# Loading work.glbl(fast)
-# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (30) for port 'a'. The port definition is at: ../../../../MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v(57).
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1 File: ../../../../../../rtl/imem.v Line: 26
-run
-# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# ** Warning: (vsim-PLI-3408) Too few data words read on line 163 of file "dist_mem_gen_0.mif". Expected 176, found 162.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
-#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
-# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1095000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1255000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1415000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# WARNING in tb_top.dut.dm.ROM_1.inst at time              1575000 ns: 
-# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# End time: 21:28:10 on Jun 17,2025, Elapsed time: 0:15:46
+# Errors: 0, Warnings: 2

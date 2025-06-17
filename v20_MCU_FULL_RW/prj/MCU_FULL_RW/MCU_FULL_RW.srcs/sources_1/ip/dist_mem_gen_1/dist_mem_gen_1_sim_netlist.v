@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Mon Jun 16 21:19:10 2025
+// Date        : Tue Jun 17 21:11:52 2025
 // Host        : FB47 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim -rename_top dist_mem_gen_1 -prefix
-//               dist_mem_gen_1_ dist_mem_gen_1_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim
+//               Y:/Code/Digital_Design_MCU/v20_MCU_FULL_RW/prj/MCU_FULL_RW/MCU_FULL_RW.srcs/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1_sim_netlist.v
 // Design      : dist_mem_gen_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -88,7 +88,7 @@ endmodule
 (* C_MEM_INIT_FILE = "dist_mem_gen_1.mif" *) (* C_MEM_TYPE = "0" *) (* C_PARSER_TYPE = "1" *) 
 (* C_PIPELINE_STAGES = "0" *) (* C_QCE_JOINED = "0" *) (* C_QUALIFY_WE = "0" *) 
 (* C_READ_MIF = "1" *) (* C_REG_A_D_INPUTS = "0" *) (* C_REG_DPRA_INPUT = "0" *) 
-(* C_SYNC_ENABLE = "1" *) (* C_WIDTH = "16" *) 
+(* C_SYNC_ENABLE = "1" *) (* C_WIDTH = "16" *) (* ORIG_REF_NAME = "dist_mem_gen_v8_0_13" *) 
 module dist_mem_gen_1_dist_mem_gen_v8_0_13
    (a,
     d,
@@ -192,7 +192,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
        (.G(\<const0> ));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h4B37)) 
+    .INIT(16'hE5A7)) 
     g0_b0
        (.I0(a[0]),
         .I1(a[1]),
@@ -201,7 +201,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
         .O(\^spo [0]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
-    .INIT(16'h6777)) 
+    .INIT(16'hCF70)) 
     g0_b1
        (.I0(a[0]),
         .I1(a[1]),
@@ -210,7 +210,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
         .O(\^spo [1]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'h86D0)) 
+    .INIT(16'h23B1)) 
     g0_b2
        (.I0(a[0]),
         .I1(a[1]),
@@ -219,7 +219,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
         .O(\^spo [2]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'hCD20)) 
+    .INIT(16'h31E8)) 
     g0_b3
        (.I0(a[0]),
         .I1(a[1]),
@@ -228,7 +228,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
         .O(\^spo [3]));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
-    .INIT(16'h23B1)) 
+    .INIT(16'hAEDD)) 
     g0_b4
        (.I0(a[0]),
         .I1(a[1]),
@@ -237,7 +237,7 @@ module dist_mem_gen_1_dist_mem_gen_v8_0_13
         .O(\^spo [4]));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
-    .INIT(16'hCE17)) 
+    .INIT(16'h0108)) 
     g0_b5
        (.I0(a[0]),
         .I1(a[1]),
