@@ -11,10 +11,6 @@ module ALU_top (
 );
 
   //---------------- 0) 操作码译码 ----------------
-  // wire        is_and = (ALUOp == 2'b10);
-  // wire        is_or = (ALUOp == 2'b11);
-  // wire        is_add = (ALUOp == 2'b00);
-  // wire        is_sub = (ALUOp == 2'b01);
   wire        is_and = ALUOp[1] & ~ALUOp[0];
   wire        is_or = ALUOp[1] & ALUOp[0];
   wire        is_add = ~ALUOp[1] & ~ALUOp[0];
@@ -39,9 +35,6 @@ module ALU_top (
   );
 
   //---------------- 3) 溢出检测 ------------------
-  // wire overflow_add = (~(A[31] ^ B[31])) & (A[31] ^ addsub_res[31]);
-  // wire overflow_sub = (A[31] ^ B[31]) & (A[31] ^ addsub_res[31]);
-  // wire ovf = (is_sub & overflow_sub) | (~is_sub & overflow_add);
   wire ovf = (is_sub & (A[31] ^ B[31]) & (A[31] ^ addsub_res[31])) | (~is_sub & (~(A[31] ^ B[31])) & (A[31] ^ addsub_res[31]));
 
   //---------------- 4) 结果拼接 -------------------
@@ -51,15 +44,6 @@ module ALU_top (
         ({32{is_add | is_sub}}   & addsub_res);
 
   //---------------- 5) 状态标志 ------------------
-  // wire N;  // Negative, Result[31]
-  // wire V;  // oVerflow（有符号溢出）
-  // wire C;  // Carry（ADD/SUB 的 Cout）
-  // wire Z;  // Zero flag
-
-  // assign N = Result[31];  // 最高位
-  // assign C = (is_add | is_sub) & cout;
-  // assign V = (is_add | is_sub) & ovf;
-  // assign Z = ~|Result;  // 全 0 为 1
 
   // 将单独的标志位组合成一个4位输出 - 高到低顺序为NZCV
   assign ALUFlags = {

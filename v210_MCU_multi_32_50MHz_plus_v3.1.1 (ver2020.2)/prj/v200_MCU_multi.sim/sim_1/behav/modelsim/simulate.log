@@ -1,0 +1,229 @@
+# //  ModelSim SE-64 2020.4 Oct 13 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do {tb_top_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
+# Start time: 12:58:19 on Jul 05,2025
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.shifter(fast)
+# Loading work.alu(fast)
+# Loading work.imem_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.imem_1(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__1)
+# Loading work.imem_2(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__2)
+# Loading work.imem_3(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__3)
+# Loading work.imem_4(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__4)
+# Loading work.imem_5(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__5)
+# Loading work.imem_6(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__6)
+# Loading work.imem_7(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__7)
+# Loading work.dmem(fast)
+# Loading work.dist_mem_gen_1(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__8)
+# Loading work.ila_0(fast)
+# Loading work.glbl(fast)
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.mult_gen_0(mult_gen_0_arch)#1
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.mult_and(mult_and_v)#1
+# Loading unisim.lut2(lut2_v)#1
+# Loading unisim.muxcy(muxcy_v)#1
+# Loading unisim.xorcy(xorcy_v)#1
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_0/sim/imem_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_1 File: ../../../../../rtl/top.v Line: 188
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_1/sim/imem_1.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_2 File: ../../../../../rtl/top.v Line: 193
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_3 File: ../../../../../rtl/top.v Line: 198
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_4 File: ../../../../../rtl/top.v Line: 203
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_4/sim/imem_4.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_5 File: ../../../../../rtl/top.v Line: 208
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_5/sim/imem_5.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_6 File: ../../../../../rtl/top.v Line: 213
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_6/sim/imem_6.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_7 File: ../../../../../rtl/top.v Line: 218
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_7/sim/imem_7.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_8 File: ../../../../../rtl/top.v Line: 223
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (20) for port 'probe0'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/ila_0/sim/ila_0.v(53).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/u_ila File: ../../../../../rtl/top.v Line: 314
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 58 of file "imem_0.mif". Expected 64, found 57.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_1/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_1.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_2/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_2.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_3/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_3.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_4/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_4.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_5/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_5.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_6/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_6.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_7/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 41 of file "imem_7.mif". Expected 48, found 40.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_8/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING in tb_top.dut.dm.ROM_1.inst at time                    0 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.dm.ROM_1.inst at time               545000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.ROM_8.inst at time               835000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.ROM_8.inst is          47
+# WARNING in tb_top.dut.dm.ROM_1.inst at time               995000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+add wave -position insertpoint  \
+sim:/tb_top/dut/cnt_test
+add wave -position insertpoint  \
+sim:/tb_top/dut/test_vector_in
+add wave -position insertpoint  \
+sim:/tb_top/dut/verify_RAM
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.tb_top(fast)
+# Loading work.top(fast)
+# Loading work.arm(fast)
+# Loading work.controller(fast)
+# Loading work.decoder(fast)
+# Loading work.condlogic(fast)
+# Loading work.flopenr(fast)
+# Loading work.condcheck(fast)
+# Loading work.datapath(fast)
+# Loading work.mux2(fast)
+# Loading work.flopr(fast)
+# Loading work.adder(fast)
+# Loading work.mux3(fast)
+# Loading work.mux2(fast__1)
+# Loading work.regfile(fast)
+# Loading work.extend(fast)
+# Loading work.shifter(fast)
+# Loading work.alu(fast)
+# Loading work.imem_0(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast)
+# Loading work.imem_1(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__1)
+# Loading work.imem_2(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__2)
+# Loading work.imem_3(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__3)
+# Loading work.imem_4(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__4)
+# Loading work.imem_5(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__5)
+# Loading work.imem_6(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__6)
+# Loading work.imem_7(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__7)
+# Loading work.dmem(fast)
+# Loading work.dist_mem_gen_1(fast)
+# Loading dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(fast__8)
+# Loading work.ila_0(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_0/sim/imem_0.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_1 File: ../../../../../rtl/top.v Line: 188
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_1/sim/imem_1.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_2 File: ../../../../../rtl/top.v Line: 193
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_3 File: ../../../../../rtl/top.v Line: 198
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_4 File: ../../../../../rtl/top.v Line: 203
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_4/sim/imem_4.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_5 File: ../../../../../rtl/top.v Line: 208
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_5/sim/imem_5.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_6 File: ../../../../../rtl/top.v Line: 213
+# ** Warning: (vsim-3015) [PCDPC] - Port size (5) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_6/sim/imem_6.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_7 File: ../../../../../rtl/top.v Line: 218
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (30) for port 'a'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/imem_7/sim/imem_7.v(57).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_8 File: ../../../../../rtl/top.v Line: 223
+# ** Warning: (vsim-3015) [PCDPC] - Port size (6) does not match connection size (20) for port 'probe0'. The port definition is at: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/prj/v200_MCU_multi.sim/sim_1/behav/modelsim/../../../../v200_MCU_multi.gen/sources_1/ip/ila_0/sim/ila_0.v(53).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/u_ila File: ../../../../../rtl/top.v Line: 314
+run
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 58 of file "imem_0.mif". Expected 64, found 57.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_1/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_1.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_2/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_2.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_3/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_3.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_4/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_4.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_5/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_5.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_6/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 25 of file "imem_6.mif". Expected 32, found 24.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_7/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# ** Warning: (vsim-PLI-3408) Too few data words read on line 41 of file "imem_7.mif". Expected 48, found 40.    : G:/Xilinx/Vivado/2020.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
+#    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/ROM_8/inst
+# WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+# WARNING in tb_top.dut.dm.ROM_1.inst at time                    0 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.dm.ROM_1.inst at time               545000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# WARNING in tb_top.dut.ROM_8.inst at time               835000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.ROM_8.inst is          47
+# WARNING in tb_top.dut.dm.ROM_1.inst at time               995000 ns: 
+# Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
+# End time: 12:58:52 on Jul 05,2025, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 17

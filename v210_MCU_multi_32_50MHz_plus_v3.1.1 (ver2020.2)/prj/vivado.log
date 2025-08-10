@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Aug 10 18:09:15 2025
+# Process ID: 700
+# Current directory: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32000 F:\GitHub\Digital_Design_MCU\v210_MCU_multi_32_50MHz_plus_v3.1.1\prj\v200_MCU_multi.xpr
+# Log file: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj/vivado.log
+# Journal file: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj/v200_MCU_multi.xpr
+INFO: [Project 1-313] Project file moved from 'F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj' since last save.
+WARNING: [Project 1-312] File not found as 'F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz/rtl/imem.v'; using path 'F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/rtl/imem.v' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz/rtl/imem.v'; using path 'F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/rtl/imem.v' instead.
+WARNING: [Project 1-312] File not found as 'F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz/rtl/imem.v'; using path 'F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz/rtl/imem.v' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 10 18:12:18 2025...

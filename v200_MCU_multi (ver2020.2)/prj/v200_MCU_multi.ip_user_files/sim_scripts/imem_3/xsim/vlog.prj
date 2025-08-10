@@ -1,0 +1,6 @@
+verilog xil_defaultlib  \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

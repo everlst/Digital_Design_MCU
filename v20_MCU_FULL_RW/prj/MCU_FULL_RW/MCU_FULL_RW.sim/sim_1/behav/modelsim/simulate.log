@@ -13,7 +13,7 @@
 # //
 # do {tb_top_simulate.do}
 # vsim -voptargs=""+acc"" -L dist_mem_gen_v8_0_13 -L xil_defaultlib -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb_top xil_defaultlib.glbl 
-# Start time: 21:12:24 on Jun 17,2025
+# Start time: 22:35:55 on Jul 03,2025
 # ** Note: (vsim-8009) Loading existing optimized design _opt
 # Loading work.tb_top(fast)
 # Loading work.top(fast)
@@ -67,7 +67,7 @@
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
 add wave -position insertpoint  \
-sim:/tb_top/dut/dm/verify_RAM
+sim:/tb_top/dut/dm/RAM
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Note: (vsim-8009) Loading existing optimized design _opt
@@ -103,6 +103,7 @@ run
 # ** Warning: (vsim-PLI-3408) Too few data words read on line 171 of file "dist_mem_gen_0.mif". Expected 176, found 170.    : E:/Xilinx/Vivado/2019.2/data/ip/xilinx/dist_mem_gen_v8_0/simulation/dist_mem_gen_v8_0.v(234)
 #    Time: 0 ps  Iteration: 0  Instance: /tb_top/dut/im/ROM_1/inst
 # WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+run
 # WARNING in tb_top.dut.dm.ROM_1.inst at time              1085000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
 # WARNING in tb_top.dut.dm.ROM_1.inst at time              1115000 ns: 
@@ -123,5 +124,6 @@ run
 # Reading from out-of-range address. Max address in tb_top.dut.im.ROM_1.inst is         175
 # WARNING in tb_top.dut.dm.ROM_1.inst at time              1785000 ns: 
 # Reading from out-of-range address. Max address in tb_top.dut.dm.ROM_1.inst is          15
-# End time: 21:28:10 on Jun 17,2025, Elapsed time: 0:15:46
+run
+# End time: 01:51:40 on Jul 04,2025, Elapsed time: 3:15:45
 # Errors: 0, Warnings: 2

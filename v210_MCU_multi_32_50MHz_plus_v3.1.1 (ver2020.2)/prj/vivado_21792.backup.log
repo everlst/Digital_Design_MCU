@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jul  5 13:47:08 2025
+# Process ID: 21792
+# Current directory: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13320 F:\GitHub\Digital_Design_MCU-main\v210_MCU_multi_32_50MHz_plus_v3.1\prj\v200_MCU_multi.xpr
+# Log file: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/vivado.log
+# Journal file: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.xpr
+INFO: [Project 1-313] Project file moved from 'F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'G:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 1148.188 ; gain = 6.289
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.65104} CONFIG.MMCM_DIVCLK_DIVIDE {6} CONFIG.MMCM_CLKFBOUT_MULT_F {48.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {16.000} CONFIG.CLKOUT1_JITTER {364.230} CONFIG.CLKOUT1_PHASE_ERROR {380.190}] [get_ips clk_wiz_0]
+generate_target all [get_files  F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_wiz_0'...
+INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'clk_wiz_0'...
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+reset_run clk_wiz_0_synth_1
+launch_runs clk_wiz_0_synth_1 -jobs 32
+[Sat Jul  5 13:47:42 2025] Launched clk_wiz_0_synth_1...
+Run output will be captured here: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/clk_wiz_0_synth_1/runme.log
+export_simulation -of_objects [get_files F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.ip_user_files/sim_scripts -ip_user_files_dir F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.ip_user_files -ipstatic_source_dir F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/modeltech64_2020.4/vivado2020.2_lib} {questa=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.cache/compile_simlib/questa} {riviera=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.cache/compile_simlib/riviera} {activehdl=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+[Sat Jul  5 13:48:43 2025] Launched synth_1...
+Run output will be captured here: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/synth_1/runme.log
+[Sat Jul  5 13:48:43 2025] Launched impl_1...
+Run output will be captured here: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+[Sat Jul  5 13:58:43 2025] Launched impl_1...
+Run output will be captured here: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+set_property PROGRAM.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+set_property PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-2302] Device xc7a35t (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2025-Jul-05 13:59:48
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2025-Jul-05 13:59:52
+INFO: [Labtools 27-3304] ILA Waveform data saved to file F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3.1/prj/v200_MCU_multi.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183A76071A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183A76071A
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Jul  5 14:02:22 2025...

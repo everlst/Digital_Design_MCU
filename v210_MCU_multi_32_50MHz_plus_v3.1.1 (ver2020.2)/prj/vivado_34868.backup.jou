@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Jul  5 13:33:14 2025
+# Process ID: 34868
+# Current directory: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent28660 F:\GitHub\Digital_Design_MCU-main\v210_MCU_multi_32_50MHz_plus_v3\prj\v200_MCU_multi.xpr
+# Log file: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/vivado.log
+# Journal file: F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.xpr
+update_compile_order -fileset sources_1
+set_property -dict [list CONFIG.CLKOUT1_REQUESTED_OUT_FREQ {50.6} CONFIG.MMCM_DIVCLK_DIVIDE {4} CONFIG.MMCM_CLKFBOUT_MULT_F {31.625} CONFIG.MMCM_CLKOUT0_DIVIDE_F {15.625} CONFIG.CLKOUT1_JITTER {306.924} CONFIG.CLKOUT1_PHASE_ERROR {264.746}] [get_ips clk_wiz_0]
+generate_target all [get_files  F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+catch { config_ip_cache -export [get_ips -all clk_wiz_0] }
+export_ip_user_files -of_objects [get_files F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci]
+launch_runs clk_wiz_0_synth_1 -jobs 32
+wait_on_run clk_wiz_0_synth_1
+export_simulation -of_objects [get_files F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci] -directory F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.ip_user_files/sim_scripts -ip_user_files_dir F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.ip_user_files -ipstatic_source_dir F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.ip_user_files/ipstatic -lib_map_path [list {modelsim=G:/modeltech64_2020.4/vivado2020.2_lib} {questa=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.cache/compile_simlib/questa} {riviera=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.cache/compile_simlib/riviera} {activehdl=F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs impl_1 -jobs 32
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 32
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+set_property PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.ltx} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {F:/GitHub/Digital_Design_MCU-main/v210_MCU_multi_32_50MHz_plus_v3/prj/v200_MCU_multi.runs/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a35t_0] -filter {CELL_NAME=~"u_ila"}]]

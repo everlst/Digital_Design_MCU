@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 -- Date        : Fri May 23 15:15:43 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top test_vector_rom -prefix
+--               test_vector_rom_ test_vector_rom_stub.vhdl
 -- Design      : test_vector_rom
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a35tcpg236-1

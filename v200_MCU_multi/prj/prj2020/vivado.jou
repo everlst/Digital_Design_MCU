@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul  4 00:57:50 2025
+# Process ID: 66912
+# Current directory: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent74568 F:\GitHub\Digital_Design_MCU-main\v200_MCU_multi\prj\v200_MCU_multi.xpr
+# Log file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/vivado.log
+# Journal file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb_top.tcl
+current_wave_config {Untitled 1}
+add_wave {{/tb_top/dut/WriteData_0}} 
+current_wave_config {Untitled 1}
+add_wave {{/tb_top/dut/dm/RAM_reg}} 
+relaunch_sim
+close_sim

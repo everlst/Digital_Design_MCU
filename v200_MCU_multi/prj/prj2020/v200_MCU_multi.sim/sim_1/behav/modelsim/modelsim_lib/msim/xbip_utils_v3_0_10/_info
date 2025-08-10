@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.sim/sim_1/behav/modelsim
+Pkdz2WMsp6oVBqb+Ptl7Avvef7rlnS3iZ1PMbcUvzgb4=
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+Z3 w1751389319
+R0
+Z4 8../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd
+Z5 F../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd
+l0
+Z6 L82 1
+VMTCn[]Q5KBlod3H3F;ECg0
+!s100 ig^5hoHi;1;NXmX2N@A2L1
+Z7 OL;C;2020.4;71
+!i119 1
+!i8a 69084816
+31
+b1
+Z8 !s110 1751557342
+!i10b 1
+Z9 !s108 1751557342.000000
+Z10 !s90 -93|-work|xbip_utils_v3_0_10|../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd|
+Z11 !s107 ../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_utils_v3_0_vh_rfs.vhd|
+!i113 0
+Z12 o-93 -work xbip_utils_v3_0_10
+Z13 tExplicit 1 CvgOpt 0
+nd48b467
+Bjb9MnQ/97bX/OkGtNFH3wA==
+Z14 DPx4 work 22 xbip_utils_v3_0_10_pkg 0 22 MTCn[]Q5KBlod3H3F;ECg0
+R1
+R2
+!i122 3
+l0
+R6
+Z15 VzX:@A<D5;?Y=mm7`Fo@1e2
+Z16 !s100 Z0U=^`0A8XV6hNIDQ7;Rj2
+R7
+!i119 1
+!i8a 1986285440
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Z17 nbody
+PX4b/LdNigqdNnvYfRU1ixg==
+!i122 3
+R3
+R0
+R4
+R5
+l0
+R6
+V=mH=3AcQ;Ui>Pl[=f<WDL0
+!s100 QbUa=[0io<^LzFZnIMPQ93
+R7
+!i119 1
+!i8a 476423408
+31
+b1
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+na205600
+B58oukRNnz5XVk/dThYaS9A==
+Z18 DPx4 work 14 xcc_utils_v3_0 0 22 =mH=3AcQ;Ui>Pl[=f<WDL0
+!i122 3
+l0
+R6
+Z19 VL>HYl3IkJAg6a=jF4f:WE2
+Z20 !s100 jlE0gAAH^^LEB0]dC5nj]0
+R7
+!i119 1
+!i8a 317998944
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R17

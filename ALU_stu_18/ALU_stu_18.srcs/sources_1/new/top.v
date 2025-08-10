@@ -140,11 +140,11 @@ module top(input rst,
     end
     
     //Ҫ�����aluģ��
-    alu u_alu
+    ALU_top u_alu
     (
-    .a(r_a),
-    .b(r_b),
-    .ALUControl(r_alu_ctrl),
+    .A(r_a),
+    .B(r_b),
+    .ALUOp(r_alu_ctrl),
     .Result(w_result),
     .ALUFlags(w_alu_flags)
     );

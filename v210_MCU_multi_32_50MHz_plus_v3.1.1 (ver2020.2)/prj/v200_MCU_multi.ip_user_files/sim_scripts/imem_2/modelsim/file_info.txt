@@ -1,0 +1,2 @@
+imem_2.v,verilog,xil_defaultlib,../../../../v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,1852 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul  4 22:21:51 2025
+# Process ID: 55384
+# Current directory: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1
+# Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top.vdi
+# Journal file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: link_design -top top -part xc7a35tcpg236-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_0/imem_0.dcp' for cell 'ROM_1'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_1/imem_1.dcp' for cell 'ROM_2'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_2/imem_2.dcp' for cell 'ROM_3'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_3/imem_3.dcp' for cell 'ROM_4'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_4/imem_4.dcp' for cell 'ROM_5'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_5/imem_5.dcp' for cell 'ROM_6'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_6/imem_6.dcp' for cell 'ROM_7'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_7/imem_7.dcp' for cell 'ROM_8'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.dcp' for cell 'u_clk'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/ila_0.dcp' for cell 'u_ila'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/mult_gen_0/mult_gen_0.dcp' for cell 'cpu_0/dp/alu_u/mul'
+INFO: [Project 1-454] Reading design checkpoint 'f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/dist_mem_gen_1/dist_mem_gen_1.dcp' for cell 'dm/ROM_1'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1141.562 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2134 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Chipscope 16-324] Core: u_ila UUID: c30a8330-47ba-5203-8dbc-7e3e3214d902 
+Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+Finished Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila_impl.xdc] for cell 'u_ila/inst'
+Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Finished Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/ila_v6_2/constraints/ila.xdc] for cell 'u_ila/inst'
+Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk/inst'
+Finished Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc] for cell 'u_clk/inst'
+Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [f:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc] for cell 'u_clk/inst'
+Parsing XDC File [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/xdc/Basys3_Master.xdc]
+Finished Parsing XDC File [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/xdc/Basys3_Master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1705.855 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 332 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRL16E, SRLC32E): 204 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 96 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 32 instances
+
+22 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1705.855 ; gain = 564.293
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.528 . Memory (MB): peak = 1705.855 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-2] Deriving generated clocks
+Ending Cache Timing Information Task | Checksum: 205931357
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.417 . Memory (MB): peak = 1720.812 ; gain = 14.957
+
+Starting Logic Optimization Task
+
+Phase 1 Generate And Synthesize Debug Cores
+INFO: [Chipscope 16-329] Generating Script for core instance : dbg_hub 
+INFO: [IP_Flow 19-3806] Processing IP xilinx.com:ip:xsdbm:3.0 for cell dbg_hub_CV.
+INFO: [Chipscope 16-469] Using cached IP synthesis design for IP xilinx.com:ip:xsdbm:3.0, cache-ID = aa5dc8f5e81cd098.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 1979.430 ; gain = 0.000
+Phase 1 Generate And Synthesize Debug Cores | Checksum: 19d1d6012
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1979.430 ; gain = 46.469
+
+Phase 2 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 2 Retarget | Checksum: 22333bac8
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-389] Phase Retarget created 2515 cells and removed 2922 cells
+INFO: [Opt 31-1021] In phase Retarget, 84 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 3 Constant propagation | Checksum: 1b12c756e
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-389] Phase Constant propagation created 704 cells and removed 1228 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 47 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Sweep
+Phase 4 Sweep | Checksum: 165364794
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 180 cells
+INFO: [Opt 31-1021] In phase Sweep, 912 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 BUFG optimization
+Phase 5 BUFG optimization | Checksum: 165364794
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 6 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 6 Shift Register Optimization | Checksum: 165364794
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 7 Post Processing Netlist
+Phase 7 Post Processing Netlist | Checksum: 165364794
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.430 ; gain = 46.469
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 57 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |            2515  |            2922  |                                             84  |
+|  Constant propagation         |             704  |            1228  |                                             47  |
+|  Sweep                        |               0  |             180  |                                            912  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             57  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1979.430 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 205007449
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1979.430 ; gain = 46.469
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 2 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 2 newly gated: 0 Total Ports: 4
+Ending PowerOpt Patch Enables Task | Checksum: 179097e5c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 179097e5c
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2087.699 ; gain = 108.270
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 179097e5c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 16773ae11
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2087.699 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+57 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:13 . Memory (MB): peak = 2087.699 ; gain = 381.844
+INFO: [Common 17-600] The following parameters have non-default value.
+tcl.collectionResultDisplayLimit
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2087.699 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+Command: report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-240] Debug cores have already been implemented
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1298c116c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1098910c5
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.365 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 181221282
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 181221282
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 181221282
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 158394770
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 13f562878
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 2.3 Global Placement Core
+
+Phase 2.3.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 52 LUTNM shape to break, 2066 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 36, two critical 16, total 52, new lutff created 0
+INFO: [Physopt 32-775] End 1 Pass. Optimized 927 nets or cells. Created 52 new cells, deleted 875 existing cells and moved 0 existing cell
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           52  |            875  |                   927  |           0  |           1  |  00:00:02  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           52  |            875  |                   927  |           0  |           8  |  00:00:02  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.3.1 Physical Synthesis In Placer | Checksum: 1fbbe609c
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:12 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Phase 2.3 Global Placement Core | Checksum: 1e602425d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1e602425d
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 14d4c7f1f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:13 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13901f3cc
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 1aca3ab1e
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 21a81179d
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:15 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1f14be284
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 17618449e
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:24 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 14f153089
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 12c005fbc
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:25 . Memory (MB): peak = 2087.699 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 12c005fbc
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:25 . Memory (MB): peak = 2087.699 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1fe738781
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.699 | TNS=-412.589 |
+Phase 1 Physical Synthesis Initialization | Checksum: 17df13fdf
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.499 . Memory (MB): peak = 2111.316 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 14c45d936
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.526 . Memory (MB): peak = 2111.316 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1fe738781
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:27 . Memory (MB): peak = 2111.316 ; gain = 23.617
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.135. For the most accurate timing information please run report_timing.
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+Phase 4.1 Post Commit Optimization | Checksum: 174fbf16d
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 174fbf16d
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 174fbf16d
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+Phase 4.3 Placer Reporting | Checksum: 174fbf16d
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2111.316 ; gain = 0.000
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c8891e3f
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+Ending Placer Task | Checksum: 180748f36
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:50 . Memory (MB): peak = 2111.316 ; gain = 23.617
+INFO: [Common 17-83] Releasing license: Implementation
+100 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:01 ; elapsed = 00:00:51 . Memory (MB): peak = 2111.316 ; gain = 23.617
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.768 . Memory (MB): peak = 2113.863 ; gain = 2.547
+INFO: [Common 17-1381] The checkpoint 'F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file top_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2113.863 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_placed.rpt -pb top_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file top_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2113.863 ; gain = 0.000
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2120.469 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.358 | TNS=-2.677 |
+Phase 1 Physical Synthesis Initialization | Checksum: 17b4c86fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.752 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 2 SLR Crossing Optimization
+Phase 2 SLR Crossing Optimization | Checksum: 17b4c86fd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.794 . Memory (MB): peak = 2126.629 ; gain = 6.160
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.358 | TNS=-2.677 |
+
+Phase 3 Fanout Optimization
+INFO: [Physopt 32-76] Pass 1. Identified 7 candidate nets for fanout optimization.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[9] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[7] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[11] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[5] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[3] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[14] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-572] Net cpu_5/dp/rf/B[13] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 3 Fanout Optimization | Checksum: 17b4c86fd
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 4 Single Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 250 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[12].  Did not re-place instance cpu_5/dp/rf/mul_i_20__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/Q[2].  Re-placed instance cpu_5/dp/pcreg/q_reg[4]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_232__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_232__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__6_i_20__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__6_i_20__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_5__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/wd3[1].  Re-placed instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_1__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_245__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_245__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_271__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_271__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/ALUFlags[0].  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_3__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig62_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[5].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__4_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__4_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_133__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_133__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_55__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_55__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig56_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[3].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig53_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[2].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig59_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[4].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[1].  Re-placed instance cpu_5/dp/pcreg/q_reg[1]
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[0].  Re-placed instance cpu_5/dp/pcreg/q_reg[0]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[9].  Did not re-place instance cpu_5/dp/rf/mul_i_23__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_252__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_252__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_281__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_281__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__5_i_18__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__5_i_18__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_269__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_269__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig152_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_151__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_151__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_64__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_64__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[6].  Did not re-place instance cpu_5/dp/rf/mul_i_26__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_352__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_352__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__5_i_15__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__5_i_15__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_268__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_268__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig203_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_3
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_75__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_75__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[6].  Did not re-place instance cpu_5/dp/rf/mul_i_169__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/Q[1].  Re-placed instance cpu_5/dp/pcreg/q_reg[3]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[4].  Did not re-place instance cpu_5/dp/rf/mul_i_28__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_176__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_176__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_273__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_273__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig254_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[2].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_180__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_180__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_82__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_82__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[10].  Did not re-place instance cpu_5/dp/rf/mul_i_22__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_327__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_327__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_326__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_326__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_218__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_218__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig113_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[5].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_134__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_134__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_146__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_146__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_61__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_61__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[12].  Did not re-place instance cpu_5/dp/rf/mul_i_243__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_23.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_17__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/Result[27].  Re-placed instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_3__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_9__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_9__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig110_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[4].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[8].  Did not re-place instance cpu_5/dp/rf/mul_i_24__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_337__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_337__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig155_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[2].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_154__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_154__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_66__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_66__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[8].  Did not re-place instance cpu_5/dp/rf/mul_i_260__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig158_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[3].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig104_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[2].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig101_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_4_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__6_i_17__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__6_i_17__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_266__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_266__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_329__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_329__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_144__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_144__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_60__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_60__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/shift_u/data1[10].  Re-placed instance cpu_5/dp/rf/mul_i_253__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/Result[26].  Re-placed instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_4__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_22.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_19__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_10__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_10__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_3
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/Result[28].  Re-placed instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_6__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_24.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_23__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_12__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_12__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_5_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_5
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_131__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_131__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_53__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_53__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/Q[0].  Re-placed instance cpu_5/dp/pcreg/q_reg[2]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[1].ppadd.b_is_even.stageN.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[1].ppadd.b_is_even.stageN.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/pcreg/q[3]_i_3__4_n_0.  Did not re-place instance cpu_5/dp/pcreg/q[3]_i_3__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_164__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_164__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_168__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_168__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_74__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_74__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/Q[3].  Re-placed instance cpu_5/dp/pcreg/q_reg[5]
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_2_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__0_i_2
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_2_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry__1_i_2
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_1_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig87_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[0].ppadd.b_is_even.stageLSB.muxcy00_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_3
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[13].  Re-placed instance cpu_5/dp/pcreg/q_reg[13]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__1_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__1_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig209_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[3].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig206_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[2].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_272__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_272__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__5_i_43__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__5_i_43__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_148__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_148__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_63__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_63__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/pcreg/Q[4].  Did not re-place instance cpu_5/dp/pcreg/q_reg[6]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig215_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[5].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_322__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_322__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_335__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_335__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_325__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_325__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_18_23_i_12__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_18_23_i_12__4
+INFO: [Physopt 32-662] Processed net cpu_5/c/cl/flagreg1/q[0]_i_1_n_0.  Did not re-place instance cpu_5/c/cl/flagreg1/q[0]_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_18.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_18_23_i_23__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/q[0]_i_12__4_0.  Did not re-place instance cpu_5/dp/rf/q[0]_i_4__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/q[0]_i_7__4_n_0.  Did not re-place instance cpu_5/dp/rf/q[0]_i_7__4
+INFO: [Physopt 32-662] Processed net cpu_5/c/cl/flagreg1/q_reg[0]_1[0].  Did not re-place instance cpu_5/c/cl/flagreg1/q_reg[0]
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[16].  Re-placed instance cpu_5/dp/pcreg/q_reg[16]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_324__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_324__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_333__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_333__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[10].  Re-placed instance cpu_5/dp/pcreg/q_reg[10]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig164_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[5].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig125_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[9].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig212_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[4].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[7].  Did not re-place instance cpu_5/dp/rf/mul_i_25__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__2_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_161__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_161__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_70__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_70__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_4_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_8__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_8__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/Result[24].  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_2__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_20.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_15__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[0].ppadd.b_is_even.stageLSB.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[0].ppadd.b_is_even.stageLSB.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig122_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[8].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig107_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[3].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_143__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_143__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_7__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_7__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/Result[25].  Re-placed instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_1__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_21.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_13__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_25.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_21__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_26.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_7__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/Result[29].  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_5__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/Result[30].  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_2__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_11__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_11__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_4__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_4__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_5_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_5
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__1_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/Result[22].  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_18_23_i_6__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig257_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[2].carrychain[2].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig74_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[9].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig260_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[2].carrychain[3].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_2
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[7].  Re-placed instance cpu_5/dp/pcreg/q_reg[7]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_287__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_287__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_356__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_356__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[0].ppadd.b_is_even.stageLSB.muxcy00_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[0].ppadd.b_is_even.stageLSB.muxcy00_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_83__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_83__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[4].  Did not re-place instance cpu_5/dp/rf/mul_i_181__3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__51_carry_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig71_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[8].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig163_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[0].ppadd.b_is_even.stageLSB.muxcy00_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__4_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__4_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_76__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_76__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[2].ppadd.b_is_even.stageN.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[2].ppadd.b_is_even.stageN.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_347__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_347__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[11].  Did not re-place instance cpu_5/dp/rf/mul_i_21__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_228__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_228__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_136__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_136__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_56__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_56__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[11].  Did not re-place instance cpu_5/dp/rf/mul_i_247__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_163__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_163__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_153__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_153__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__1_i_4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/mul_i_256__4_n_0.  Re-placed instance cpu_5/dp/rf/mul_i_256__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[3].ppadd.b_is_even.stageN.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[3].ppadd.b_is_even.stageN.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_340__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_340__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/rf/mul_i_274__4_n_0.  Re-placed instance cpu_5/dp/rf/mul_i_274__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__4_i_36__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__4_i_36__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_4_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[1].ppadd.b_is_even.stageN.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[1].ppadd.b_is_even.stageN.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig176_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[9].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig126_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[0].ppadd.b_is_even.stageLSB.muxcy00_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig167_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[6].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig170_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[7].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[0].ppadd.b_is_even.stageLSB.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[0].ppadd.b_is_even.stageLSB.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__1_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__1_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig161_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[4].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[17].  Re-placed instance cpu_5/dp/pcreg/q_reg[17]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[5].  Did not re-place instance cpu_5/dp/rf/mul_i_27__4
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_2_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__0_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_79__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_79__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/shift_u/data1[5].  Did not re-place instance cpu_5/dp/rf/mul_i_175__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[0].ppadd.b_is_even.stageLSB.ma0_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[0].ppadd.b_is_even.stageLSB.ma0
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig173_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[4].carrychain[8].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/q[0]_i_11__4_n_0.  Did not re-place instance cpu_5/dp/rf/q[0]_i_11__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/q[0]_i_21__4_n_0.  Did not re-place instance cpu_5/dp/rf/q[0]_i_21__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig68_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[7].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_4_n_0.  Re-placed instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__6_i_23__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__6_i_23__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_244__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_244__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_279__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_279__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry_i_1
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[18].  Re-placed instance cpu_5/dp/pcreg/q_reg[18]
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_251__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_251__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig65_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[6].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_174__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_174__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_78__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_78__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_3_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__2_i_3
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[2].  Did not re-place instance cpu_5/dp/rf/mul_i_30__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_189__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_189__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig305_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[1].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__2_i_2
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_193__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_193__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_91__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_91__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig221_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[3].carrychain[7].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__1_i_1_n_0.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry__1_i_1
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_84__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_84__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_377__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_377__4
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig128_out.  Did not re-place instance cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[5].carrychain[10].ppadd.b_is_even.stageN.muxcy0_i_1
+INFO: [Physopt 32-661] Optimized 33 nets.  Re-placed 33 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 33 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 33 existing cells
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.086 | TNS=-0.214 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 4 Single Cell Placement Optimization | Checksum: 1c5eac6f0
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 5 Multi Cell Placement Optimization
+INFO: [Physopt 32-660] Identified 100 candidate nets for placement-based optimization.
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[12].  Did not re-place instance cpu_5/dp/rf/mul_i_20__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__6_i_20__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__6_i_20__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_232__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_232__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_5__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_245__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_245__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/ALUFlags[0].  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_3__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_271__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_271__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_133__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_133__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_55__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_55__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[9].  Did not re-place instance cpu_5/dp/rf/mul_i_23__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_252__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_252__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__5_i_18__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__5_i_18__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_269__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_269__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_281__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_281__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_24.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_23__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_12__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_12__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_151__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_151__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_64__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_64__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/B[4].  Did not re-place instance cpu_5/dp/rf/mul_i_28__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_176__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_176__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/sum_33_carry__5_i_15__4_n_0.  Did not re-place instance cpu_5/dp/rf/sum_33_carry__5_i_15__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_273__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_273__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_22.  Did not re-place instance cpu_5/dp/alu_u/rf_reg_r1_0_15_24_29_i_19__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_10__4_n_0.  Did not re-place instance cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_10__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_180__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_180__4/O
+INFO: [Physopt 32-662] Processed net cpu_5/dp/rf/mul_i_82__4_n_0.  Did not re-place instance cpu_5/dp/rf/mul_i_82__4/O
+INFO: [Physopt 32-661] Optimized 0 net.  Re-placed 0 instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 5 Multi Cell Placement Optimization | Checksum: 113fa5331
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 6 Rewire
+INFO: [Physopt 32-246] Starting Signal Push optimization...
+INFO: [Physopt 32-77] Pass 1. Identified 3 candidate nets for rewire optimization.
+INFO: [Physopt 32-242] Processed net cpu_5/dp/alu_u/ALUFlags[0]. Rewired (signal push) cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3 to 2 loads. Replicated 0 times.
+INFO: [Physopt 32-242] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_12__4_n_0. Rewired (signal push) cpu_5/dp/rf/q_reg[28] to 2 loads. Replicated 0 times.
+INFO: [Physopt 32-242] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_10__4_n_0. Rewired (signal push) cpu_5/dp/rf/q_reg[26] to 2 loads. Replicated 0 times.
+INFO: [Physopt 32-232] Optimized 3 nets. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2126.629 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.016 | TNS=0.000 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 6 Rewire | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 7 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 7 Critical Cell Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 8 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 8 Fanout Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 9 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 9 Single Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 10 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 10 Multi Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 11 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 11 Rewire | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 12 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 12 Critical Cell Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 13 SLR Crossing Optimization
+Phase 13 SLR Crossing Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 14 Fanout Optimization
+INFO: [Physopt 32-670] No setup violation found.  Fanout Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 14 Fanout Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 15 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 15 Single Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 16 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 16 Multi Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 17 Rewire
+INFO: [Physopt 32-670] No setup violation found.  Rewire was not performed.
+Phase 17 Rewire | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 18 Critical Cell Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Cell Optimization was not performed.
+Phase 18 Critical Cell Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 19 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 19 DSP Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 20 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 20 BRAM Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 21 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 21 URAM Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 22 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 22 Shift Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 23 DSP Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+Phase 23 DSP Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 24 BRAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+Phase 24 BRAM Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 25 URAM Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+Phase 25 URAM Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 26 Shift Register Optimization
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+Phase 26 Shift Register Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 27 Critical Pin Optimization
+INFO: [Physopt 32-670] No setup violation found.  Critical Pin Optimization was not performed.
+Phase 27 Critical Pin Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 28 Very High Fanout Optimization
+INFO: [Physopt 32-1132] Very high fanout net 'ROM_4/U0/synth_options.dist_mem_inst/gen_rom.rom_inst/spo[15]' is not considered as a candidate in VHFN optimzation. Its physical fanout number is changed from 259 to 242. To force replication, set the FORCE_MAX_FANOUT property on the net to a number less than 242.
+INFO: [Physopt 32-76] Pass 1. Identified 3 candidate nets for fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 28 Very High Fanout Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 29 Single Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Single Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 29 Single Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 30 Multi Cell Placement Optimization
+INFO: [Physopt 32-670] No setup violation found.  Multi Cell Placement Optimization was not performed.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Phase 30 Multi Cell Placement Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 31 SLR Crossing Optimization
+Phase 31 SLR Crossing Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 32 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.016 | TNS=0.000 |
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.016 | TNS=0.000 |
+Phase 32 Critical Path Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2126.629 ; gain = 6.160
+
+Phase 33 BRAM Enable Optimization
+Phase 33 BRAM Enable Optimization | Checksum: 23285d4c2
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2126.629 ; gain = 6.160
+INFO: [Physopt 32-960] Skip hold-fix as initial WHS does not violate hold threshold 250 ps
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2126.629 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=0.016 | TNS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization            |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Fanout                  |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Single Cell Placement   |          0.272  |          2.463  |            0  |              0  |                    33  |           0  |           1  |  00:00:04  |
+|  Multi Cell Placement    |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  Rewire                  |          0.102  |          0.214  |            0  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  Critical Cell           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  SLR Crossing            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           3  |  00:00:00  |
+|  DSP Register            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register          |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Critical Pin            |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Very High Fanout        |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Enable             |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path           |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                   |          0.374  |          2.677  |            0  |              0  |                    36  |           0  |          10  |  00:00:06  |
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2126.629 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 111fa3a2a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2126.629 ; gain = 6.160
+INFO: [Common 17-83] Releasing license: Implementation
+442 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 2126.629 ; gain = 12.766
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.771 . Memory (MB): peak = 2146.176 ; gain = 19.547
+INFO: [Common 17-1381] The checkpoint 'F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_physopt.dcp' has been generated.
+Command: route_design -directive Explore -tns_cleanup
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 78d6f8d7 ConstDB: 0 ShapeSum: 2a3acd1f RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: edadd67c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2197.148 ; gain = 50.824
+Post Restoration Checksum: NetGraph: 7b6b9ce0 NumContArr: 7242399c Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: edadd67c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2197.148 ; gain = 50.824
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: edadd67c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2203.379 ; gain = 57.055
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: edadd67c
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2203.379 ; gain = 57.055
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 15c1b5e8f
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 2224.199 ; gain = 77.875
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.205  | TNS=0.000  | WHS=-0.331 | THS=-800.295|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 1cc87681e
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:13 . Memory (MB): peak = 2241.145 ; gain = 94.820
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.205  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1c33d8767
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2254.383 ; gain = 108.059
+Phase 2 Router Initialization | Checksum: 1db90a853
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2254.383 ; gain = 108.059
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 19259
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 19258
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 1db90a853
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:13 . Memory (MB): peak = 2254.383 ; gain = 108.059
+Phase 3 Initial Routing | Checksum: 1976f5cff
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 2254.383 ; gain = 108.059
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 8971
+ Number of Nodes with overlaps = 2583
+ Number of Nodes with overlaps = 1186
+ Number of Nodes with overlaps = 530
+ Number of Nodes with overlaps = 229
+ Number of Nodes with overlaps = 103
+ Number of Nodes with overlaps = 40
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.317 | TNS=-89.406| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: e174e8f9
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:47 . Memory (MB): peak = 2254.383 ; gain = 108.059
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3249
+ Number of Nodes with overlaps = 499
+ Number of Nodes with overlaps = 189
+ Number of Nodes with overlaps = 65
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 21
+ Number of Nodes with overlaps = 14
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.539 | TNS=-31.100| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 14c958754
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:58 . Memory (MB): peak = 2264.188 ; gain = 117.863
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 4751
+ Number of Nodes with overlaps = 1574
+ Number of Nodes with overlaps = 801
+ Number of Nodes with overlaps = 322
+ Number of Nodes with overlaps = 127
+ Number of Nodes with overlaps = 47
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.723 | TNS=-27.569| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 13060c1d1
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:15 . Memory (MB): peak = 2264.188 ; gain = 117.863
+Phase 4 Rip-up And Reroute | Checksum: 13060c1d1
+
+Time (s): cpu = 00:01:40 ; elapsed = 00:01:15 . Memory (MB): peak = 2264.188 ; gain = 117.863
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 TNS Cleanup
+
+Phase 5.1.1 Delay CleanUp
+
+Phase 5.1.1.1 Update Timing
+Phase 5.1.1.1 Update Timing | Checksum: 184739358
+
+Time (s): cpu = 00:01:41 ; elapsed = 00:01:16 . Memory (MB): peak = 2264.188 ; gain = 117.863
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.539 | TNS=-24.540| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.2 Update Timing
+Phase 5.1.1.2 Update Timing | Checksum: 1119fcf88
+
+Time (s): cpu = 00:01:45 ; elapsed = 00:01:18 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.323 | TNS=-13.668| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.3 Update Timing
+Phase 5.1.1.3 Update Timing | Checksum: ce5facca
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:19 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.316 | TNS=-11.710| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.4 Update Timing
+Phase 5.1.1.4 Update Timing | Checksum: e7a6045d
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:19 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.316 | TNS=-11.711| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 5.1.1.5 Update Timing
+Phase 5.1.1.5 Update Timing | Checksum: 19bc47eca
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:20 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.316 | TNS=-11.711| WHS=N/A    | THS=N/A    |
+
+Phase 5.1.1 Delay CleanUp | Checksum: 143a5ce69
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:20 . Memory (MB): peak = 2294.281 ; gain = 147.957
+Phase 5.1 TNS Cleanup | Checksum: 143a5ce69
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:20 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 143a5ce69
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:20 . Memory (MB): peak = 2294.281 ; gain = 147.957
+Phase 5 Delay and Skew Optimization | Checksum: 143a5ce69
+
+Time (s): cpu = 00:01:48 ; elapsed = 00:01:20 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 18a66cbff
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.316 | TNS=-11.711| WHS=0.007  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: bfab35b5
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2294.281 ; gain = 147.957
+Phase 6 Post Hold Fix | Checksum: bfab35b5
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:21 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 12d7e818e
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:22 . Memory (MB): peak = 2294.281 ; gain = 147.957
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.316 | TNS=-11.711| WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 12d7e818e
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:22 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.8917 %
+  Global Horizontal Routing Utilization  = 12.2888 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 85.5856%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X22Y56 -> INT_L_X22Y56
+South Dir 1x1 Area, Max Cong = 87.3874%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X23Y44 -> INT_R_X23Y44
+   INT_R_X27Y42 -> INT_R_X27Y42
+East Dir 1x1 Area, Max Cong = 94.1176%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_R_X23Y53 -> INT_R_X23Y53
+   INT_R_X21Y51 -> INT_R_X21Y51
+   INT_L_X24Y47 -> INT_L_X24Y47
+West Dir 1x1 Area, Max Cong = 86.7647%, Congestion bounded by tiles (Lower Left Tile -> Upper Right Tile):
+   INT_L_X30Y54 -> INT_L_X30Y54
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 1
+
+Phase 8 Route finalize | Checksum: 12d7e818e
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:23 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 12d7e818e
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:23 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: c28468c0
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:24 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2294.281 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.176. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 1b43b1a4d
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2294.281 ; gain = 0.000
+Phase 11 Incr Placement Change | Checksum: c28468c0
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:33 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 14fa98fcf
+
+Time (s): cpu = 00:02:05 ; elapsed = 00:01:34 . Memory (MB): peak = 2294.281 ; gain = 147.957
+Post Restoration Checksum: NetGraph: 6203786 NumContArr: eb3aaab1 Constraints: 0 Timing: 0
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: f15ae237
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: f15ae237
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2294.281 ; gain = 147.957
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: 1a3ef8c38
+
+Time (s): cpu = 00:02:06 ; elapsed = 00:01:35 . Memory (MB): peak = 2294.281 ; gain = 147.957
+ Number of Nodes with overlaps = 0
+
+Phase 13.4 Update Timing
+Phase 13.4 Update Timing | Checksum: 1af9c1dfa
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:38 . Memory (MB): peak = 2325.289 ; gain = 178.965
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.203 | TNS=-4.562 | WHS=-0.331 | THS=-800.281|
+
+
+Phase 13.5 Update Timing for Bus Skew
+
+Phase 13.5.1 Update Timing
+Phase 13.5.1 Update Timing | Checksum: 117453592
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:41 . Memory (MB): peak = 2338.891 ; gain = 192.566
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.203 | TNS=-1.221 | WHS=N/A    | THS=N/A    |
+
+Phase 13.5 Update Timing for Bus Skew | Checksum: 1aacb2b73
+
+Time (s): cpu = 00:02:15 ; elapsed = 00:01:41 . Memory (MB): peak = 2351.855 ; gain = 205.531
+Phase 13 Router Initialization | Checksum: 19f6d466e
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:41 . Memory (MB): peak = 2351.855 ; gain = 205.531
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 10.8743 %
+  Global Horizontal Routing Utilization  = 12.2674 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 185
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 53
+  Number of Partially Routed Nets     = 132
+  Number of Node Overlaps             = 0
+
+
+Phase 14 Initial Routing
+
+Phase 14.1 Global Routing
+Phase 14.1 Global Routing | Checksum: 19f6d466e
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:41 . Memory (MB): peak = 2351.855 ; gain = 205.531
+Phase 14 Initial Routing | Checksum: 1097d70a6
+
+Time (s): cpu = 00:02:16 ; elapsed = 00:01:41 . Memory (MB): peak = 2351.855 ; gain = 205.531
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+ Number of Nodes with overlaps = 458
+ Number of Nodes with overlaps = 262
+ Number of Nodes with overlaps = 132
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 18
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.538 | TNS=-27.257| WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: c87639cd
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:48 . Memory (MB): peak = 2351.855 ; gain = 205.531
+
+Phase 15.2 Global Iteration 1
+ Number of Nodes with overlaps = 4963
+ Number of Nodes with overlaps = 2650
+ Number of Nodes with overlaps = 1233
+ Number of Nodes with overlaps = 624
+ Number of Nodes with overlaps = 284
+ Number of Nodes with overlaps = 110
+ Number of Nodes with overlaps = 61
+ Number of Nodes with overlaps = 27
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.041 | TNS=-20.317| WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 10be01ec8
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:04 . Memory (MB): peak = 2351.855 ; gain = 205.531
+Phase 15 Rip-up And Reroute | Checksum: 10be01ec8
+
+Time (s): cpu = 00:02:51 ; elapsed = 00:02:04 . Memory (MB): peak = 2351.855 ; gain = 205.531
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 TNS Cleanup
+
+Phase 16.1.1 Delay CleanUp
+
+Phase 16.1.1.1 Update Timing
+Phase 16.1.1.1 Update Timing | Checksum: 17377c9e2
+
+Time (s): cpu = 00:02:52 ; elapsed = 00:02:05 . Memory (MB): peak = 2351.855 ; gain = 205.531
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.538 | TNS=-21.746| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 16.1.1.2 Update Timing
+Phase 16.1.1.2 Update Timing | Checksum: 110569c79
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:07 . Memory (MB): peak = 2368.645 ; gain = 222.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.521 | TNS=-18.948| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 16.1.1.3 Update Timing
+Phase 16.1.1.3 Update Timing | Checksum: 13a7d6736
+
+Time (s): cpu = 00:02:55 ; elapsed = 00:02:07 . Memory (MB): peak = 2368.645 ; gain = 222.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.521 | TNS=-18.873| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+
+Phase 16.1.1.4 Update Timing
+Phase 16.1.1.4 Update Timing | Checksum: 1776204c4
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2368.645 ; gain = 222.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.521 | TNS=-18.873| WHS=N/A    | THS=N/A    |
+
+Phase 16.1.1 Delay CleanUp | Checksum: 110bcfe86
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2368.645 ; gain = 222.320
+Phase 16.1 TNS Cleanup | Checksum: 110bcfe86
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 110bcfe86
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2368.645 ; gain = 222.320
+Phase 16 Delay and Skew Optimization | Checksum: 110bcfe86
+
+Time (s): cpu = 00:02:56 ; elapsed = 00:02:08 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 15bc11c46
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:09 . Memory (MB): peak = 2368.645 ; gain = 222.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.521 | TNS=-18.873| WHS=0.007  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 9e370e44
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:09 . Memory (MB): peak = 2368.645 ; gain = 222.320
+Phase 17 Post Hold Fix | Checksum: 9e370e44
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:02:09 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 17235fb12
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:02:11 . Memory (MB): peak = 2368.645 ; gain = 222.320
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.521 | TNS=-18.873| WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 17235fb12
+
+Time (s): cpu = 00:03:00 ; elapsed = 00:02:11 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Phase 19 Reset Design
+INFO: [Route 35-307] 19271 nets already restored were skipped.
+Post Restoration Checksum: NetGraph: 2191ef35 NumContArr: 5cb50bd3 Constraints: 0 Timing: 840fe5c9
+Phase 19 Reset Design | Checksum: 10256e0d1
+
+Time (s): cpu = 00:03:01 ; elapsed = 00:02:11 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Phase 20 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=-0.319 | TNS=-11.735| WHS=0.007  | THS=0.000  |
+
+Phase 20 Post Router Timing | Checksum: 12cae8b9b
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:14 . Memory (MB): peak = 2368.645 ; gain = 222.320
+WARNING: [Route 35-39] The design did not meet timing requirements. Please run report_timing_summary for detailed reports.
+Resolution: Verify that the timing was met or had small violations at all previous steps (synthesis, placement, power_opt, and phys_opt). Run report_timing_summary and analyze individual timing paths.
+INFO: [Route 35-253] TNS is the sum of the worst slack violation on every endpoint in the design. Review the paths with the biggest WNS violations in the timing reports and modify your constraints or your design to improve both WNS and TNS.
+INFO: [Route 72-16] Aggressive Explore Summary
++------+--------+---------+-------+-----+--------+--------------+-------------------+
+| Pass |  WNS   |   TNS   |  WHS  | THS | Status | Elapsed Time | Solution Selected |
++------+--------+---------+-------+-----+--------+--------------+-------------------+
+|  1   | -0.316 | -11.711 | 0.007 |  -  |  Pass  |   00:01:16   |         x         |
++------+--------+---------+-------+-----+--------+--------------+-------------------+
+|  2   | -0.521 | -18.873 | 0.007 |  -  |  Fail  |   00:00:36   |                   |
++------+--------+---------+-------+-----+--------+--------------+-------------------+
+
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:03:06 ; elapsed = 00:02:14 . Memory (MB): peak = 2368.645 ; gain = 222.320
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+482 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:03:09 ; elapsed = 00:02:16 . Memory (MB): peak = 2368.645 ; gain = 222.469
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2368.645 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+Command: report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb -rpx top_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+Command: report_methodology -file top_methodology_drc_routed.rpt -pb top_methodology_drc_routed.pb -rpx top_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+Command: report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+494 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file top_route_status.rpt -pb top_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file top_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file top_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_routed.rpt -pb top_bus_skew_routed.pb -rpx top_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Vivado_Tcl 4-241] Physical synthesis in post route mode ( 100.0% nets are fully routed)
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2368.645 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.319 | TNS=-11.735 | WHS=0.007 | THS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 20d8dd7e8
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 2368.645 ; gain = 0.000
+
+Phase 2 Critical Path Optimization
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.319 | TNS=-11.735 | WHS=0.007 | THS=0.000 |
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: u_clk/inst/clk_out1_clk_wiz_0.
+INFO: [Physopt 32-710] Processed net cpu_1/c/cl/flagreg1/q[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell cpu_1/c/cl/flagreg1/q[0]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.305. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/q[0]_i_12__0_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r2_0_15_6_11/DOC1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg[9]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_6_11_i_5__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.291. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_4/dp/rf/rf_reg_r2_0_15_6_11/DOC1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg_2[9]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_6_11_i_5__3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.283. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_12_17/DOB1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg[13]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_12_17_i_3__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.258. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_18_23/DOB0.
+INFO: [Physopt 32-710] Processed net cpu_1/dp/rf/Result[20]. Critical path length was reduced through logic transformation on cell cpu_1/dp/rf/rf_reg_r1_0_15_18_23_i_4__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.251. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_18_23_i_10__0_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_2/dp/rf/rf_reg_r2_0_15_12_17/DOA1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg_0[11]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_12_17_i_1__1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.249. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_12_17/DOA1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg[11]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_12_17_i_1__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.249. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_30_31/DOA0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_30_31_i_4__2_n_0.
+INFO: [Physopt 32-710] Processed net cpu_3/dp/rf/rf_reg_r1_0_15_30_31_i_4__2_n_0. Critical path length was reduced through logic transformation on cell cpu_3/dp/rf/rf_reg_r1_0_15_30_31_i_4__2_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.241. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__1_26.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_30_31/DOA1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/ALUFlags[0].
+INFO: [Physopt 32-710] Processed net cpu_3/dp/alu_u/ALUFlags[0]. Critical path length was reduced through logic transformation on cell cpu_3/dp/alu_u/rf_reg_r1_0_15_30_31_i_3__2_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.238. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_6/dp/rf/rf_reg_r1_0_15_24_29/DOC1.
+INFO: [Physopt 32-710] Processed net cpu_6/dp/rf/Result[29]. Critical path length was reduced through logic transformation on cell cpu_6/dp/rf/rf_reg_r1_0_15_24_29_i_5__5_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.228. Path group: clk_out1_clk_wiz_0. Processed net: cpu_6/dp/rf/rf_reg_r1_0_15_24_29_i_11__5_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29/DOC0.
+INFO: [Physopt 32-710] Processed net cpu_3/dp/rf/Result[28]. Critical path length was reduced through logic transformation on cell cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_6__2_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.225. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_12__2_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.219. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/q[0]_i_12__0_0.
+INFO: [Physopt 32-663] Processed net dm/RAM_reg_reg_n_0_[39][12].  Re-placed instance dm/RAM_reg_reg[39][12]
+INFO: [Physopt 32-952] Improved path group WNS = -0.219. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg_n_0_[39][12].
+INFO: [Physopt 32-663] Processed net dm/RAM_reg_reg_n_0_[39][4].  Re-placed instance dm/RAM_reg_reg[39][4]
+INFO: [Physopt 32-952] Improved path group WNS = -0.216. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg_n_0_[39][4].
+INFO: [Physopt 32-663] Processed net cpu_5/dp/pcreg/q_reg_n_0_[0].  Re-placed instance cpu_5/dp/pcreg/q_reg[0]
+INFO: [Physopt 32-952] Improved path group WNS = -0.213. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/pcreg/q_reg_n_0_[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_4/dp/rf/rf_reg_r1_0_15_12_17/DOA1.
+INFO: [Physopt 32-710] Processed net dm/ready_reg_2[11]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_12_17_i_1__3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.208. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg_n_0_[39][10].
+INFO: [Physopt 32-710] Processed net cpu_1/c/cl/flagreg1/RAM_reg[39][15]_i_7[0]. Critical path length was reduced through logic transformation on cell cpu_1/c/cl/flagreg1/RAM_reg[39][15]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.198. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/RAM_reg[39][15]_i_15.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r2_0_15_6_11/DOB1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.193. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-710] Processed net cpu_3/c/cl/flagreg1/q[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell cpu_3/c/cl/flagreg1/q[0]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.188. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/q[0]_i_12__2_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29/DOC1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_11__2_n_0.
+INFO: [Physopt 32-710] Processed net cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_11__2_n_0. Critical path length was reduced through logic transformation on cell cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_11__2_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.181. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__1_25.
+INFO: [Physopt 32-710] Processed net dm/ready_reg[11]. Critical path length was reduced through logic transformation on cell dm/rf_reg_r1_0_15_12_17_i_1__0_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.162. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/ready_reg_0_repN_4.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg[31]_0[9].
+INFO: [Physopt 32-952] Improved path group WNS = -0.159. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/RAM_reg[31][15]_i_15.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29/DOC0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/Result[28]. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_6__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.158. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_12__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29/DOA1.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/Result[25]. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_1__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.154. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_7__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/P[31].
+INFO: [Physopt 32-952] Improved path group WNS = -0.129. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__4_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_24_29/DOA0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.113. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_24_29_i_8__4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-710] Processed net cpu_5/c/cl/flagreg1/q[0]_i_1_n_0. Critical path length was reduced through logic transformation on cell cpu_5/c/cl/flagreg1/q[0]_i_1_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.110. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/rf/q[0]_i_12__4_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/q[0]_i_8__6_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/q[0]_i_8__6_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/q[0]_i_3__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.106. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/q[0]_i_8__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_30_31/DOA1.
+INFO: [Physopt 32-710] Processed net cpu_1/dp/alu_u/wd3[1]. Critical path length was reduced through logic transformation on cell cpu_1/dp/alu_u/rf_reg_r1_0_15_30_31_i_1__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.105. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/ALUFlags[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_30_31/DOA1.
+INFO: [Physopt 32-710] Processed net cpu_5/dp/alu_u/wd3[1]. Critical path length was reduced through logic transformation on cell cpu_5/dp/alu_u/rf_reg_r1_0_15_30_31_i_1__4_rewire_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.105. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29/DOB0.
+INFO: [Physopt 32-710] Processed net cpu_3/dp/rf/Result[26]. Critical path length was reduced through logic transformation on cell cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_4__2_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.099. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_24_29_i_10__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r2_0_15_18_23/DOB1.
+INFO: [Physopt 32-710] Processed net cpu_1/dp/rf/Result[21]. Critical path length was reduced through logic transformation on cell cpu_1/dp/rf/rf_reg_r1_0_15_18_23_i_3__0_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.098. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_18_23_i_9__0_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_30_31/DOA1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_29_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_29_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/alu_u/rf_reg_r1_0_15_30_31_i_3__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.098. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_30_31_i_6__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/q[0]_i_12__0_0.
+INFO: [Physopt 32-710] Processed net cpu_1/dp/rf/q[0]_i_12__0_0. Critical path length was reduced through logic transformation on cell cpu_1/dp/rf/q[0]_i_4__0_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.097. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_12_17_i_9__0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/q[0]_i_10__6_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_11__6_n_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_11__6_n_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_11__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.095. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_39_27.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_12__6_n_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_12__6_n_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_12__6_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.094. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_39_26.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_3/dp/pcreg/q_reg_n_0_[9].
+INFO: [Physopt 32-710] Processed net cpu_3/c/cl/flagreg1/D[9]. Critical path length was reduced through logic transformation on cell cpu_3/c/cl/flagreg1/q[9]_i_1__3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.054. Path group: clk_out1_clk_wiz_0_1. Processed net: dm/ready_reg_1[8].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/rf/q[0]_i_11__4_n_0.
+INFO: [Physopt 32-710] Processed net cpu_5/dp/rf/q[0]_i_11__4_n_0. Critical path length was reduced through logic transformation on cell cpu_5/dp/rf/q[0]_i_11__4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.052. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/rf/q[0]_i_21__4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_18_23/DOC1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_18_23_i_11__6_n_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/rf_reg_r1_0_15_18_23_i_11__6_n_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_18_23_i_11__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.051. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_39_21.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_6_11/DOC1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.050. Path group: clk_out1_clk_wiz_0_1. Processed net: dm/D[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_4/dp/rf/rf_reg_r1_0_15_12_17/DOB1.
+INFO: [Physopt 32-710] Processed net cpu_0/dp/rf/ready_reg_3[1]. Critical path length was reduced through logic transformation on cell cpu_0/dp/rf/rf_reg_r1_0_15_12_17_i_3__3_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.045. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_30_31/DOA0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_30_31_i_4__6_n_0.
+INFO: [Physopt 32-710] Processed net cpu_7/dp/rf/rf_reg_r1_0_15_30_31_i_4__6_n_0. Critical path length was reduced through logic transformation on cell cpu_7/dp/rf/rf_reg_r1_0_15_30_31_i_4__6_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.044. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_39_28.
+INFO: [Physopt 32-710] Processed net cpu_5/dp/rf/q[0]_i_11__4_n_0. Critical path length was reduced through logic transformation on cell cpu_5/dp/rf/q[0]_i_11__4_comp_1.
+INFO: [Physopt 32-952] Improved path group WNS = -0.043. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_30_31/DOA0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_4__4_n_0.
+INFO: [Physopt 32-710] Processed net cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_4__4_n_0. Critical path length was reduced through logic transformation on cell cpu_5/dp/rf/rf_reg_r1_0_15_30_31_i_4__4_comp.
+INFO: [Physopt 32-952] Improved path group WNS = -0.041. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_5/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__3_26.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_4/dp/rf/rf_reg_r1_0_15_12_17/DOB0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0_1. Processed net: cpu_0/dp/rf/ready_reg_0.
+INFO: [Physopt 32-710] Processed net cpu_0/dp/rf/ready_reg_0. Critical path length was reduced through logic transformation on cell cpu_0/dp/rf/rf_reg_r1_0_15_6_11_i_10__0_comp_9.
+INFO: [Physopt 32-735] Processed net cpu_0/dp/rf/ROM_1_i_7_6. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=-0.094 | TNS=-0.936 | WHS=0.007 | THS=0.000 |
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: u_clk/inst/clk_out1_clk_wiz_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.092. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/q[0]_i_12__0_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/q[0]_i_10__6_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.085. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_11__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg_n_0_[39][12].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_4/dp/rf/RAM_reg[39][15]_i_4.
+INFO: [Physopt 32-952] Improved path group WNS = -0.084. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/rf/rf_reg_r1_0_15_0_5_i_30__3_5.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/q[0]_i_12__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/q[0]_i_25__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__1_25.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/P[29].
+INFO: [Physopt 32-952] Improved path group WNS = -0.082. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__3_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: dm/RAM_reg_reg[31]_0[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/RAM_reg[31][15]_i_15.
+INFO: [Physopt 32-952] Improved path group WNS = -0.078. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_0_5_i_30_6.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/c/cl/flagreg1/q_reg[0]_1[0].
+INFO: [Physopt 32-952] Improved path group WNS = -0.072. Path group: clk_out1_clk_wiz_0. Processed net: cpu_0/dp/rf/q[0]_i_14_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_18_23/DOC1.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/rf_reg_r1_0_15_18_23_i_11__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/rf_reg_r1_0_15_0_5_i_81__1_19.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/P[23].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp9[9].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__267_carry__0_i_1_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp5[5].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[6]_6[3].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/NxM_mult.ppgen[6].carrychain[1].ppadd.b_is_even.stageN.muxcy0_i_1_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/B[12].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_55__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_133__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_232__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_118__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_226__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/mul_i_327__2_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/PCPlus8[31].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/pcreg/q_reg[15]_0[7].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/rf/Result[23].
+INFO: [Physopt 32-703] Processed net cpu_3/dp/pcreg/Q[1]. Clock skew was adjusted for instance cpu_3/dp/pcreg/q_reg[3].
+INFO: [Physopt 32-952] Improved path group WNS = -0.064. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/pcreg/Q[1].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_18_23/DOC0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/rf_reg_r1_0_15_18_23_i_12__0_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/rf_reg_r1_0_15_0_5_i_81_18.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/P[22].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_3_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp[15].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp_carry__0_i_4_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/pp_out[1]_1[4].
+INFO: [Physopt 32-952] Improved path group WNS = -0.058. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig305_out.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/q[0]_i_9__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/rf/rf_reg_r1_0_15_24_29_i_8__6_n_0.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/rf_reg_r1_0_15_0_5_i_39_22.
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/P[24].
+INFO: [Physopt 32-953] Path group WNS did not improve. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp7[17].
+INFO: [Common 17-14] Message 'Physopt 32-953' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-952] Improved path group WNS = -0.039. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry__2_i_2_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.038. Path group: clk_out1_clk_wiz_0. Processed net: cpu_1/dp/rf/B[2].
+INFO: [Physopt 32-952] Improved path group WNS = -0.024. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry_i_3_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.023. Path group: clk_out1_clk_wiz_0. Processed net: cpu_3/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__215_carry__0_i_2_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.015. Path group: clk_out1_clk_wiz_0. Processed net: cpu_2/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__163_carry_i_3_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.015. Path group: clk_out1_clk_wiz_0. Processed net: cpu_7/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__325_carry__2_i_3_n_0.
+INFO: [Physopt 32-952] Improved path group WNS = -0.004. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig362_out.
+INFO: [Physopt 32-952] Improved path group WNS = -0.001. Path group: clk_out1_clk_wiz_0. Processed net: cpu_5/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/lut_sig368_out.
+INFO: [Physopt 32-735] Processed net cpu_1/dp/alu_u/mul/U0/i_mult/gLUT.gLUT_speed.iLUT/plusOp__103_carry_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.005 | TNS=0.000 | WHS=0.007 | THS=0.000 |
+INFO: [Physopt 32-668] Current Timing Summary | WNS=0.005 | TNS=0.000 | WHS=0.007 | THS=0.000 |
+Phase 2 Critical Path Optimization | Checksum: 20d8dd7e8
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:49 . Memory (MB): peak = 2418.008 ; gain = 49.363
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2418.008 ; gain = 0.000
+INFO: [Physopt 32-669] Post Physical Optimization Timing Summary | WNS=0.005 | TNS=0.000 | WHS=0.007 | THS=0.000 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Critical Path  |          0.323  |         11.735  |            0  |              0  |                    62  |           0  |           1  |  00:01:46  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2418.008 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 2541e0ae9
+
+Time (s): cpu = 00:02:27 ; elapsed = 00:01:49 . Memory (MB): peak = 2418.008 ; gain = 49.363
+INFO: [Common 17-83] Releasing license: Implementation
+220 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:02:28 ; elapsed = 00:01:50 . Memory (MB): peak = 2418.008 ; gain = 49.363
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:03 ; elapsed = 00:00:01 . Memory (MB): peak = 2418.008 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/impl_1/top_postroute_physopt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -warn_on_violation -file top_timing_summary_postroute_physopted.rpt -pb top_timing_summary_postroute_physopted.pb -rpx top_timing_summary_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file top_bus_skew_postroute_physopted.rpt -pb top_bus_skew_postroute_physopted.pb -rpx top_bus_skew_postroute_physopted.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  4 22:27:59 2025...
