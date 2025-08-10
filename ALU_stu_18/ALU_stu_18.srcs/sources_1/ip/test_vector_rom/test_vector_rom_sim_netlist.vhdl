@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 -- Date        : Fri May 23 15:15:43 2025
 -- Host        : FB47 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top test_vector_rom -prefix
+--               test_vector_rom_ test_vector_rom_sim_netlist.vhdl
 -- Design      : test_vector_rom
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -21,8 +21,6 @@ entity test_vector_rom_blk_mem_gen_prim_wrapper_init is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_prim_wrapper_init : entity is "blk_mem_gen_prim_wrapper_init";
 end test_vector_rom_blk_mem_gen_prim_wrapper_init;
 
 architecture STRUCTURE of test_vector_rom_blk_mem_gen_prim_wrapper_init is
@@ -277,8 +275,6 @@ entity test_vector_rom_blk_mem_gen_prim_width is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_prim_width : entity is "blk_mem_gen_prim_width";
 end test_vector_rom_blk_mem_gen_prim_width;
 
 architecture STRUCTURE of test_vector_rom_blk_mem_gen_prim_width is
@@ -302,8 +298,6 @@ entity test_vector_rom_blk_mem_gen_generic_cstr is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_generic_cstr : entity is "blk_mem_gen_generic_cstr";
 end test_vector_rom_blk_mem_gen_generic_cstr;
 
 architecture STRUCTURE of test_vector_rom_blk_mem_gen_generic_cstr is
@@ -327,8 +321,6 @@ entity test_vector_rom_blk_mem_gen_top is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_top : entity is "blk_mem_gen_top";
 end test_vector_rom_blk_mem_gen_top;
 
 architecture STRUCTURE of test_vector_rom_blk_mem_gen_top is
@@ -352,8 +344,6 @@ entity test_vector_rom_blk_mem_gen_v8_4_4_synth is
     ena : in STD_LOGIC;
     addra : in STD_LOGIC_VECTOR ( 6 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_v8_4_4_synth : entity is "blk_mem_gen_v8_4_4_synth";
 end test_vector_rom_blk_mem_gen_v8_4_4_synth;
 
 architecture STRUCTURE of test_vector_rom_blk_mem_gen_v8_4_4_synth is
@@ -586,8 +576,6 @@ entity test_vector_rom_blk_mem_gen_v8_4_4 is
   attribute C_WRITE_WIDTH_B of test_vector_rom_blk_mem_gen_v8_4_4 : entity is 66;
   attribute C_XDEVICEFAMILY : string;
   attribute C_XDEVICEFAMILY of test_vector_rom_blk_mem_gen_v8_4_4 : entity is "artix7";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of test_vector_rom_blk_mem_gen_v8_4_4 : entity is "blk_mem_gen_v8_4_4";
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of test_vector_rom_blk_mem_gen_v8_4_4 : entity is "yes";
 end test_vector_rom_blk_mem_gen_v8_4_4;

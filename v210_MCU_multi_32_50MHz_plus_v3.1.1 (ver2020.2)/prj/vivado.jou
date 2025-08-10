@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Aug 10 18:09:15 2025
+# Process ID: 700
+# Current directory: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32000 F:\GitHub\Digital_Design_MCU\v210_MCU_multi_32_50MHz_plus_v3.1.1\prj\v200_MCU_multi.xpr
+# Log file: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj/vivado.log
+# Journal file: F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project F:/GitHub/Digital_Design_MCU/v210_MCU_multi_32_50MHz_plus_v3.1.1/prj/v200_MCU_multi.xpr
+update_compile_order -fileset sources_1

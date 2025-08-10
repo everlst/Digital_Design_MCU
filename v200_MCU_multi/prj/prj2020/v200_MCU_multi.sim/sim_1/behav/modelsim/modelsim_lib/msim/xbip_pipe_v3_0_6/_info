@@ -1,0 +1,159 @@
+m255
+K4
+z2
+!s11e vcom 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.sim/sim_1/behav/modelsim
+EygwaSlTPXsDWe/N0FBz5IvgzG+J83qCEWLDkQvO5fJE=
+Z1 w1751389319
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z4 8../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd
+Z5 F../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd
+l0
+Z6 L82 1
+VFFnk:Kmoh?TdWLVN6DS7S3
+!s100 l77]]7gOl8;D_g@XGXO0P2
+Z7 OL;C;2020.4;71
+!i119 1
+!i8a 73267184
+31
+Z8 !s110 1751557342
+!i10b 1
+Z9 !s108 1751557342.000000
+Z10 !s90 -93|-work|xbip_pipe_v3_0_6|../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd|
+Z11 !s107 ../../../../v200_MCU_multi.ip_user_files/ipstatic/hdl/xbip_pipe_v3_0_vh_rfs.vhd|
+!i113 0
+Z12 o-93 -work xbip_pipe_v3_0_6
+Z13 tExplicit 1 CvgOpt 0
+nfbcb96
+A9o9g9gSXuAOe3dxNheGf4g==
+Z14 DPx18 xbip_utils_v3_0_10 22 xbip_utils_v3_0_10_pkg 0 22 MTCn[]Q5KBlod3H3F;ECg0
+Z15 DEx16 xbip_pipe_v3_0_6 20 xbip_pipe_v3_0_6_viv 0 22 7bF4;V:B?h@g[`S=^^`>`0
+R2
+R3
+Z16 DEx4 work 16 xbip_pipe_v3_0_6 0 22 FFnk:Kmoh?TdWLVN6DS7S3
+!i122 3
+l82
+R6
+Z17 VX0L;KVU`H]Vnj8^iQn>4H1
+Z18 !s100 kKIbVb]f8ci>Knn1mZ7j02
+R7
+!i119 1
+!i8a 2022574544
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Z19 n7f03058
+PAzE8aePgvvPXhTHKSIgEqWtKCbMMnW7NnCYbt588/N8=
+R2
+R3
+!i122 3
+R1
+R0
+R4
+R5
+l0
+R6
+V;UX`fS5Cm3jDAYonW?S<m2
+!s100 9Y0YjVSi7oGI`726M_J5P1
+R7
+!i119 1
+!i8a 320198784
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+n9ca3af0
+EZBkLThiV/J3s5q5sSMiImGqk3kExE3Kom8j4J8qc4tw=
+R1
+R14
+R2
+R3
+!i122 3
+R0
+R4
+R5
+l0
+R6
+V7bF4;V:B?h@g[`S=^^`>`0
+!s100 1TUEaI_VdE?=F^iYhM2=a3
+R7
+!i119 1
+!i8a 1120549872
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nb9c98c6
+AGZYPvrlBWDOqnxgQ4CfrIA==
+R14
+R2
+R3
+Z20 DEx4 work 20 xbip_pipe_v3_0_6_viv 0 22 7bF4;V:B?h@g[`S=^^`>`0
+!i122 3
+l82
+R6
+Z21 VP_a2ZU1D3[m@PQl96LCDQ2
+Z22 !s100 LI@hP7mlLjh1H7^n9RY7l0
+R7
+!i119 1
+!i8a 1181766640
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Z23 n7b05a8
+PJ2JJPH/YYX1iyTLDkSmu5EhjMsOv24IFRQATSQ6aTSQ=
+R2
+R3
+!i122 3
+R1
+R0
+R4
+R5
+l0
+R6
+V5LzYM889koQAQeGoH`hf<3
+!s100 hbz_n:@d2ao:Xi?Xhb3S:3
+R7
+!i119 1
+!i8a 591143328
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+nc1c6dc0

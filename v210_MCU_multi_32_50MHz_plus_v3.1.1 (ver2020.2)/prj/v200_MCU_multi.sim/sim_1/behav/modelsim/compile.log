@@ -1,0 +1,83 @@
+# do {tb_top_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# Model Technology ModelSim SE-64 vmap 2020.4 Lib Mapping Utility 2020.10 Oct 13 2020
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 12:57:25 on Jul 05,2025
+# vlog -incr -work xil_defaultlib "+incdir+../../../../v200_MCU_multi.gen/sources_1/ip/clk_wiz_0" ../../../../v200_MCU_multi.gen/sources_1/ip/ila_0/sim/ila_0.v ../../../../v200_MCU_multi.gen/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_7/sim/imem_7.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_6/sim/imem_6.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_5/sim/imem_5.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_4/sim/imem_4.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_1/sim/imem_1.v ../../../../v200_MCU_multi.gen/sources_1/ip/imem_0/sim/imem_0.v 
+# -- Skipping module ila_0
+# -- Skipping module dist_mem_gen_1
+# -- Skipping module imem_7
+# -- Skipping module imem_6
+# -- Skipping module imem_5
+# -- Skipping module imem_4
+# -- Skipping module imem_3
+# -- Skipping module imem_2
+# -- Skipping module imem_1
+# -- Skipping module imem_0
+# 
+# Top level modules:
+# 	ila_0
+# 	dist_mem_gen_1
+# 	imem_7
+# 	imem_6
+# 	imem_5
+# 	imem_4
+# 	imem_3
+# 	imem_2
+# 	imem_1
+# 	imem_0
+# End time: 12:57:25 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vcom 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 12:57:25 on Jul 05,2025
+# vcom -93 -work xil_defaultlib ../../../../v200_MCU_multi.gen/sources_1/ip/mult_gen_0/sim/mult_gen_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mult_gen_0
+# -- Compiling architecture mult_gen_0_arch of mult_gen_0
+# End time: 12:57:25 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 12:57:25 on Jul 05,2025
+# vlog -incr -work xil_defaultlib "+incdir+../../../../v200_MCU_multi.gen/sources_1/ip/clk_wiz_0" ../../../../../rtl/adder.v ../../../../../rtl/alu.v ../../../../../rtl/arm.v ../../../../../rtl/condlogic.v ../../../../../rtl/controller.v ../../../../../rtl/datapath.v ../../../../../rtl/decoder.v ../../../../../rtl/dmem.v ../../../../../rtl/extend.v ../../../../../rtl/flopenr.v ../../../../../rtl/flopr.v ../../../../../rtl/mux2.v ../../../../../rtl/mux3.v ../../../../../rtl/regfile.v ../../../../../rtl/shifter.v ../../../../../rtl/top.v ../../../../../sim/tb.v 
+# -- Skipping module adder
+# -- Compiling module alu
+# -- Compiling module arm
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module controller
+# -- Skipping module datapath
+# -- Compiling module decoder
+# -- Skipping module dmem
+# -- Skipping module extend
+# -- Skipping module flopenr
+# -- Skipping module flopr
+# -- Skipping module mux2
+# -- Skipping module mux3
+# -- Skipping module regfile
+# -- Compiling module shifter
+# -- Compiling module top
+# -- Skipping module tb_top
+# 
+# Top level modules:
+# 	tb_top
+# End time: 12:57:25 on Jul 05,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim SE-64 vlog 2020.4 Compiler 2020.10 Oct 13 2020
+# Start time: 12:57:25 on Jul 05,2025
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:57:26 on Jul 05,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

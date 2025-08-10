@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jul  4 12:03:56 2025
+# Process ID: 25088
+# Current directory: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/imem_3_synth_1
+# Command line: vivado.exe -log imem_3.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source imem_3.tcl
+# Log file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/imem_3_synth_1/imem_3.vds
+# Journal file: F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.runs/imem_3_synth_1\vivado.jou
+#-----------------------------------------------------------
+source imem_3.tcl -notrace

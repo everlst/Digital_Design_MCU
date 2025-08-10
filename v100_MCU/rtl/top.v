@@ -105,7 +105,7 @@ module top (
   end
 
   always @(posedge clk) begin
-    if (cnt_test < 162) begin
+    if (cnt_test < 182) begin
       cnt_test <= cnt_test + 1;
     end else begin
       cnt_test <= cnt_test;

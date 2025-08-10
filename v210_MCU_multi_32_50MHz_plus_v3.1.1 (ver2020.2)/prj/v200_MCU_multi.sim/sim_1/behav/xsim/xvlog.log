@@ -1,0 +1,55 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/ila_0/sim/ila_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ila_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dist_mem_gen_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_7/sim/imem_7.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_7
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_6/sim/imem_6.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_6
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_5/sim/imem_5.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_5
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_4/sim/imem_4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_4
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_1/sim/imem_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.gen/sources_1/ip/imem_0/sim/imem_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/arm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arm
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/condlogic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module condlogic
+INFO: [VRFC 10-311] analyzing module condcheck
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/datapath.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module decoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/dmem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/flopenr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopenr
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/flopr.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module flopr
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/mux2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/mux3.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux3
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/regfile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module regfile
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/sim/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_top

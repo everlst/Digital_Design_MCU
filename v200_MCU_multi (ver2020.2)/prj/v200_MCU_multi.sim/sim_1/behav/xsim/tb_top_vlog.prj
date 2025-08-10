@@ -1,0 +1,35 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../v200_MCU_multi.gen/sources_1/ip/clk_wiz_0" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/ila_0/sim/ila_0.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/dist_mem_gen_1/sim/dist_mem_gen_1.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_7/sim/imem_7.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_6/sim/imem_6.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_5/sim/imem_5.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_4/sim/imem_4.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_3/sim/imem_3.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_2/sim/imem_2.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_1/sim/imem_1.v" \
+"../../../../v200_MCU_multi.gen/sources_1/ip/imem_0/sim/imem_0.v" \
+"../../../../../rtl/adder.v" \
+"../../../../../rtl/alu.v" \
+"../../../../../rtl/arm.v" \
+"../../../../../rtl/condlogic.v" \
+"../../../../../rtl/controller.v" \
+"../../../../../rtl/datapath.v" \
+"../../../../../rtl/decoder.v" \
+"../../../../../rtl/dmem.v" \
+"../../../../../rtl/extend.v" \
+"../../../../../rtl/flopenr.v" \
+"../../../../../rtl/flopr.v" \
+"../../../../../rtl/mux2.v" \
+"../../../../../rtl/mux3.v" \
+"../../../../../rtl/regfile.v" \
+"../../../../../rtl/shifter.v" \
+"../../../../../rtl/top.v" \
+"../../../../../sim/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

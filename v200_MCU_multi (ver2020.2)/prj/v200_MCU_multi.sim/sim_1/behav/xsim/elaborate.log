@@ -1,0 +1,81 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: G:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 260f8a52230c4927b5e006ece945537e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L dist_mem_gen_v8_0_13 -L xbip_utils_v3_0_10 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_behav xil_defaultlib.tb_top xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 6 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:195]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:200]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:205]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:210]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:215]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:220]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 5 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:225]
+WARNING: [VRFC 10-3091] actual bit length 30 differs from formal bit length 6 for port 'a' [F:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/rtl/top.v:230]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_viv_comp
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.decoder
+Compiling module xil_defaultlib.flopenr(WIDTH=2)
+Compiling module xil_defaultlib.condcheck
+Compiling module xil_defaultlib.condlogic
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.mux2(WIDTH=32)
+Compiling module xil_defaultlib.flopr(WIDTH=32)
+Compiling module xil_defaultlib.adder(WIDTH=32)
+Compiling module xil_defaultlib.mux3(WIDTH=4)
+Compiling module xil_defaultlib.mux2(WIDTH=4)
+Compiling module xil_defaultlib.regfile
+Compiling module xil_defaultlib.extend
+Compiling module xil_defaultlib.shifter
+Compiling architecture lut2_v of entity unisim.LUT2 [\LUT2(init="1000")(0,3)\]
+Compiling architecture mult_and_v of entity unisim.MULT_AND [mult_and_default]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ao_width=19,bo_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.luts [\luts(c_xdevicefamily="artix7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16_viv [\mult_gen_v12_0_16_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.mult_gen_v12_0_16 [\mult_gen_v12_0_16(c_xdevicefami...]
+Compiling architecture mult_gen_0_arch of entity xil_defaultlib.mult_gen_0 [mult_gen_0_default]
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.arm
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_0
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_1
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_2
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_3
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_4
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_5
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_6
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.imem_7
+Compiling module dist_mem_gen_v8_0_13.dist_mem_gen_v8_0_13(C_FAMILY="a...
+Compiling module xil_defaultlib.dist_mem_gen_1
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.tb_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_behav

@@ -1,0 +1,36 @@
+m255
+K4
+z2
+!s11f vlog 2020.4 2020.10, Oct 13 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dF:/GitHub/Digital_Design_MCU-main/v200_MCU_multi/prj/v200_MCU_multi.sim/sim_1/behav/modelsim
+vdist_mem_gen_v8_0_13
+!s10a 1751555271
+!s110 1751557097
+!i10b 1
+!s100 5L>98[6zbV@g0LkRh1Xn`1
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I:cH6`AA_h?YNJTQgZYA[;2
+R0
+w1751555271
+8../../../../v200_MCU_multi.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+F../../../../v200_MCU_multi.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v
+!i122 0
+L0 78 495
+VDg1SIo80bB@j0V0VzS_@n1
+OL;L;2020.4;71
+r1
+!s85 0
+31
+!s108 1751557097.000000
+!s107 ../../../../v200_MCU_multi.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!s90 -incr|-work|dist_mem_gen_v8_0_13|+incdir+../../../../v200_MCU_multi.gen/sources_1/ip/clk_wiz_0|../../../../v200_MCU_multi.ip_user_files/ipstatic/simulation/dist_mem_gen_v8_0.v|
+!i113 0
+o-work dist_mem_gen_v8_0_13 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -work dist_mem_gen_v8_0_13 +incdir+../../../../v200_MCU_multi.gen/sources_1/ip/clk_wiz_0 -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+tCvgOpt 0

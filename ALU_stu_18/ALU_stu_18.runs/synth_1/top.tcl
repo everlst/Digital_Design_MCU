@@ -17,10 +17,8 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param tcl.collectionResultDisplayLimit 0
 set_param chipscope.maxJobs 3
 set_param simulator.modelsimInstallPath E:/modeltech64_2020.4/win64
-set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -40,7 +38,8 @@ add_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/import
 add_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/test_vector.coe
 add_files Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.ip_user_files/mem_init_files/flags_and_result.coe
 read_verilog -library xil_defaultlib {
-  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top.v
+  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/ALU_top_preadder.v
+  Y:/Code/Digital_Design_MCU/ALU_gate/rtl/pre_adder_32.v
   Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/new/top.v
 }
 read_ip -quiet Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_vector_rom/test_vector_rom.xci

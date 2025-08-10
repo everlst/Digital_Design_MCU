@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
 // Date        : Fri May 23 15:21:29 2025
 // Host        : FB47 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/test_flags_and_result_rom/test_flags_and_result_rom_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top test_flags_and_result_rom -prefix
+//               test_flags_and_result_rom_ test_flags_and_result_rom_sim_netlist.v
 // Design      : test_flags_and_result_rom
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -191,7 +191,6 @@ module test_flags_and_result_rom
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module test_flags_and_result_rom_blk_mem_gen_generic_cstr
    (douta,
     clka,
@@ -214,7 +213,6 @@ module test_flags_and_result_rom_blk_mem_gen_generic_cstr
         .ena(ena));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module test_flags_and_result_rom_blk_mem_gen_prim_width
    (douta,
     clka,
@@ -237,7 +235,6 @@ module test_flags_and_result_rom_blk_mem_gen_prim_width
         .ena(ena));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module test_flags_and_result_rom_blk_mem_gen_prim_wrapper_init
    (douta,
     clka,
@@ -379,7 +376,6 @@ module test_flags_and_result_rom_blk_mem_gen_prim_wrapper_init
         .WEBWE({1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module test_flags_and_result_rom_blk_mem_gen_top
    (douta,
     clka,
@@ -427,7 +423,7 @@ endmodule
 (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) (* C_WRITE_DEPTH_A = "128" *) 
 (* C_WRITE_DEPTH_B = "128" *) (* C_WRITE_MODE_A = "WRITE_FIRST" *) (* C_WRITE_MODE_B = "WRITE_FIRST" *) 
 (* C_WRITE_WIDTH_A = "36" *) (* C_WRITE_WIDTH_B = "36" *) (* C_XDEVICEFAMILY = "artix7" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module test_flags_and_result_rom_blk_mem_gen_v8_4_4
    (clka,
     rsta,
@@ -681,7 +677,6 @@ module test_flags_and_result_rom_blk_mem_gen_v8_4_4
         .ena(ena));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4_synth" *) 
 module test_flags_and_result_rom_blk_mem_gen_v8_4_4_synth
    (douta,
     clka,

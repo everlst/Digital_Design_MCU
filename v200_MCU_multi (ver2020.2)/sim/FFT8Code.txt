@@ -1,0 +1,105 @@
+数据导入（将Rom中数据导入Ram中）：
+MOV R1, #0 
+LDR R0, [R1]        ; 0   → 32,xr[0]
+STR R0, [R1, #32]
+LDR R0, [R1, #2]    ; 2   → 34,xr[1]
+STR R0, [R1, #34]
+LDR R0, [R1, #4]    ; 4   → 36,xr[2]
+STR R0, [R1, #36]
+LDR R0, [R1, #6]    ; 6   → 38,xr[3]
+STR R0, [R1, #38]
+LDR R0, [R1, #8]    ; 8   → 40,xr[4]
+STR R0, [R1, #40]
+LDR R0, [R1, #10]   ; 10  → 42,xr[5]
+STR R0, [R1, #42]
+LDR R0, [R1, #12]   ; 12  → 44,xr[6]
+STR R0, [R1, #44]
+LDR R0, [R1, #14]   ; 14  → 46,xr[7]
+STR R0, [R1, #46]
+LDR R0, [R1, #16]   ; 16  → 48,xi[0]
+STR R0, [R1, #48]
+LDR R0, [R1, #18]   ; 18  → 50,xi[1]
+STR R0, [R1, #50]
+LDR R0, [R1, #20]   ; 20  → 52,xi[2]
+STR R0, [R1, #52]
+LDR R0, [R1, #22]   ; 22  → 54,xi[3]
+STR R0, [R1, #54]
+LDR R0, [R1, #24]   ; 24  → 56,xi[4]
+STR R0, [R1, #56]
+LDR R0, [R1, #26]   ; 26  → 58,xi[5]
+STR R0, [R1, #58]
+LDR R0, [R1, #28]   ; 28  → 60,xi[6]
+STR R0, [R1, #60]
+LDR R0, [R1, #30]   ; 30  → 62,xi[7]
+STR R0, [R1, #62]
+MOV R1,#32
+
+M1(x2r[0,1],x4r[0,1],x8r[0,1]):
+LDR R0,[R1]       #R0=xr[0]
+LDR R2,[R1,#8]    #R2=xr[4]
+ADD R3,R0,R2      #R3=xr[0]+xr[4]=x2r[0]    	
+SUB R4,R0,R2      #R4=xr[0]-xr[4]=x2r[1]
+STR R3,[R1,#32]   #x2r[0,1]存储在R1+32,34      
+STR R4,[R1,#34]   #x2r[0,1] 	
+
+
+M2(x2r[2,3],x4r[2,3],x8r[2,3]):
+LDR R0,[R1,#4]    #R0=xr[2]		
+LDR R2,[R1,#12]   #R2=xr[6]
+ADD R3,R0,R2      #R3=xr[2]+xr[6]=x2r[2]    	
+SUB R4,R0,R2      #R4=xr[2]-xr[6]=x2r[3]
+STR R3,[R1,#36]
+STR R4,[R1,#38]   #x2r[2,3] 	
+
+
+M3(x2r[4,5],x4r[4,5],x8r[4,5]):
+LDR R9,[R1,#2]    #R9=xr[1]		
+LDR R10,[R1,#10]  #R10=xr[5]
+ADD R11,R9,R10    #R11=xr[1]+xr[5]=x2r[4]    	
+SUB R0,R9,R10     #R0=xr[1]-xr[5]=x2r[5]
+STR R11,[R1,#40]
+STR R0,[R1,#42]   #x2r[4,5]
+
+
+M4(x2r[6,7],x4r[6,7],x8r[6,7]):
+LDR R2,[R1,#6]    #R2=xr[3]		
+LDR R12,[R1,#14]  #R12=xr[7]
+ADD R9,R2,R12     #R9=xr[3]+xr[7]=x2r[6]     
+SUB R5,R2,R12     #R5=xr[3]-xr[7]=x2r[7] 
+STR R9,[R1,#44]
+STR R5,[R1,#46]   #x2r[6,7]
+
+M5(x2i[0,1],x4i[0,1],x8i[0,1]):
+LDR R0,[R1,#16]   #R0=xi[0]   		
+LDR R2,[R1,#24]   #R0=xi[4]
+ADD R3,R0,R2          	
+SUB R4,R0,R2 
+STR R3,[R1,#48]       
+STR R4,[R1,#50]   #x2i[0,1]  
+
+
+M6(x2i[2,3],x4i[2,3],x8i[2,3]):
+LDR R5,[R1,#20]   		
+LDR R6,[R1,#28]
+ADD R7,R5,R6          	
+SUB R8,R5,R6
+STR R7,[R1,#52]
+STR R8,[R1,#54]   #x2i[2,3]
+
+
+M7(x2i[4,5],x4i[4,5],x8i[4,5]):
+LDR R9,[R1,#18]   		
+LDR R10,[R1,#26]
+ADD R11,R9,R10        	
+SUB R0,R9,R10
+STR R11,[R1,#56]
+STR R0,[R1,#58]   #x2i[4,5]
+
+
+M8(x2i[6,7],x4i[6,7],x8i[6,7]):
+LDR R2,[R1,#22]   		
+LDR R12,[R1,#30]  
+ADD R9,R2,R12          
+SUB R5,R2,R12
+STR R9,[R1,#60]
+STR R5,[R1,#62]   #x2i[6,7]

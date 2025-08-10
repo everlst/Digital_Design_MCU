@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri May 23 17:48:24 2025
+// Date        : Mon Jul  7 21:58:40 2025
 // Host        : FB47 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               Y:/Code/Digital_Design_MCU/ALU_stu_18/ALU_stu_18.srcs/sources_1/ip/sys_clk/sys_clk_stub.v
